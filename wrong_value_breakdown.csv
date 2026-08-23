@@ -1,0 +1,11 @@
+category,total_wrong_value,number,non_number,type_only,both,unclear
+simple_python_hi,26,12,10,4,0,0
+simple_python_ta,33,14,15,4,0,0
+simple_python_hi_pt,46,15,27,4,0,0
+simple_python_hi_pre,40,12,24,4,0,0
+simple_python_hi_post,50,12,34,4,0,0
+simple_python_hi_pt_post,49,15,30,4,0,0
+simple_python_ta_pt,45,16,24,4,1,0
+simple_python_ta_pre,60,13,41,4,2,0
+simple_python_ta_post,59,16,38,4,1,0
+simple_python_ta_pt_post,49,16,28,4,1,0
