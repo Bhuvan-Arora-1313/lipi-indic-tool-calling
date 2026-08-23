@@ -1,3 +1,0 @@
-id,lang,reason
-simple_python_ta_128,ta,repetition garbage - undetected by original QA pass
-simple_python_ta_135,ta,repetition garbage - undetected by original QA pass
