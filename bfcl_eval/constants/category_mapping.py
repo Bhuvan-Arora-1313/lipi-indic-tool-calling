@@ -12,6 +12,7 @@ NON_LIVE_CATEGORY = [
     "simple_java",
     "simple_javascript",
     "multiple",
+    "multiple_ta",  # Tamil, gold-reviewed (see data/reviews/tamil_final_resolved.jsonl)
     "parallel",
     "parallel_multiple",
     "irrelevance",
