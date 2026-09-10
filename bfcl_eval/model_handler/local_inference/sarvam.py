@@ -1,4 +1,5 @@
 import re
+from typing import Any
 
 from bfcl_eval.model_handler.local_inference.base_oss_handler import OSSHandler
 from overrides import override
@@ -84,7 +85,7 @@ class SarvamHandler(OSSHandler):
         return super().decode_execute(cleaned, has_tool_call_tag)
 
     @override
-    def _parse_query_response_prompting(self, api_response):
+    def _parse_query_response_prompting(self, api_response: Any) -> dict:
         model_response = api_response.choices[0].text
 
         reasoning_content = ""
@@ -102,7 +103,9 @@ class SarvamHandler(OSSHandler):
         }
 
     @override
-    def _add_assistant_message_prompting(self, inference_data, model_response_data):
+    def _add_assistant_message_prompting(
+        self, inference_data: dict, model_response_data: dict
+    ) -> dict:
         inference_data["message"].append(
             {
                 "role": "assistant",
