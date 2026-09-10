@@ -52,26 +52,27 @@ class SarvamHandler(OSSHandler):
 
     @staticmethod
     def _isolate_call_list(result: str) -> str:
-        """Best-effort extraction of the actual function-call-list substring
-        out of a response that may contain surrounding prose/explanation."""
-        text = result.strip()
+        """Strip a markdown code fence if present; otherwise pass the text
+        through unchanged and let default_decode_ast_prompting's own
+        bracket-wrapping logic (via super().decode_ast/decode_execute)
+        handle turning a bare call, or an already-bracketed call list, into
+        something ast_parse can read.
 
-        # Prefer the last fenced code block, if any -- Sarvam-M tends to put
-        # the actual call there even while explaining around it.
+        An earlier version tried to regex-extract a bracket span directly
+        here (`re.findall(r"\[.*?\]", ...)`  then take the last match).
+        Confirmed via a real run (job 338733, 34/200 failures in BOTH the
+        English and Tamil subsets, identical count -- a signature of a
+        parsing bug, not a language-dependent model failure): that regex
+        grabs the wrong, *inner* bracket span whenever an argument itself
+        is a list (e.g. `pointA=[3,4]`), or the shortest non-greedy match
+        instead of the real outer list. Every one of those 34 failures was
+        actually a clean, correctly-formatted response -- the extraction
+        step was destroying valid output before it ever reached the parser.
+        """
+        text = result.strip()
         fence_matches = re.findall(r"```(?:python|json)?\s*(.*?)```", text, re.DOTALL)
         if fence_matches:
             text = fence_matches[-1].strip()
-
-        # Otherwise (or still), look for the last top-level [...] or a bare
-        # call-list-shaped run of `name(...)[, name(...)]*`.
-        bracket_matches = re.findall(r"\[.*?\]", text, re.DOTALL)
-        if bracket_matches:
-            return bracket_matches[-1]
-
-        call_matches = re.findall(r"[A-Za-z_][A-Za-z0-9_.]*\([^()]*\)", text, re.DOTALL)
-        if call_matches:
-            return ", ".join(call_matches)
-
         return text
 
     @override
