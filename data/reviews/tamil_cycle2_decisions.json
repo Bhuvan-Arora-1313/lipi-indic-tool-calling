@@ -1,0 +1,168 @@
+{
+  "bucket3_rohan": {
+    "multiple_1": {
+      "base_id": "multiple_1",
+      "English Source": "Calculate the area of a triangle, given the lengths of its three sides: 3, 4, and 5.",
+      "Original Translation (you marked this Correct)": "ஒரு முக்கோணத்தின் மூன்று பக்கங்களின் நீளத்தைக் கருத்தில் கொண்டு அதன் பரப்பளவைக் கணக்கிடுங்கள்ஃ 3,4 மற்றும் 5.",
+      "Other reviewer's proposed fix": "ஒரு முக்கோணத்தின் மூன்று பக்கங்களின் நீளத்தைக் கருத்தில் கொண்டு அதன் பரப்பளவைக் கணக்கிடுங்கள்: 3, 4 மற்றும் 5.",
+      "Other reviewer's reasoning": "Colon rendered as 'ஃ'.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_5": {
+      "base_id": "multiple_5",
+      "English Source": "What is the wind speed and temperature in location given by coordinates 46.603354,1.8883340 on December 13, 2019?",
+      "Original Translation (you marked this Correct)": "டிசம்பர் 13,2019 அன்று 46.603354, 1.8883340 ஆயத்த முனைகளால் கொடுக்கப்பட்ட இடத்தில் காற்றின் வேகம் மற்றும் வெப்பநிலை என்ன?",
+      "Other reviewer's proposed fix": "டிசம்பர் 13, 2019 அன்று 46.603354, 1.8883340 ஆயத்தொலைவுகளால் குறிக்கப்படும் இடத்தில் காற்றின் வேகம் மற்றும் வெப்பநிலை என்ன?",
+      "Other reviewer's reasoning": "'coordinates' rendered as 'ஆயத்த முனைகள்' (ready ends); the term is 'ஆயத்தொலைவுகள்'.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_7": {
+      "base_id": "multiple_7",
+      "English Source": "How to assess the population growth in deer and their impact on woodland in Washington state over the past decade?",
+      "Original Translation (you marked this Correct)": "கடந்த பத்தாண்டுகளில் வாஷிங்டன் மாநிலத்தில் மான்களின் மக்கள் தொகை வளர்ச்சி மற்றும் காடுகளில் அவற்றின் தாக்கத்தை எவ்வாறு மதிப்பிடுவது?",
+      "Other reviewer's proposed fix": "கடந்த பத்தாண்டுகளில் வாஷிங்டன் மாநிலத்தில் மான்களின் எண்ணிக்கை வளர்ச்சியையும், காடுகளில் அவற்றின் தாக்கத்தையும் எவ்வாறு மதிப்பிடுவது?",
+      "Other reviewer's reasoning": "'மக்கள் தொகை' means human population; for deer it should be 'எண்ணிக்கை' or 'இனத்தொகை'.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_11": {
+      "base_id": "multiple_11",
+      "English Source": "Calculate the roots of a quadratic equation with coefficients 5, 20, and -25",
+      "Original Translation (you marked this Correct)": "5, 20 மற்றும்-25 குணகங்களுடன் ஒரு இருபடி சமன்பாட்டின் வேர்களைக் கணக்கிடுங்கள்.",
+      "Other reviewer's proposed fix": "5, 20 மற்றும் -25 கெழுக்களை கொண்ட இருபடி சமன்பாட்டின் வேர்களைக் கணக்கிடுங்கள்.",
+      "Other reviewer's reasoning": "Wrong word for coefficient, ",
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_14": {
+      "base_id": "multiple_14",
+      "English Source": "Calculate the depreciated value of a property costing $200,000 with an annual depreciation rate of 3% for 5 years.",
+      "Original Translation (you marked this Correct)": "5 ஆண்டுகளுக்கு 3 சதவீதம் வருடாந்திர தேய்மான விகிதத்துடன் $200,000 மதிப்புள்ள ஒரு சொத்தின் தேய்மான மதிப்பைக் கணக்கிடுங்கள்.",
+      "Other reviewer's proposed fix": "5 ஆண்டுகளுக்கு 3 சதவீதம் வருடாந்திர தேய்மான விகிதத்துடன் $200,000 மதிப்புள்ள சொத்தின் தேய்மான மதிப்பைக் கணக்கிடுங்கள்.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_18": {
+      "base_id": "multiple_18",
+      "English Source": "Who were the main participants and what was the location of the Battle of Stalingrad?",
+      "Original Translation (you marked this Correct)": "முக்கிய பங்கேற்பாளர்கள் யார், ஸ்டாலின்கிராட் போர் நடந்த இடம் என்ன?",
+      "Other reviewer's proposed fix": "ஸ்டாலின்கிராட் போர் நடந்த இடம் என்ன மற்றும் முக்கிய பங்கேற்பாளர்கள் யார்?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_19": {
+      "base_id": "multiple_19",
+      "English Source": "What are the three great Schism in Christianity history?",
+      "Original Translation (you marked this Correct)": "கிறிஸ்துவ வரலாற்றில் மூன்று பெரிய பிளவுகள் யாவை?",
+      "Other reviewer's proposed fix": "கிறிஸ்துவ வரலாற்றில் மூன்று பெரிய பிரிவுகள் யாவை?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_32": {
+      "base_id": "multiple_32",
+      "English Source": "Calculate the volume of a cone with radius 4 and height 7.",
+      "Original Translation (you marked this Correct)": "ஆரம் 4 மற்றும் உயரம் 7 கொண்ட கூம்பின் அளவைக் கணக்கிடுங்கள்.",
+      "Other reviewer's proposed fix": "4 அலகுகள் ஆரம் மற்றும் 7 அலகுகள் உயரம் கொண்ட கூம்பின் அளவைக் கணக்கிடுங்கள்.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket4_rohan": {
+    "multiple_4": {
+      "base_id": "multiple_4",
+      "English Source": "Can you calculate the displacement of a car moving at an initial speed of 20 m/s and then accelerates at 10 m/s^2 for 5 seconds? (assuming a straight line motion)",
+      "Original Translation (both flagged Incorrect)": "20 மீ/வி என்ற ஆரம்ப வேகத்தில் நகரும் ஒரு காரின் இடப்பெயர்ச்சியை உங்களால் கணக்கிட முடியுமா, பின்னர் 5 விநாடிகளுக்கு 10 மீ/வி 2 இல் முடுக்கிவிட முடியுமா? (ஒரு நேர் கோடு இயக்கத்தை எடுத்துக் கொள்ளுங்கள்)",
+      "Version A": "20 m/s என்ற ஆரம்ப வேகத்தில் சென்று, பின்னர் 5 வினாடிகளுக்கு 10 m/s² என்ற முடுக்கத்துடன் செல்லும் ஒரு காரின் இடப்பெயர்ச்சியைக் கணக்கிட முடியுமா? (நேர்க்கோட்டு இயக்கம் எனக் கருதி)",
+      "Version B": "20 m/s என்ற ஆரம்ப வேகத்தில் சென்று, பின்னர் 5 விநாடிகளுக்கு 10 m/s² என்ற முடுக்கத்துடன் செல்லும் ஒரு காரின் இடப்பெயர்ச்சியைக் கணக்கிட முடியுமா? (நேர்க்கோட்டு இயக்கம் எனக் கருதி)",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_15": {
+      "base_id": "multiple_15",
+      "English Source": "How much is the potential of the Solar farm at location with coordinates [43.653225, -79.383186] in December, given that it has a total solar panel area of 80000 sq ft?",
+      "Original Translation (both flagged Incorrect)": "டிசம்பரில் சூரிய மின் உற்பத்தி பண்ணையின் மொத்த பரப்பளவு 80000 சதுர அடி என்பதால், அதன் ஆயத்தங்கள் [43.653225,-79.383186] உள்ள இடத்தில் எவ்வளவு திறன் உள்ளது?",
+      "Version A": "மொத்த சூரிய மின்தகடு (solar panel) பரப்பளவு 80000 சதுர அடி எனக் கொடுக்கப்பட்டால், [43.653225, -79.383186] ஆயத்தொலைவுகள் உள்ள இடத்தில் உள்ள சூரிய மின் பண்ணையின் திறன் டிசம்பரில் எவ்வளவு?",
+      "Version B": "டிசம்பரில் சூரிய மின் உற்பத்தி பண்ணையின் மொத்த பரப்பளவு 80000 சதுர அடி என்பதால், அதன் ஆயத்தங்கள் [43.653225,-79.383186] உள்ள இடத்தில் எவ்வளவு மின்திறன் உற்பத்தி உள்ளது?",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_33": {
+      "base_id": "multiple_33",
+      "English Source": "Find the integral of the function f(x) = 3x^2 from 1 to 2.",
+      "Original Translation (both flagged Incorrect)": "f (x) = 3x2 என்ற சார்பின் ஒருங்கிணைப்பை 1 முதல் 2 வரை கண்டறியவும்.",
+      "Version A": "f(x) = 3x² என்ற சார்பின் 1 முதல் 2 வரையிலான தொகையீட்டைக் (integral) கண்டறியவும்.",
+      "Version B": "f (x) = 3x^2 என்ற சார்பின் தொகை நுண்கணிதம் 1 முதல் 2 வரை கண்டறியவும்.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_37": {
+      "base_id": "multiple_37",
+      "English Source": "Find the final velocity of an object thrown up at 40 m/s after 6 seconds.",
+      "Original Translation (both flagged Incorrect)": "6 விநாடிகளுக்குப் பிறகு 40 மீ/வி என்ற வேகத்தில் வீசப்பட்ட ஒரு பொருளின் இறுதி வேகத்தைக் கண்டறியவும்.",
+      "Version A": "40 m/s வேகத்தில் மேல்நோக்கி வீசப்பட்ட ஒரு பொருளின், 6 விநாடிகளுக்குப் பின்னான இறுதி வேகத்தைக் கண்டறியவும்.",
+      "Version B": "6 விநாடிகளுக்குப் பிறகு 40 மீ/வி என்ற வேகத்தில் வீசப்பட்ட ஒரு பொருளின் இறுதி திசைவேகத்தைக் கண்டறியவும்.",
+      "Decision": "Neither - write new",
+      "Corrected version (only if 'Neither')": "40 m/s திசைவேகத்தில் மேல்நோக்கி வீசப்பட்ட ஒரு பொருளின், 6 விநாடிகளுக்குப் பின்னான இறுதி வேகத்தைக் கண்டறியவும்.",
+      "Notes": null
+    }
+  },
+  "bucket4_dhayanidhi": {
+    "multiple_10": {
+      "base_id": "multiple_10",
+      "English Source": "I need to delete some columns from my employees database on personal_data table. I want to remove their email addresses and social security numbers to respect privacy.",
+      "Original Translation (both flagged Incorrect)": "தனிப்பட்ட தரவு அட்டவணையில் உள்ள எனது ஊழியர்களின் தரவுத்தளத்திலிருந்து சில நெடுவரிசைகளை நான் நீக்க வேண்டும். தனியுரிமையை மதிக்க அவர்களின் மின்னஞ்சல் முகவரிகள் மற்றும் சமூக பாதுகாப்பு எண்களை அகற்ற விரும்புகிறேன்.",
+      "Version A": "personal_data அட்டவணையில் உள்ள எனது ஊழியர்கள் தரவுத்தளத்திலிருந்து சில நெடுவரிசைகளை நான் நீக்க வேண்டும். தனியுரிமையை மதிக்கும் வகையில் அவர்களின் மின்னஞ்சல் முகவரிகள் மற்றும் சமூகப் பாதுகாப்பு எண்களை அகற்ற விரும்புகிறேன்.",
+      "Version B": "தனிப்பட்ட தரவு அட்டவணையில் உள்ள எனது ஊழியர்களின் தரவுத்தளத்திலிருந்து சில நெடுவரிசைகளை நான் நீக்க விரும்புகிறேன். தனியுரிமையை மதிக்க அவர்களின் மின்னஞ்சல் முகவரிகள் மற்றும் சமூக பாதுகாப்பு எண்களை அகற்ற விரும்புகிறேன்.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_13": {
+      "base_id": "multiple_13",
+      "English Source": "How much revenue would company XYZ generate if we increase the sales units of product A by 10% while keeping the price the same?",
+      "Original Translation (both flagged Incorrect)": "A-வின் விற்பனை அலகுகளை 10 சதவீதம் அதிகரித்து, விலையை ஒரே மாதிரியாக வைத்தால் XYZ நிறுவனம் எவ்வளவு வருவாயை ஈட்டும்?",
+      "Version A": "A-வின் விற்பனை அளவுகளை 10 சதவீதம் அதிகரித்து, விலையை ஒரே மாதிரியாக வைத்தால் XYZ நிறுவனம் எவ்வளவு வருவாயை ஈட்டும்?",
+      "Version B": "விலையை மாற்றாமல் வைத்திருந்து, A என்ற பொருளின் விற்பனை அலகுகளை 10% அதிகரித்தால் XYZ நிறுவனம் எவ்வளவு வருவாய் ஈட்டும்?",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_16": {
+      "base_id": "multiple_16",
+      "English Source": "What's the required minimum population size (Ne) for maintaining the genetic diversity of a wild tiger population for the next 100 generations with a probability of 0.95?",
+      "Original Translation (both flagged Incorrect)": "அடுத்த 100 தலைமுறைகளுக்கு 0.95 என்ற நிகழ்தகவுடன் ஒரு காட்டு புலிகளின் மரபணு பன்முகத்தன்மையை பராமரிக்க தேவையான குறைந்தபட்ச மக்கள் தொகை அளவு (Ne) என்ன?",
+      "Version A": "அடுத்த 100 தலைமுறைகளுக்கு 0.95 என்ற நிகழ்தகவுடன் ஒரு காட்டுப் புலி இனத்தொகையின் மரபணுப் பன்முகத்தன்மையைப் பராமரிக்கத் தேவையான குறைந்தபட்ச இனத்தொகை அளவு (Ne) என்ன?",
+      "Version B": "அடுத்த 100 தலைமுறைகளுக்கு 0.95 என்ற நிகழ்தகவுடன் ஒரு காட்டு புலிகளின் மரபணு பன்முகத்தன்மையை பராமரிக்க தேவையான குறைந்தபட்ச மக்கள் தொகை அளவு (Ne) என்ன?",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_34": {
+      "base_id": "multiple_34",
+      "English Source": "Calculate the Least Common Multiple (LCM) of 18 and 12.",
+      "Original Translation (both flagged Incorrect)": "18 மற்றும் 12 இன் குறைந்த பொதுவான பெருக்கத்தைக் (எல். சி. எம்) கணக்கிடுங்கள்.",
+      "Version A": "18 மற்றும் 12 இன் மீச்சிறு பொது மடங்கை (LCM) கணக்கிடுங்கள்.",
+      "Version B": "18 மற்றும் 12 இன் மிகச்சிறிய பொதுவான பெருக்கத்தைக் (மி.சி.ம) கணக்கிடுங்கள்.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  }
+}

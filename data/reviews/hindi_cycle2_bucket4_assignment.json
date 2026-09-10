@@ -1,0 +1,32 @@
+{
+  "language": "hi",
+  "random_seed": 42,
+  "note": "version_a_author/version_b_author are NOT shown to the adjudicator -- blinded as Version A/B in the sheet.",
+  "bucket4_assignment": {
+    "multiple_4": {
+      "adjudicator": "Anshul",
+      "version_a_author": "Anshul",
+      "version_b_author": "Jayant"
+    },
+    "multiple_6": {
+      "adjudicator": "Anshul",
+      "version_a_author": "Anshul",
+      "version_b_author": "Jayant"
+    },
+    "multiple_64": {
+      "adjudicator": "Jayant",
+      "version_a_author": "Anshul",
+      "version_b_author": "Jayant"
+    },
+    "multiple_99": {
+      "adjudicator": "Jayant",
+      "version_a_author": "Anshul",
+      "version_b_author": "Jayant"
+    },
+    "multiple_106": {
+      "adjudicator": "Jayant",
+      "version_a_author": "Anshul",
+      "version_b_author": "Jayant"
+    }
+  }
+}

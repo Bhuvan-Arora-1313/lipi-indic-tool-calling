@@ -1,0 +1,47 @@
+{
+  "language": "ta",
+  "random_seed": 42,
+  "note": "version_a_author/version_b_author are NOT shown to the adjudicator -- blinded as Version A/B in the sheet.",
+  "bucket4_assignment": {
+    "multiple_4": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_10": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_13": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_15": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_16": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_33": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_34": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_37": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    }
+  }
+}

@@ -1693,6 +1693,25 @@ local_inference_model_map = {
         is_fc_model=True,
         underscore_to_dot=False,
     ),
+    "qwen3-8b-ollama-FC": ModelConfig(
+        # Local Qwen3-8B served via Ollama's OpenAI-compatible API
+        # (localhost:11434/v1), not a self-managed vLLM/SGLang server.
+        # model_name must match Ollama's own model naming ("qwen3:8b"),
+        # which is why this is a separate entry from "Qwen/Qwen3-8B-FC"
+        # (that one's model_name is HuggingFace-style and would 404
+        # against Ollama). Run with --skip-server-setup and
+        # REMOTE_OPENAI_BASE_URL=http://localhost:11434/v1 set.
+        model_name="qwen3:8b",
+        display_name="Qwen3-8B (Ollama, local, FC)",
+        url="https://huggingface.co/Qwen/Qwen3-8B",
+        org="Qwen",
+        license="apache-2.0",
+        model_handler=QwenFCHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
     "Qwen/Qwen3-8B": ModelConfig(
         model_name="Qwen/Qwen3-8B",
         display_name="Qwen3-8B (Prompt)",
