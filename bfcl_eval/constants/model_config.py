@@ -52,6 +52,7 @@ from bfcl_eval.model_handler.local_inference.llama_3_1 import LlamaHandler_3_1
 from bfcl_eval.model_handler.local_inference.minicpm import MiniCPMHandler
 from bfcl_eval.model_handler.local_inference.minicpm_fc import MiniCPMFCHandler
 from bfcl_eval.model_handler.local_inference.mistral_fc import MistralFCHandler
+from bfcl_eval.model_handler.local_inference.sarvam_fc import SarvamFCHandler
 from bfcl_eval.model_handler.local_inference.phi import PhiHandler
 from bfcl_eval.model_handler.local_inference.phi_fc import PhiFCHandler
 from bfcl_eval.model_handler.local_inference.quick_testing_oss import (
@@ -1448,6 +1449,18 @@ local_inference_model_map = {
         org="Salesforce",
         license="cc-by-nc-4.0",
         model_handler=SalesforceQwenHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "sarvamai/sarvam-m": ModelConfig(
+        model_name="sarvamai/sarvam-m",
+        display_name="Sarvam-M (FC)",
+        url="https://huggingface.co/sarvamai/sarvam-m",
+        org="Sarvam AI",
+        license="apache-2.0",
+        model_handler=SarvamFCHandler,
         input_price=None,
         output_price=None,
         is_fc_model=True,

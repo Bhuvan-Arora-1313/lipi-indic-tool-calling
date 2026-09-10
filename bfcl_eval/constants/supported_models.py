@@ -124,6 +124,7 @@ SUPPORTED_MODELS = [
     "Salesforce/xLAM-2-32b-fc-r",
     "Salesforce/xLAM-2-3b-fc-r",
     "Salesforce/xLAM-2-1b-fc-r",
+    "sarvamai/sarvam-m",
     "mistralai/Ministral-8B-Instruct-2410",
     "microsoft/phi-4",
     "microsoft/Phi-4-mini-instruct",

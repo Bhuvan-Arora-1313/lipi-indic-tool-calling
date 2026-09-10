@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen3-32B-FC",
+  "tamil_accuracy": 0.795,
+  "english_accuracy": 0.965,
+  "bucket_counts": {
+    "2_function_level_error": 5,
+    "language_mismatch": 19,
+    "wrong_value_english": 17
+  },
+  "bucket_items": {
+    "2_function_level_error": [
+      "multiple_ta_7",
+      "multiple_ta_10",
+      "multiple_ta_21",
+      "multiple_ta_26",
+      "multiple_ta_53"
+    ],
+    "language_mismatch": [
+      "multiple_ta_9",
+      "multiple_ta_12",
+      "multiple_ta_38",
+      "multiple_ta_56",
+      "multiple_ta_62",
+      "multiple_ta_75",
+      "multiple_ta_87",
+      "multiple_ta_89",
+      "multiple_ta_112",
+      "multiple_ta_118",
+      "multiple_ta_140",
+      "multiple_ta_149",
+      "multiple_ta_172",
+      "multiple_ta_180",
+      "multiple_ta_181",
+      "multiple_ta_183",
+      "multiple_ta_187",
+      "multiple_ta_188",
+      "multiple_ta_194"
+    ],
+    "wrong_value_english": [
+      "multiple_ta_20",
+      "multiple_ta_25",
+      "multiple_ta_58",
+      "multiple_ta_60",
+      "multiple_ta_61",
+      "multiple_ta_67",
+      "multiple_ta_79",
+      "multiple_ta_80",
+      "multiple_ta_94",
+      "multiple_ta_138",
+      "multiple_ta_145",
+      "multiple_ta_151",
+      "multiple_ta_153",
+      "multiple_ta_160",
+      "multiple_ta_166",
+      "multiple_ta_184",
+      "multiple_ta_193"
+    ]
+  },
+  "language_specific_failure_count": 38,
+  "total_tamil_failures": 41,
+  "not_yet_done": [
+    "semantic sub-split within language_mismatch (same-meaning / relevant-but-wrong / wrong-value)",
+    "semantic sub-split within wrong_value_english (wrong-value / relevant-but-incorrect / correct-but-strict-match-failure)"
+  ]
+}
