@@ -770,3 +770,42 @@ Sheets. Classification + bucket-4 assignment saved to `data/reviews/
 hindi_cycle1_classification.json` and `hindi_cycle2_bucket4_assignment.
 json`. Verified row assignment in both generated sheets matches the
 computed bucket-3/bucket-4-by-adjudicator lists exactly.
+
+## 2026-09-16
+
+**Checked completed English PARA/SYNO Cycle 1 files (Jayant Kapoor,
+Anshul Gupta) and built Cycle 2.** Structural audit hit a new, real bug on
+the first pass: naive loading reported only 201 rows per reviewer (should
+be 400) with almost every row showing as PARA and only one SYNO --
+`build_perturbation_sheet` (generate_review_sheets.py) merges the
+base_id and English Source cells across each PARA+SYNO pair, and
+openpyxl only returns a value on the top-left cell of a merged range, so
+every SYNO row's base_id/English Source read as None and collapsed onto
+a single dict key. Fixed by forward-filling those two columns from the
+last non-empty value seen; re-verified afterward (400/400 rows, keys
+match between reviewers, source text identical, no empty Correctness).
+
+Classified with the composite (base_id, perturbation_type) key (PARA and
+SYNO reviewed independently per base_id): bucket 1 (both Correct) 392,
+bucket 2 (identical fix) 1, bucket 3 (asymmetric) 6, bucket 4 (different
+fixes) 1. Found a new kind of anomaly, not seen in Tamil/Hindi: two items
+where a reviewer marked "Incorrect" with literally nothing else filled in
+(no fix, no issue-type checkbox, no notes) -- `multiple_3` (PARA, Jayant)
+and `multiple_72` (SYNO, Anshul's side of a bucket-4 pair). Reported to
+the user with a concrete proposal before writing anything; confirmed:
+`multiple_3` still gets a Cycle 2 row but with only two decision options
+(no "Accept fix", nothing to accept) -- "Original stands" / "Neither -
+write new"; `multiple_72` skips Cycle 2 entirely and is auto-resolved to
+Jayant's fix directly, since Anshul's blank side isn't a competing
+alternative to weigh against it, just an omission.
+
+Wrote `translation/generate_cycle2_parasyno.py`. Per-row decision-list
+support added to the sheet styling (a single row can get a different
+dropdown than the rest of its column) specifically for the multiple_3
+case. Wrote `data/review_sheets/cycle2/ParaSyno_Cycle2_Jayant.xlsx` (3
+bucket-3 items) and `ParaSyno_Cycle2_Anshul.xlsx` (3 bucket-3 items,
+including the 2-option row), not yet uploaded to Google Sheets.
+Classification + the auto-resolved bucket-4 item saved to `data/reviews/
+parasyno_cycle1_classification.json`. Verified after generation: correct
+row assignment per adjudicator, and the multiple_3 row's dropdown is
+genuinely 2-option while every other row stayed 3-option.
