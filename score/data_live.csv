@@ -1,2 +1,10 @@
 Rank,Model,Live Overall Acc,AST Summary,Python Simple AST,Python Multiple AST,Python Parallel AST,Python Parallel Multiple AST,Irrelevance Detection,Relevance Detection
-1,Qwen3-8B (Ollama, local, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+1,Gemma4-31B (OpenRouter, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+2,Llama4-Maverick (OpenRouter, FC) [substitute for unavailable Scout],0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+3,Qwen3.5-122B-A10B (OpenRouter, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+4,Gemma4-26B-A4B (OpenRouter, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+5,Qwen3.5-9B (OpenRouter, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+6,Qwen3.8-27B (OpenRouter, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+7,Qwen3-8B (Ollama, local, FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+8,Qwen3-32B (FC),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+9,Sarvam-M (Prompt),0.00%,N/A,N/A,N/A,N/A,N/A,N/A,N/A

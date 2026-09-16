@@ -1471,7 +1471,7 @@ local_inference_model_map = {
         input_price=0.08,
         output_price=0.13,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "qwen/qwen3.8-27b": ModelConfig(
         model_name="qwen/qwen3.8-27b",
@@ -1483,7 +1483,7 @@ local_inference_model_map = {
         input_price=None,
         output_price=None,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "qwen/qwen3.5-122b-a10b": ModelConfig(
         model_name="qwen/qwen3.5-122b-a10b",
@@ -1495,7 +1495,7 @@ local_inference_model_map = {
         input_price=0.26,
         output_price=2.08,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "google/gemma-4-26b-a4b-it": ModelConfig(
         model_name="google/gemma-4-26b-a4b-it",
@@ -1507,7 +1507,7 @@ local_inference_model_map = {
         input_price=0.042,
         output_price=0.22,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "google/gemma-4-31b-it": ModelConfig(
         model_name="google/gemma-4-31b-it",
@@ -1519,7 +1519,7 @@ local_inference_model_map = {
         input_price=0.09,
         output_price=0.34,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "meta-llama/llama-4-maverick": ModelConfig(
         # Llama-4-Scout is NOT available on OpenRouter (checked both
@@ -1538,7 +1538,7 @@ local_inference_model_map = {
         input_price=0.19,
         output_price=0.65,
         is_fc_model=True,
-        underscore_to_dot=False,
+        underscore_to_dot=True,
     ),
     "sarvamai/sarvam-m": ModelConfig(
         model_name="sarvamai/sarvam-m",
