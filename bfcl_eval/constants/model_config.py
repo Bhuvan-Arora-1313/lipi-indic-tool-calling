@@ -23,6 +23,7 @@ from bfcl_eval.model_handler.api_inference.nvidia import NvidiaHandler
 from bfcl_eval.model_handler.api_inference.openai_completion import (
     OpenAICompletionsHandler,
 )
+from bfcl_eval.model_handler.api_inference.openrouter import OpenRouterHandler
 from bfcl_eval.model_handler.api_inference.openai_response import OpenAIResponsesHandler
 from bfcl_eval.model_handler.api_inference.qwen import (
     QwenAgentNoThinkHandler,
@@ -1451,6 +1452,91 @@ local_inference_model_map = {
         model_handler=SalesforceQwenHandler,
         input_price=None,
         output_price=None,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    # Routed through OpenRouter (see .env: OPENAI_BASE_URL=https://openrouter.ai/api/v1).
+    # OpenRouter applies each model's own correct chat template/tool-calling
+    # format server-side, so no per-model prompt-formatting code is needed
+    # here the way local vLLM-served models require -- see openrouter.py.
+    # Sizes/model IDs verified live against OpenRouter (2026-09-16) before
+    # registering: exact tool-calling request/response checked for each one.
+    "qwen/qwen3.5-9b": ModelConfig(
+        model_name="qwen/qwen3.5-9b",
+        display_name="Qwen3.5-9B (OpenRouter, FC)",
+        url="https://openrouter.ai/qwen/qwen3.5-9b",
+        org="Qwen",
+        license="apache-2.0",
+        model_handler=OpenRouterHandler,
+        input_price=0.08,
+        output_price=0.13,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "qwen/qwen3.8-27b": ModelConfig(
+        model_name="qwen/qwen3.8-27b",
+        display_name="Qwen3.8-27B (OpenRouter, FC)",
+        url="https://openrouter.ai/qwen/qwen3.8-27b",
+        org="Qwen",
+        license="apache-2.0",
+        model_handler=OpenRouterHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "qwen/qwen3.5-122b-a10b": ModelConfig(
+        model_name="qwen/qwen3.5-122b-a10b",
+        display_name="Qwen3.5-122B-A10B (OpenRouter, FC)",
+        url="https://openrouter.ai/qwen/qwen3.5-122b-a10b",
+        org="Qwen",
+        license="apache-2.0",
+        model_handler=OpenRouterHandler,
+        input_price=0.26,
+        output_price=2.08,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "google/gemma-4-26b-a4b-it": ModelConfig(
+        model_name="google/gemma-4-26b-a4b-it",
+        display_name="Gemma4-26B-A4B (OpenRouter, FC)",
+        url="https://openrouter.ai/google/gemma-4-26b-a4b-it",
+        org="Google",
+        license="apache-2.0",
+        model_handler=OpenRouterHandler,
+        input_price=0.042,
+        output_price=0.22,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "google/gemma-4-31b-it": ModelConfig(
+        model_name="google/gemma-4-31b-it",
+        display_name="Gemma4-31B (OpenRouter, FC)",
+        url="https://openrouter.ai/google/gemma-4-31b-it",
+        org="Google",
+        license="apache-2.0",
+        model_handler=OpenRouterHandler,
+        input_price=0.09,
+        output_price=0.34,
+        is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "meta-llama/llama-4-maverick": ModelConfig(
+        # Llama-4-Scout is NOT available on OpenRouter (checked both
+        # "meta-llama/llama-4-scout" and the "-17b-16e-instruct" naming --
+        # both return "No endpoints found", 2026-09-16). Maverick is its
+        # sibling in the same Llama 4 release (400B total/17B active vs
+        # Scout's 109B total/17B active) and does work -- used as the
+        # substitute for the OpenRouter route specifically; Scout itself
+        # is still the one to use if/when self-hosted on Sharanga.
+        model_name="meta-llama/llama-4-maverick",
+        display_name="Llama4-Maverick (OpenRouter, FC) [substitute for unavailable Scout]",
+        url="https://openrouter.ai/meta-llama/llama-4-maverick",
+        org="Meta",
+        license="Llama 4 Community License",
+        model_handler=OpenRouterHandler,
+        input_price=0.19,
+        output_price=0.65,
         is_fc_model=True,
         underscore_to_dot=False,
     ),
