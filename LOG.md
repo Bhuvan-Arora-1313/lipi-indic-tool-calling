@@ -809,3 +809,140 @@ Classification + the auto-resolved bucket-4 item saved to `data/reviews/
 parasyno_cycle1_classification.json`. Verified after generation: correct
 row assignment per adjudicator, and the multiple_3 row's dropdown is
 genuinely 2-option while every other row stayed 3-option.
+
+## 2026-09-16 (continued) -- first real experiments on Tamil, and a pivot to OpenRouter
+
+**Qwen3-32B and Sarvam-M, full 200 English + 200 Tamil, run on Sharanga
+GPUs.** First real experimental results, not just pipeline validation.
+Qwen3-32B: 96.5% English / 79.5% Tamil (17.0pt gap). Sarvam-M -- the
+Indic-native model -- needed two real fixes before its number could be
+trusted: (1) a hand-rolled Mistral-style prompt scored 0%, model was
+just reasoning in prose and ignoring the tagged format entirely; rebuilt
+as a plain "prompting"-style handler using BFCL's own default python-
+call-list instruction instead, which worked; (2) even then, 34/200
+failures in BOTH languages (identical count -- signature of a parsing
+bug, not a real failure) turned out to be my own `_isolate_call_list`
+regex grabbing the wrong (inner) bracket span whenever an argument was
+itself a list, e.g. `pointA=[3,4]`; fixed by not touching brackets at
+all and letting BFCL's own tested wrapping logic handle it. Final,
+verified Sarvam-M: 95.5% English / 73.5% Tamil (22.0pt gap) -- *larger*
+than Qwen3-32B's, not smaller: being Indic-native did not shrink the
+gap here. Built `translation/analyze_tamil_error_taxonomy.py` to break
+the Qwen3-32B Tamil failures down by MLCL's error categories rather than
+just aggregate accuracy: 46% language-mismatch (model gets the task
+right but leaves a value in Tamil script where English was expected --
+the core signal), 41% genuinely wrong value, 12% wrong function. Paired
+check: 38/41 (93%) of Tamil failures succeeded on the identical question
+in English -- rules out "the model just isn't very good at these
+questions." Built a one-page PDF summary (`reports/
+tamil_initial_results.pdf`, via reportlab) for sharing with the team;
+went through two real rendering bugs first (Tamil script glyphs showing
+as black boxes -- no font support, removed the literal script and
+described it in words instead; two stacked Paragraphs-in-one-table-cell
+silently overlapping regardless of row height/padding fixes -- resolved
+by using a single Paragraph per cell with inline mixed-size HTML-like
+markup instead of multiple flowables).
+
+**Extended the model list, verifying every "latest" claim live rather
+than trusting training-data-era assumptions** (8 months stale): Qwen
+moved two full generations to 3.8, Gemma shipped Gemma4 with its first
+Apache 2.0 license and genuinely new native tool-calling (Gemma3 never
+had any), Llama shipped a new 405B open-weight release, Kimi/DeepSeek/
+GLM/Mistral all have current flagships far too large to self-host.
+Built a full model/cost table (self-host feasibility on Sharanga vs.
+OpenRouter pricing, using real measured token counts from actual runs,
+not guesses) before committing to anything.
+
+**User raised two real methodology objections, both addressed rather
+than waved off**: (1) if every model gets its own prompt format, is the
+comparison even fair? -- answered: yes, by design, matching BFCL/MLCL's
+own convention (each model tested in the format it was trained to
+expect); what's actually held constant is the questions, functions,
+ground truth, and grading code; the real risk is a badly-built handler
+unfairly penalizing a model, which is exactly why every new model gets
+a small-scale check before a full run. (2) if some models can "think"
+and thinking is known to improve accuracy, doesn't suppressing it
+handicap them? -- resolved: run every model direct/non-reasoning by
+default (matches BFCL/MLCL's own single-shot design, and reasoning mode
+demonstrably breaks output-format compliance, not just adds latency --
+already observed firsthand with Sarvam-M), explicitly flagged as a
+stated limitation rather than hidden, with "run reasoning-toggle models
+both ways" identified as a legitimate, separate follow-up experiment.
+
+**Pivoted from self-hosting Qwen3.5/Gemma4/Llama4 on Sharanga to
+OpenRouter**, on the user's direct prompt ("why are u checking gpu ...
+just use openrouter"). This turned out to be the right call for a
+concrete reason found along the way, not just convenience: checked
+Qwen3.5's and Gemma4's *actual* current chat templates directly against
+HuggingFace before building anything -- both had changed their native
+tool-calling format significantly since the versions BFCL's existing
+local handlers were built for (Gemma3 had no tool-calling support in its
+template at all; Qwen3.5 moved to a different XML-nested call syntax).
+Reusing the old handlers for the new model versions would have been a
+real, silent bug. Routing through OpenRouter sidesteps this entirely,
+since OpenRouter applies each model's correct template server-side.
+Built `bfcl_eval/model_handler/api_inference/openrouter.py`
+(`OpenRouterHandler`, a thin subclass of the existing
+`OpenAICompletionsHandler` that reads `OPENAI_API_KEY`/`OPENAI_BASE_URL`
+from `.env`, already pointed at OpenRouter from earlier perturbation-
+generation work). Verified live, before registering anything, that a
+plain non-standard OpenRouter `reasoning` field actually suppresses
+"thinking": `qwen/qwen3.8-27b` defaulted to reasoning ON and burned 51
+hidden tokens replying to "OK" until told `reasoning: {"enabled": false}`
+explicitly -- `OpenRouterHandler` now sends this on every call,
+matching the project's decided policy.
+
+Registered `qwen/qwen3.5-9b`, `qwen/qwen3.8-27b`,
+`qwen/qwen3.5-122b-a10b`, `google/gemma-4-26b-a4b-it`,
+`google/gemma-4-31b-it`, `meta-llama/llama-4-maverick` -- verified each
+one's actual tool-calling request/response live before registering.
+Llama-4-Scout is not available on OpenRouter at all (checked both
+naming variants, both "No endpoints found") -- substituted Maverick
+(same 17B active params, larger 400B total) for the OpenRouter route
+specifically; Scout remains correct if self-hosted on Sharanga instead.
+Checked OpenRouter's actual model listing afterward (user caught that
+only 2 of the 4 originally-proposed Gemma sizes had been run) --
+confirmed E4B and 12B are genuinely not hosted on OpenRouter by anyone
+right now, not a search miss; getting them needs self-hosting on
+Sharanga with a real Gemma4 handler, not yet done.
+
+Hit two real bugs on the pipeline check before trusting anything:
+1. **All 6 new models scored exactly 0%** despite visibly correct, clean
+   tool calls on manual inspection of the raw output -- too consistent
+   across 6 different models/families to be real. Score file showed
+   `Function name 'triangle_properties.get' not found in model output`:
+   OpenAI-style APIs don't allow dots in function names (regex
+   `^[a-zA-Z0-9_-]{1,64}$`), so `triangle_properties.get` arrives back as
+   `triangle_properties_get`. `underscore_to_dot=True` is BFCL's existing
+   flag for exactly this (its own comment already said "This happens for
+   OpenAI, Mistral, and Google models") -- had set it to False the first
+   time; fixed on all 6 entries, re-evaluated without regenerating
+   (responses were already fine), real scores appeared (60-100% range).
+2. **The full run was running far slower than API latency alone
+   explains.** Checked instead of assuming "APIs are just slow": for
+   non-OSS (API-routed) models, BFCL defaults `num_threads=1` --
+   every one of 2400 calls was going out fully sequentially. Killed and
+   restarted with `--num-threads 20`; resume logic picked up exactly
+   where it left off (verified directly: the `multiple` result file
+   already had all 200 lines, the restart only needed the 63 remaining
+   items, not wasted or redone) -- roughly 20-40x faster afterward.
+
+Final results, full 200 English + 200 Tamil each, verified with spot
+checks on every model's raw output before trusting the score, not just
+read off the summary:
+
+| Model | English | Tamil | Gap |
+|---|---|---|---|
+| Qwen3.5-9B | 94.0% | 74.0% | 20.0pt |
+| Qwen3.8-27B | 95.5% | 76.5% | 19.0pt |
+| Qwen3.5-122B-A10B | 95.0% | 78.0% | 17.0pt |
+| Gemma4-26B-A4B | 93.0% | 83.5% | 9.5pt |
+| Gemma4-31B | 88.5% | 80.5% | 8.0pt |
+| Llama4-Maverick | 91.5% | 79.5% | 12.0pt |
+
+Gemma4 shows a noticeably smaller English-Tamil gap than every other
+model tested so far (8-9.5pt vs. 12-22pt elsewhere) -- flagged as
+worth a closer error-taxonomy look, not yet done. Real total OpenRouter
+cost for this entire batch (all test calls + full 2400-call run):
+$0.487, checked directly via OpenRouter's own usage API before and
+after, comfortably under the user's $3-4 ceiling for this phase.
