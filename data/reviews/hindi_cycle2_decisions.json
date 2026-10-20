@@ -1,0 +1,140 @@
+{
+  "bucket3_anshul": {
+    "multiple_75": {
+      "base_id": "multiple_75",
+      "English Source": "Which paint color is currently most popular for living rooms?",
+      "Original Translation (you marked this Correct)": "वर्तमान में रहने वाले कमरों के लिए कौन सा रंग सबसे लोकप्रिय है?",
+      "Other reviewer's proposed fix": "वर्तमान में बैठक के लिए कौन सा रंग सबसे लोकप्रिय है?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": "“बैठक” is a more natural Hindi rendering of “living room” than “रहने वाले कमरे”. The other version is more natural while preserving the meaning."
+    },
+    "multiple_107": {
+      "base_id": "multiple_107",
+      "English Source": "What is the density of a substance with a mass of 45 kg and a volume of 15 m³?",
+      "Original Translation (you marked this Correct)": "45 कि. ग्रा. द्रव्यमान और 15 मी. 3 आयतन वाले पदार्थ का घनत्व क्या है?",
+      "Other reviewer's proposed fix": "45 कि. ग्रा. द्रव्यमान और 15 m^3 आयतन वाले पदार्थ का घनत्व क्या है?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_108": {
+      "base_id": "multiple_108",
+      "English Source": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+      "Original Translation (you marked this Correct)": "हवा के लिए स्थिर दबाव पर ऊष्मा क्षमता की गणना करें, क्योंकि इसका तापमान 298K है और आयतन 10 m3 है।",
+      "Other reviewer's proposed fix": "हवा के लिए स्थिर दबाव पर ऊष्मा क्षमता की गणना करें, क्योंकि इसका तापमान 298K है और आयतन 10 m^3 है।",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_195": {
+      "base_id": "multiple_195",
+      "English Source": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+      "Original Translation (you marked this Correct)": "हवा के लिए स्थिर दबाव पर ऊष्मा क्षमता की गणना करें, क्योंकि इसका तापमान 298K है और आयतन 10 m3 है।",
+      "Other reviewer's proposed fix": "हवा के लिए स्थिर दबाव पर ऊष्मा क्षमता की गणना करें, क्योंकि इसका तापमान 298K है और आयतन 10 m^3 है।",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket3_jayant": {
+    "multiple_122": {
+      "base_id": "multiple_122",
+      "English Source": "Run a linear regression model with predictor variables 'Age', 'Income' and 'Education' and a target variable 'Purchase_Amount'. Also apply standardization.",
+      "Original Translation (you marked this Correct)": "भविष्यवक्ता चर'आयु','आय'और'शिक्षा'के साथ एक रैखिक प्रतिगमन मॉडल चलाएँ और एक लक्ष्य चर'खरीद _ राशि'चलाएँ। मानकीकरण भी लागू करें।",
+      "Other reviewer's proposed fix": "आयु', 'आय' और 'शिक्षा' को भविष्यवक्ता चरों तथा 'Purchase_Amount' को लक्ष्य चर के रूप में उपयोग करके एक रैखिक प्रतिगमन मॉडल चलाएँ। मानकीकरण भी लागू करें।\n",
+      "Other reviewer's reasoning": "The underscore/name formatting is changed from Purchase_Amount to खरीद _ राशि.",
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_125": {
+      "base_id": "multiple_125",
+      "English Source": "Run a two sample T-test to compare the average of Group A [3, 4, 5, 6, 4] and Group B [7, 8, 9, 8, 7] assuming equal variance.",
+      "Original Translation (you marked this Correct)": "समूह ए [3,4,5,6,4] और समूह बी [7,8,9,8,7] के औसत की तुलना करने के लिए दो नमूना टी-परीक्षण चलाएँ।",
+      "Other reviewer's proposed fix": "समान विचरण मानते हुए, समूह ए [3,4,5,6,4] और समूह बी [7,8,9,8,7] के औसत की तुलना करने के लिए दो-नमूना टी-परीक्षण चलाएँ।\n",
+      "Other reviewer's reasoning": "The English explicitly says to assume equal variance, which is important because it specifies the type of two-sample t-test (pooled/equal-variance version).",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_134": {
+      "base_id": "multiple_134",
+      "English Source": "Look up details of a felony crime record for case number CA123456 in San Diego County",
+      "Original Translation (you marked this Correct)": "सैन डिएगो काउंटी में मामला संख्या CA123456 के लिए एक आपराधिक अपराध रिकॉर्ड का विवरण देखें।",
+      "Other reviewer's proposed fix": "सैन डिएगो काउंटी में मामला संख्या CA123456 के लिए गंभीर अपराध (फेलोनी) के आपराधिक रिकॉर्ड का विवरण देखें।\n",
+      "Other reviewer's reasoning": "Because “felony” is an important qualifier and is omitted in the Hindi translation, the meaning is not fully equivalent.",
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_170": {
+      "base_id": "multiple_170",
+      "English Source": "Get the player stats of Cristiano Ronaldo in the 2019-2020 season",
+      "Original Translation (you marked this Correct)": "2019-2020 सत्र में क्रिस्टियानो रोनाल्डो के खिलाड़ियों के आंकड़े प्राप्त करें",
+      "Other reviewer's proposed fix": "2019-2020 सत्र में क्रिस्टियानो रोनाल्डो के खिलाड़ी आँकड़े प्राप्त करें।",
+      "Other reviewer's reasoning": "player stats of Cristiano Ronaldo → should mean क्रिस्टियानो रोनाल्डो के खिलाड़ी आंकड़े / व्यक्तिगत खिलाड़ी आँकड़े. Hindi says “क्रिस्टियानो रोनाल्डो के खिलाड़ियों के आंकड़े” ❌, which grammatically means “Cristiano Ronaldo's players' statistics” (statistics of his players), not Ronaldo's own statistics.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket4_anshul": {
+    "multiple_4": {
+      "base_id": "multiple_4",
+      "English Source": "Can you calculate the displacement of a car moving at an initial speed of 20 m/s and then accelerates at 10 m/s^2 for 5 seconds? (assuming a straight line motion)",
+      "Original Translation (both flagged Incorrect)": "क्या आप 20 मीटर/सेकंड की प्रारंभिक गति से चलने वाली कार के विस्थापन की गणना कर सकते हैं और फिर 5 सेकंड के लिए 10 मीटर/सेकंड पर गति बढ़ा सकते हैं? (एक सीधी रेखा गति मानते हुए)",
+      "Version A": "क्या आप 20 मीटर/सेकंड की प्रारंभिक गति से चलने वाली कार के विस्थापन की गणना कर सकते हैं, जो 5 सेकंड तक 10 मीटर/सेकंड² के त्वरण से गति करती है? (एक सीधी रेखा में गति मानते हुए)",
+      "Version B": "क्या आप 20 मीटर/सेकंड की प्रारंभिक गति से चलने वाली कार के विस्थापन की गणना कर सकते हैं और फिर 5 सेकंड के लिए 10 मीटर/सेकंड स्क्वायर पर गति बढ़ा सकते हैं? (एक सीधी रेखा गति मानते हुए)",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": "The English says the car accelerates at 10 m/s². Version A correctly translates this as 10 मीटर/सेकंड² के त्वरण."
+    },
+    "multiple_6": {
+      "base_id": "multiple_6",
+      "English Source": "Calculate the capacitance of a parallel plate capacitor where the area of the plate is 10 square meters, the distance between plates is 0.01 meters and the dielectric constant K is 1.0.",
+      "Original Translation (both flagged Incorrect)": "एक समानांतर प्लेट संधारित्र की धारिता की गणना करें जहां प्लेट का क्षेत्रफल 10 वर्ग मीटर है, प्लेटों के बीच की दूरी 0.01 मीटर है और पराबैंगनी स्थिरांक K 1 है।",
+      "Version A": "एक समानांतर प्लेट संधारित्र की धारिता की गणना करें, जहाँ प्लेट का क्षेत्रफल 10 वर्ग मीटर है, प्लेटों के बीच की दूरी 0.01 मीटर है और परावैद्युतांक K 1.0 है।",
+      "Version B": "एक समानांतर प्लेट संधारित्र की धारिता की गणना करें जहां प्लेट का क्षेत्रफल 10 वर्ग मीटर है, प्लेटों के बीच की दूरी 0.01 मीटर है और पारद्युतिक स्थिरांक K 1 है।",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": "Dielectric constant = परावैद्युतांक"
+    }
+  },
+  "bucket4_jayant": {
+    "multiple_64": {
+      "base_id": "multiple_64",
+      "English Source": "Give me the UV index for Tokyo for tomorrow, June01 2023.",
+      "Original Translation (both flagged Incorrect)": "मुझे कल, जून 2023 के लिए टोक्यो के लिए यूवी सूचकांक दें।",
+      "Version A": "मुझे कल, 1 जून 2023 के लिए टोक्यो का यूवी सूचकांक बताएं।\n",
+      "Version B": "मुझे कल, 1 जून 2023 के लिए टोक्यो के लिए यूवी सूचकांक दें।",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_99": {
+      "base_id": "multiple_99",
+      "English Source": "Calculate the derivative of the function 2x^2 at x = 1.",
+      "Original Translation (both flagged Incorrect)": "x = 1 पर फलन 2x2 के व्युत्पन्न की गणना करें।",
+      "Version A": "x = 1 पर फलन 2x² के व्युत्पन्न की गणना करें।\n",
+      "Version B": "x = 1 पर फलन x²  के व्युत्पन्न की गणना करें।",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_106": {
+      "base_id": "multiple_106",
+      "English Source": "Calculate the electric field strength 4 meters away from a charge of 0.01 Coulombs.",
+      "Original Translation (both flagged Incorrect)": "0. 1 कूलम्ब के आवेश से 4 मीटर दूर विद्युत क्षेत्र की शक्ति की गणना करें।",
+      "Version A": "0.01 कूलम्ब के आवेश से 4 मीटर दूर विद्युत क्षेत्र की तीव्रता की गणना करें।\n",
+      "Version B": "0.01 कूलम्ब के आवेश से 4 मीटर दूर विद्युत क्षेत्र की शक्ति की गणना करें।",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  }
+}

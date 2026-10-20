@@ -1,0 +1,14 @@
+Qwen_Qwen3-1.7B-FC hi:40/4:p=1.7e-08 ta:69/4:p=2.4e-16 para:14/7:p=0.19 syno:17/4:p=0.0072 HIvsTA:49/20:p=0.00064
+Qwen_Qwen3-8B-FC hi:40/3:p=3e-09 ta:30/3:p=1.4e-06 para:12/3:p=0.035 syno:21/2:p=6.6e-05 HIvsTA:16/26:p=0.16
+Qwen_Qwen3-32B-FC hi:44/1:p=2.6e-12 ta:38/4:p=5.7e-08 para:12/2:p=0.013 syno:14/1:p=0.00098 HIvsTA:17/26:p=0.22
+google_gemma-3-4b-it hi:64/7:p=1.3e-12 ta:50/4:p=3.8e-11 para:8/5:p=0.58 syno:21/3:p=0.00028 HIvsTA:19/30:p=0.15
+google_gemma-3-12b-it hi:36/2:p=5.4e-09 ta:26/3:p=1.5e-05 para:10/2:p=0.039 syno:15/0:p=6.1e-05 HIvsTA:7/18:p=0.043
+google_gemma-3-27b-it hi:53/1:p=6.1e-15 ta:43/2:p=5.9e-11 para:9/3:p=0.15 syno:13/2:p=0.0074 HIvsTA:10/21:p=0.071
+tiiuae_Falcon3-3B-Instruct-FC hi:111/1:p=4.4e-32 ta:123/1:p=1.2e-35 para:24/11:p=0.041 syno:36/14:p=0.0026 HIvsTA:18/6:p=0.023
+tiiuae_Falcon3-7B-Instruct-FC hi:77/3:p=1.4e-19 ta:113/2:p=3.2e-31 para:8/2:p=0.11 syno:13/4:p=0.049 HIvsTA:48/11:p=1.2e-06
+tiiuae_Falcon3-10B-Instruct-FC hi:60/3:p=9e-15 ta:102/1:p=2.1e-29 para:9/2:p=0.065 syno:17/1:p=0.00014 HIvsTA:53/9:p=1.1e-08
+meta-llama_Llama-3.2-3B-Instruct-FC hi:106/2:p=3.6e-29 ta:104/2:p=1.4e-28 para:11/0:p=0.00098 syno:25/0:p=6e-08 HIvsTA:18/20:p=0.87
+meta-llama_Llama-3.1-8B-Instruct-FC hi:59/8:p=1e-10 ta:44/9:p=1.2e-06 para:8/6:p=0.79 syno:17/7:p=0.064 HIvsTA:13/29:p=0.02
+MadeAgents_Hammer2.1-0.5b hi:130/2:p=3.2e-36 ta:146/1:p=1.7e-42 para:23/7:p=0.0052 syno:61/4:p=3.9e-14 HIvsTA:22/5:p=0.0015
+MadeAgents_Hammer2.1-1.5b hi:104/3:p=2.5e-27 ta:134/0:p=9.2e-41 para:14/4:p=0.031 syno:34/5:p=2.4e-06 HIvsTA:43/10:p=5.6e-06
+MadeAgents_Hammer2.1-7b hi:58/5:p=1.7e-12 ta:100/3:p=3.6e-26 para:11/3:p=0.057 syno:35/0:p=5.8e-11 HIvsTA:56/12:p=6.2e-08

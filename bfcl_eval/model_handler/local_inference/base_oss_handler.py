@@ -174,6 +174,32 @@ class OSSHandler(BaseHandler, EnforceOverrides):
                             "--gpu-memory-utilization",
                             str(gpu_memory_utilization),
                             "--trust-remote-code",
+                            # Caps vLLM's profiling dummy-run batch size -- on a
+                            # shared GPU with another process already resident,
+                            # the default (unbounded) profiling batch triggered a
+                            # CUDA OOM for Gemma3 regardless of gpu_memory_utilization,
+                            # since that ceiling only bounds the post-profiling KV
+                            # cache allocation, not the profiling pass itself.
+                            "--max-num-seqs",
+                            "16",
+                            # BFCL queries are short single-turn function calls
+                            # (a few hundred tokens observed) -- reserving KV
+                            # cache for a model's full native max_position_embeddings
+                            # (e.g. Gemma3/Llama-3.2's 131072) needs far more memory
+                            # than actually used and can make cache allocation
+                            # impossible on a shared/contended GPU. min() so this
+                            # never exceeds a model whose real ceiling is smaller.
+                            "--max-model-len",
+                            str(min(self.max_context_length, 8192)),
+                            # CPU-offloaded KV cache swap space isn't needed for
+                            # short single-turn prompts, and its pinned-memory
+                            # allocation (torch.zeros on the CPU cache tensor)
+                            # hit a reproducible "CUDA error: invalid argument"
+                            # on a shared GPU that had absorbed several abrupt
+                            # process kills earlier the same session -- disabling
+                            # it sidesteps that allocation path entirely.
+                            "--swap-space",
+                            "0",
                         ]
                         + (["--enable-lora"] if enable_lora else [])
                         + (

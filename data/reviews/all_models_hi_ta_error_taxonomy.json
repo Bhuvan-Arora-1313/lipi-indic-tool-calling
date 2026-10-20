@@ -1,0 +1,239 @@
+{
+ "Qwen_Qwen3-1.7B-FC": {
+  "hi": {
+   "n_fail": 51,
+   "function": 9,
+   "other_value": 36,
+   "lang_mismatch": 6,
+   "en_ok_same_q": 40
+  },
+  "ta": {
+   "n_fail": 80,
+   "other_value": 61,
+   "function": 13,
+   "lang_mismatch": 6,
+   "en_ok_same_q": 69
+  }
+ },
+ "Qwen_Qwen3-8B-FC": {
+  "hi": {
+   "n_fail": 45,
+   "function": 6,
+   "lang_mismatch": 20,
+   "other_value": 19,
+   "en_ok_same_q": 40
+  },
+  "ta": {
+   "n_fail": 35,
+   "function": 4,
+   "lang_mismatch": 9,
+   "other_value": 22,
+   "en_ok_same_q": 30
+  }
+ },
+ "Qwen_Qwen3-32B-FC": {
+  "hi": {
+   "n_fail": 50,
+   "function": 3,
+   "lang_mismatch": 30,
+   "other_value": 17,
+   "en_ok_same_q": 44
+  },
+  "ta": {
+   "n_fail": 41,
+   "function": 5,
+   "lang_mismatch": 19,
+   "other_value": 17,
+   "en_ok_same_q": 38
+  }
+ },
+ "google_gemma-3-4b-it": {
+  "hi": {
+   "n_fail": 82,
+   "lang_mismatch": 33,
+   "syntax": 10,
+   "function": 10,
+   "other_value": 29,
+   "en_ok_same_q": 64
+  },
+  "ta": {
+   "n_fail": 71,
+   "lang_mismatch": 11,
+   "syntax": 13,
+   "other_value": 34,
+   "function": 13,
+   "en_ok_same_q": 50
+  }
+ },
+ "google_gemma-3-12b-it": {
+  "hi": {
+   "n_fail": 46,
+   "lang_mismatch": 18,
+   "function": 5,
+   "syntax": 1,
+   "other_value": 22,
+   "en_ok_same_q": 36
+  },
+  "ta": {
+   "n_fail": 35,
+   "function": 5,
+   "lang_mismatch": 8,
+   "other_value": 22,
+   "en_ok_same_q": 26
+  }
+ },
+ "google_gemma-3-27b-it": {
+  "hi": {
+   "n_fail": 67,
+   "lang_mismatch": 45,
+   "function": 5,
+   "other_value": 17,
+   "en_ok_same_q": 53
+  },
+  "ta": {
+   "n_fail": 56,
+   "function": 6,
+   "lang_mismatch": 36,
+   "other_value": 14,
+   "en_ok_same_q": 43
+  }
+ },
+ "tiiuae_Falcon3-3B-Instruct-FC": {
+  "hi": {
+   "n_fail": 173,
+   "syntax": 69,
+   "other_value": 31,
+   "function": 69,
+   "lang_mismatch": 4,
+   "en_ok_same_q": 111
+  },
+  "ta": {
+   "n_fail": 185,
+   "function": 84,
+   "syntax": 73,
+   "other_value": 22,
+   "lang_mismatch": 6,
+   "en_ok_same_q": 123
+  }
+ },
+ "tiiuae_Falcon3-7B-Instruct-FC": {
+  "hi": {
+   "n_fail": 96,
+   "other_value": 60,
+   "function": 13,
+   "lang_mismatch": 22,
+   "syntax": 1,
+   "en_ok_same_q": 77
+  },
+  "ta": {
+   "n_fail": 133,
+   "other_value": 43,
+   "function": 62,
+   "lang_mismatch": 20,
+   "syntax": 8,
+   "en_ok_same_q": 113
+  }
+ },
+ "tiiuae_Falcon3-10B-Instruct-FC": {
+  "hi": {
+   "n_fail": 72,
+   "syntax": 3,
+   "lang_mismatch": 15,
+   "other_value": 48,
+   "function": 6,
+   "en_ok_same_q": 60
+  },
+  "ta": {
+   "n_fail": 116,
+   "function": 33,
+   "other_value": 58,
+   "syntax": 2,
+   "lang_mismatch": 23,
+   "en_ok_same_q": 102
+  }
+ },
+ "meta-llama_Llama-3.2-3B-Instruct-FC": {
+  "hi": {
+   "n_fail": 119,
+   "lang_mismatch": 83,
+   "function": 10,
+   "syntax": 9,
+   "other_value": 17,
+   "en_ok_same_q": 106
+  },
+  "ta": {
+   "n_fail": 117,
+   "function": 21,
+   "lang_mismatch": 60,
+   "other_value": 31,
+   "syntax": 5,
+   "en_ok_same_q": 104
+  }
+ },
+ "meta-llama_Llama-3.1-8B-Instruct-FC": {
+  "hi": {
+   "n_fail": 144,
+   "syntax": 7,
+   "lang_mismatch": 65,
+   "other_value": 69,
+   "function": 3,
+   "en_ok_same_q": 59
+  },
+  "ta": {
+   "n_fail": 128,
+   "lang_mismatch": 26,
+   "other_value": 89,
+   "function": 5,
+   "syntax": 8,
+   "en_ok_same_q": 44
+  }
+ },
+ "MadeAgents_Hammer2.1-0.5b": {
+  "hi": {
+   "n_fail": 167,
+   "function": 123,
+   "other_value": 41,
+   "lang_mismatch": 3,
+   "en_ok_same_q": 130
+  },
+  "ta": {
+   "n_fail": 184,
+   "function": 167,
+   "other_value": 16,
+   "lang_mismatch": 1,
+   "en_ok_same_q": 146
+  }
+ },
+ "MadeAgents_Hammer2.1-1.5b": {
+  "hi": {
+   "n_fail": 117,
+   "other_value": 83,
+   "function": 32,
+   "lang_mismatch": 2,
+   "en_ok_same_q": 104
+  },
+  "ta": {
+   "n_fail": 150,
+   "function": 93,
+   "other_value": 54,
+   "lang_mismatch": 3,
+   "en_ok_same_q": 134
+  }
+ },
+ "MadeAgents_Hammer2.1-7b": {
+  "hi": {
+   "n_fail": 68,
+   "function": 14,
+   "lang_mismatch": 17,
+   "other_value": 37,
+   "en_ok_same_q": 58
+  },
+  "ta": {
+   "n_fail": 112,
+   "other_value": 47,
+   "function": 51,
+   "lang_mismatch": 14,
+   "en_ok_same_q": 100
+  }
+ }
+}

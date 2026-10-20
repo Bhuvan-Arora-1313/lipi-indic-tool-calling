@@ -59,6 +59,11 @@ LANG_NAMES = {"hi": "Hindi", "ta": "Tamil", "mr": "Marathi", "bn": "Bengali", "s
 SRC_LANG = "eng_Latn"
 
 SOURCE_PATH = Path("data/perturbations/en_multiple_perturbations.jsonl")
+# PARA/SYNO English text goes through Cycle 1/2 human review (see
+# translation/resolve_cycle2_parasyno.py) -- roughly a dozen items were
+# corrected there. Translate the reviewed/corrected text, not the stale
+# pre-review version still sitting in SOURCE_PATH.
+PARASYNO_RESOLVED_PATH = Path("data/reviews/parasyno_final_resolved.jsonl")
 OUTPUT_PATH = Path("data/translations/multiple_translations.jsonl")
 
 
@@ -106,6 +111,25 @@ def load_jsonl(path):
     return entries
 
 
+def load_source_rows(perturbation_types):
+    """NO comes from the original generator output (never reviewed at the
+    English level). PARA/SYNO comes from the Cycle 2 resolved file, since
+    that's the reviewed/corrected English text -- see PARASYNO_RESOLVED_PATH."""
+    rows = []
+    if "NO" in perturbation_types:
+        rows.extend(e for e in load_jsonl(SOURCE_PATH) if e["perturbation_type"] == "NO")
+    para_syno_types = [pt for pt in perturbation_types if pt in ("PARA", "SYNO")]
+    if para_syno_types:
+        resolved = load_jsonl(PARASYNO_RESOLVED_PATH)
+        if not resolved:
+            print(f"ERROR: {PARASYNO_RESOLVED_PATH} not found or empty. Run resolve_cycle2_parasyno.py first.")
+        rows.extend(
+            {"base_id": e["base_id"], "perturbation_type": e["perturbation_type"], "text": e["final_text"]}
+            for e in resolved if e["perturbation_type"] in para_syno_types
+        )
+    return rows
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang", required=True, choices=list(LANG_CODES.keys()))
@@ -116,11 +140,11 @@ def main():
     parser.add_argument("--batch-size", type=int, default=16)
     args = parser.parse_args()
 
-    source_entries = load_jsonl(SOURCE_PATH)
+    source_entries = load_source_rows(args.perturbation_types)
     if not source_entries:
-        print(f"ERROR: {SOURCE_PATH} not found or empty. Run generate_perturbations.py first.")
+        print(f"ERROR: no source rows found for perturbation types {args.perturbation_types}. "
+              f"Check {SOURCE_PATH} (for NO) / {PARASYNO_RESOLVED_PATH} (for PARA/SYNO) exist.")
         return
-    source_entries = [e for e in source_entries if e["perturbation_type"] in args.perturbation_types]
     if args.limit:
         source_entries = source_entries[: args.limit]
 

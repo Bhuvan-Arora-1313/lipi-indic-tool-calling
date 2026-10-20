@@ -13,6 +13,10 @@ NON_LIVE_CATEGORY = [
     "simple_javascript",
     "multiple",
     "multiple_ta",  # Tamil, gold-reviewed (see data/reviews/tamil_final_resolved.jsonl)
+    "multiple_hi",  # Hindi, gold-reviewed (see data/reviews/hindi_final_resolved.jsonl)
+    "multiple_gu",  # Gujarati, gold-reviewed (see data/reviews/gujarati_final_resolved.jsonl)
+    "multiple_para",  # English paraphrase perturbation, gold-reviewed (see data/reviews/parasyno_final_resolved.jsonl)
+    "multiple_syno",  # English synonym-swap perturbation, gold-reviewed (see data/reviews/parasyno_final_resolved.jsonl)
     "parallel",
     "parallel_multiple",
     "irrelevance",

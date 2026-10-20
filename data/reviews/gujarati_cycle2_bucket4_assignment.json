@@ -1,0 +1,77 @@
+{
+  "language": "gu",
+  "random_seed": 42,
+  "note": "version_a_author/version_b_author are NOT shown to the adjudicator -- blinded as Version A/B in the sheet.",
+  "bucket4_assignment": {
+    "multiple_4": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_33": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_39": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_49": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_57": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_78": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_99": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_106": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Samarth",
+      "version_b_author": "Dhruv"
+    },
+    "multiple_107": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_108": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Samarth",
+      "version_b_author": "Dhruv"
+    },
+    "multiple_123": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Samarth",
+      "version_b_author": "Dhruv"
+    },
+    "multiple_124": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_150": {
+      "adjudicator": "Dhruv",
+      "version_a_author": "Dhruv",
+      "version_b_author": "Samarth"
+    },
+    "multiple_178": {
+      "adjudicator": "Samarth",
+      "version_a_author": "Samarth",
+      "version_b_author": "Dhruv"
+    }
+  }
+}

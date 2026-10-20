@@ -20,8 +20,13 @@ data provenance policy in PROJECT_MANIFEST.md.
 
 USAGE (run from inside berkeley-function-call-leaderboard):
     python translation/check_translation_fidelity.py
+    # Or against the Google Translate candidate file:
+    python translation/check_translation_fidelity.py \
+        --input data/translations/multiple_translations_google.jsonl \
+        --output data/translations/multiple_translations_google_qa.jsonl
 """
 
+import argparse
 import json
 import re
 from collections import Counter
@@ -105,11 +110,16 @@ def load_jsonl(path):
 
 
 def main():
-    if not RAW_PATH.exists():
-        print(f"ERROR: {RAW_PATH} not found. Run translate_indictrans2.py first.")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=RAW_PATH)
+    parser.add_argument("--output", type=Path, default=QA_OUTPUT_PATH)
+    args = parser.parse_args()
+
+    if not args.input.exists():
+        print(f"ERROR: {args.input} not found. Run translate_indictrans2.py first.")
         return
 
-    entries = load_jsonl(RAW_PATH)
+    entries = load_jsonl(args.input)
     qa_rows = []
     n_number_mismatch = 0
     n_marker_mismatch = 0
@@ -149,7 +159,7 @@ def main():
             "checker_version": CHECKER_VERSION,
         })
 
-    with open(QA_OUTPUT_PATH, "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         for row in qa_rows:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
@@ -159,7 +169,7 @@ def main():
     print(f"Number mismatches: {n_number_mismatch} ({n_number_mismatch / n_total * 100:.1f}%)")
     print(f"Marker (^ % degree) drops: {n_marker_mismatch} ({n_marker_mismatch / n_total * 100:.1f}%)")
     print(f"Total flagged: {n_flagged} ({n_flagged / n_total * 100:.1f}%)")
-    print(f"Wrote {QA_OUTPUT_PATH}")
+    print(f"Wrote {args.output}")
 
     if n_flagged:
         print("\nFlagged rows:")

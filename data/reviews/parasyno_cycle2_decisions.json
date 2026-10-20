@@ -1,0 +1,72 @@
+{
+  "bucket3_anshul": {
+    "multiple_3|PARA": {
+      "base_id": "multiple_3",
+      "Perturbation type": "PARA",
+      "English Source": "Compute the Euclidean distance between two points A(3,4) and B(1,2).",
+      "Original Perturbed text (you marked this Correct)": "Calculate the Euclidean distance between the points A(3,4) and B(1,2).",
+      "Other reviewer's proposed fix": "(No fix or reason given -- the other reviewer marked this Incorrect with no explanation.)",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_4|SYNO": {
+      "base_id": "multiple_4",
+      "Perturbation type": "SYNO",
+      "English Source": "Can you calculate the displacement of a car moving at an initial speed of 20 m/s and then accelerates at 10 m/s^2 for 5 seconds? (assuming a straight line motion)",
+      "Original Perturbed text (you marked this Correct)": "Could you compute the displacement of an automobile traveling at a starting velocity of 20 m/s and subsequently accelerates at 10 m/s^2 for 5 seconds? (presuming a direct path movement)",
+      "Other reviewer's proposed fix": "Could you compute the displacement of an automobile traveling at a starting velocity of 20 m/s and subsequently accelerating at 10 m/s^2 for 5 seconds? (presuming a direct path movement)",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_7|SYNO": {
+      "base_id": "multiple_7",
+      "Perturbation type": "SYNO",
+      "English Source": "How to assess the population growth in deer and their impact on woodland in Washington state over the past decade?",
+      "Original Perturbed text (you marked this Correct)": "How to evaluate the population increase in deer and their effect upon woodland in Washington state throughout the previous decade?",
+      "Other reviewer's proposed fix": "How to evaluate the increase in population of deer and their effect upon woodland in Washington state throughout the previous decade?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket3_jayant": {
+    "multiple_5|SYNO": {
+      "base_id": "multiple_5",
+      "Perturbation type": "SYNO",
+      "English Source": "What is the wind speed and temperature in location given by coordinates 46.603354,1.8883340 on December 13, 2019?",
+      "Original Perturbed text (you marked this Correct)": "What is the wind velocity and temperature in place specified by coordinates 46.603354,1.8883340 on December 13, 2019?",
+      "Other reviewer's proposed fix": "What is the wind velocity and temperature in place specified by coordinates 46.603354,1.8883340 on December 13, 2019?",
+      "Other reviewer's reasoning": "velocity and speed are two different words, the original sentence specified the term speed and not velocity, 'velocity has a direction but speed necessarily do not require direction.",
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_8|SYNO": {
+      "base_id": "multiple_8",
+      "Perturbation type": "SYNO",
+      "English Source": "Find a 3 bedroom villa for sale within $300,000 to $400,000 budget in San Diego.",
+      "Original Perturbed text (you marked this Correct)": "Locate a 3 bedroom house for purchase within $300,000 to $400,000 range in San Diego.",
+      "Other reviewer's proposed fix": "Locate a 3 bedroom villa for purchase within $300,000 to $400,000 range in San Diego.",
+      "Other reviewer's reasoning": "The original sentence spoke of villa specifically and  again house does'nt neccessarily mean to be a villa",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_24|PARA": {
+      "base_id": "multiple_24",
+      "Perturbation type": "PARA",
+      "English Source": "What is the fastest route from London to Edinburgh for playing a chess championship? Also provide an estimate of the distance.",
+      "Original Perturbed text (you marked this Correct)": "Could you provide the quickest travel route from London to Edinburgh to attend a chess championship, along with the estimated distance between them?",
+      "Other reviewer's proposed fix": "Could you provide the quickest travel route from London to Edinburgh to play a chess championship, along with the estimated distance between them?",
+      "Other reviewer's reasoning": "The pertubed text uses the word attend and not play, like  anyone could attend to tournament as an audinece as well",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  }
+}

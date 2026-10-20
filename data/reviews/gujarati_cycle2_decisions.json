@@ -1,0 +1,660 @@
+{
+  "bucket3_samarth": {
+    "multiple_1": {
+      "base_id": "multiple_1",
+      "English Source": "Calculate the area of a triangle, given the lengths of its three sides: 3, 4, and 5.",
+      "Original Translation (you marked this Correct)": "ત્રિકોણની ત્રણ બાજુઓની લંબાઈઃ 3,4 અને 5 ને ધ્યાનમાં રાખીને તેના ક્ષેત્રફળની ગણતરી કરો.",
+      "Other reviewer's proposed fix": "ત્રિકોણની ત્રણ બાજુઓની લંબાઈ 3, 4 અને 5 આપેલી હોય, તો તેનું ક્ષેત્રફળ શોધો.",
+      "Other reviewer's reasoning": "The sentence has the word 'given these values', but the translation used 'keeping in mind these values', giving the same overall meaning but a slightly different sense.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_18": {
+      "base_id": "multiple_18",
+      "English Source": "Who were the main participants and what was the location of the Battle of Stalingrad?",
+      "Original Translation (you marked this Correct)": "મુખ્ય સહભાગીઓ કોણ હતા અને સ્ટેલિનગ્રેડની લડાઈનું સ્થાન શું હતું?",
+      "Other reviewer's proposed fix": "સ્ટાલિનગ્રાડના યુદ્ધના મુખ્ય સહભાગીઓ કોણ હતા અને તેનું સ્થળ કયું હતું?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_19": {
+      "base_id": "multiple_19",
+      "English Source": "What are the three great Schism in Christianity history?",
+      "Original Translation (you marked this Correct)": "ખ્રિસ્તી ધર્મના ઇતિહાસમાં ત્રણ મહાન મતભેદ કયા છે?",
+      "Other reviewer's proposed fix": "ખ્રિસ્તી ધર્મના ઇતિહાસમાં કયા ત્રણ મોટા વિભાજન (Schisms) થયા છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_32": {
+      "base_id": "multiple_32",
+      "English Source": "Calculate the volume of a cone with radius 4 and height 7.",
+      "Original Translation (you marked this Correct)": "ત્રિજ્યા 4 અને ઊંચાઈ 7 ધરાવતા શંકુના કદની ગણતરી કરો.",
+      "Other reviewer's proposed fix": "4 ત્રિજ્યા અને 7 ઊંચાઈ ધરાવતા શંકુના ઘનફળની ગણતરી કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Original stands",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_46": {
+      "base_id": "multiple_46",
+      "English Source": "Sort this list of names in ascending order: ['Sam', 'Alice', 'Jack']",
+      "Original Translation (you marked this Correct)": "નામોની આ સૂચિને ચઢતા ક્રમમાં ક્રમમાં ગોઠવોઃ ['સેમ','એલિસ','જેક']",
+      "Other reviewer's proposed fix": "નામોની આ સૂચિને ચઢતા ક્રમમાં ગોઠવોઃ ['સેમ','એલિસ','જેક']",
+      "Other reviewer's reasoning": "repeated word",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_48": {
+      "base_id": "multiple_48",
+      "English Source": "Find me a pet-friendly library with facilities for disabled people in New York City.",
+      "Original Translation (you marked this Correct)": "મને ન્યુ યોર્ક શહેરમાં વિકલાંગ લોકો માટે સુવિધાઓ સાથેનું પાલતુ-મૈત્રીપૂર્ણ પુસ્તકાલય શોધો.",
+      "Other reviewer's proposed fix": "ન્યૂ યોર્ક શહેરમાં પાલતુ પ્રાણીઓને સાથે લઈ જવાની છૂટ હોય અને દિવ્યાંગ વ્યક્તિઓ માટે સુવિધાઓ હોય તેવું પુસ્તકાલય શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Neither - write new",
+      "Corrected version (only if 'Neither')": "ન્યૂ યોર્ક શહેરમાં પાલતુ પ્રાણીઓ માટે અનુકૂળ હોય અને દિવ્યાંગ વ્યક્તિઓ માટે સુવિધાઓ હોય તેવું પુસ્તકાલય શોધી આપો.",
+      "Notes": null
+    },
+    "multiple_50": {
+      "base_id": "multiple_50",
+      "English Source": "Predict the house prices for the next month in New York.",
+      "Original Translation (you marked this Correct)": "ન્યૂયોર્કમાં આગામી મહિના માટે ઘરની કિંમતની આગાહી કરો.",
+      "Other reviewer's proposed fix": "ન્યૂ યોર્કમાં આવતા મહિના માટે ઘરની કિંમતોનું અનુમાન કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_51": {
+      "base_id": "multiple_51",
+      "English Source": "Calculate the probability of rolling a sum of 7 on a roll of two dice.",
+      "Original Translation (you marked this Correct)": "બે પાસાના વળાંક પર 7 નો સરવાળો ફેરવવાની સંભાવનાની ગણતરી કરો.",
+      "Other reviewer's proposed fix": "બે પાસા ફેંકતી વખતે અંકોનો સરવાળો 7 મળે તેની સંભાવનાની ગણતરી કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_54": {
+      "base_id": "multiple_54",
+      "English Source": "Find out the historical dividend payments of Apple Inc for last five years.",
+      "Original Translation (you marked this Correct)": "છેલ્લા પાંચ વર્ષમાં એપલ ઇન્કની ઐતિહાસિક ડિવિડન્ડ ચૂકવણીઓ શોધો.",
+      "Other reviewer's proposed fix": "છેલ્લા પાંચ વર્ષોમાં એપલ Inc દ્વારા કરવામાં આવેલી ડિવિડન્ડની ચૂકવણીની વિગતો જાણો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_56": {
+      "base_id": "multiple_56",
+      "English Source": "Find the average closing price of Apple stock in the past 60 days",
+      "Original Translation (you marked this Correct)": "છેલ્લા 60 દિવસમાં એપલના શેરની સરેરાશ બંધ કિંમત શોધો.",
+      "Other reviewer's proposed fix": "છેલ્લા 60 દિવસમાં એપલનો શેર સરેરાશ જે ભાવે બંધ થયો હોય તે શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_58": {
+      "base_id": "multiple_58",
+      "English Source": "Search for divorce law specialists in Los Angeles",
+      "Original Translation (you marked this Correct)": "લોસ એન્જલસમાં છૂટાછેડાના કાયદાના નિષ્ણાતો માટે શોધો",
+      "Other reviewer's proposed fix": "લોસ એન્જલસમાં છૂટાછેડાના કાયદાના નિષ્ણાતોને શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_62": {
+      "base_id": "multiple_62",
+      "English Source": "Find me the closest nature park that allows camping and has scenic views in Boston, MA.",
+      "Original Translation (you marked this Correct)": "મને સૌથી નજીકનું પ્રકૃતિ ઉદ્યાન શોધો જે કેમ્પિંગની મંજૂરી આપે છે અને બોસ્ટન, એમએમાં મનોહર દૃશ્યો ધરાવે છે.",
+      "Other reviewer's proposed fix": "મને બોસ્ટન, મેસેચ્યુસેટ્સમાં એવું સૌથી નજીકનું નેચર પાર્ક શોધી આપો જ્યાં કેમ્પિંગની સુવિધા હોય અને સુંદર નજારા જોવા મળતા હોય.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_66": {
+      "base_id": "multiple_66",
+      "English Source": "How much traffic should I expect from Las Vegas to Los Angeles this weekend?",
+      "Original Translation (you marked this Correct)": "આ સપ્તાહના અંતે લાસ વેગાસથી લોસ એન્જલસ સુધી મારે કેટલો ટ્રાફિકની અપેક્ષા રાખવી જોઈએ?",
+      "Other reviewer's proposed fix": "આ સપ્તાહના અંતે લાસ વેગાસથી લોસ એન્જલસ વચ્ચે મારે કેટલા ટ્રાફિકની અપેક્ષા રાખવી જોઈએ?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_67": {
+      "base_id": "multiple_67",
+      "English Source": "Translate Hello, how are you? from English to French.",
+      "Original Translation (you marked this Correct)": "નમસ્તે, તમે કેવા છો? અંગ્રેજીથી ફ્રેન્ચમાં અનુવાદ કરો.",
+      "Other reviewer's proposed fix": "Hello, how are you?' નો અંગ્રેજીમાંથી ફ્રેન્ચમાં અનુવાદ કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_69": {
+      "base_id": "multiple_69",
+      "English Source": "Determine my personality type based on the five factor model with given information: I'm talkative, gets nervous easily, has few artistic interests, tend to be lazy and has a forgiving nature.",
+      "Original Translation (you marked this Correct)": "આપેલી માહિતી સાથે પાંચ પરિબળોના નમૂના પર આધારિત મારા વ્યક્તિત્વનો પ્રકાર નક્કી કરો કેઃ હું બોલનાર છું, સરળતાથી ગભરાઈ જાઉં છું, થોડી કલાત્મક રુચિઓ ધરાવું છું, આળસુ બનવાનું વલણ ધરાવું છું અને ક્ષમાશીલ સ્વભાવ ધરાવું છું.",
+      "Other reviewer's proposed fix": "આપેલી માહિતી સાથે પાંચ પરિબળોના નમૂના પર આધારિત મારા વ્યક્તિત્વનો પ્રકાર નક્કી કરો: હું વાતોડિયો છું, સરળતાથી ગભરાઈ જાઉં છું, થોડી કલાત્મક રુચિઓ ધરાવું છું, આળસુ બનવાનું વલણ ધરાવું છું અને ક્ષમાશીલ સ્વભાવ ધરાવું છું.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_75": {
+      "base_id": "multiple_75",
+      "English Source": "Which paint color is currently most popular for living rooms?",
+      "Original Translation (you marked this Correct)": "હાલમાં વસવાટ કરો છો ખંડ માટે કયો રંગ સૌથી વધુ લોકપ્રિય છે?",
+      "Other reviewer's proposed fix": "હાલમાં બેઠકખંડ માટે કયો રંગ સૌથી વધુ લોકપ્રિય છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_76": {
+      "base_id": "multiple_76",
+      "English Source": "I want to order a custom bronze sculpture of a horse. What material options are available?",
+      "Original Translation (you marked this Correct)": "હું ઘોડાનું કસ્ટમ કાંસાની મૂર્તિ મંગાવવા માંગુ છું. કયા સામગ્રી વિકલ્પો ઉપલબ્ધ છે?",
+      "Other reviewer's proposed fix": "હું ઘોડાની  કસ્ટમ કાંસાની મૂર્તિ મંગાવવા માંગુ છું. કયા સામગ્રી વિકલ્પો ઉપલબ્ધ છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_81": {
+      "base_id": "multiple_81",
+      "English Source": "Book a ticket for the upcoming Eminem concert in New York City, I would like to get the one with backstage access.",
+      "Original Translation (you marked this Correct)": "ન્યુ યોર્ક સિટીમાં આગામી એમિનેમ કોન્સર્ટ માટે ટિકિટ બુક કરો, હું બેકસ્ટેજ ઍક્સેસ સાથે એક મેળવવા માંગુ છું.",
+      "Other reviewer's proposed fix": "ન્યુ યોર્ક સિટીમાં આગામી એમિનેમ કોન્સર્ટ માટે ટિકિટ બુક કરો; મારે બેકસ્ટેજ એક્સેસ વાળી ટિકિટ જોઈએ છે.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_86": {
+      "base_id": "multiple_86",
+      "English Source": "What are some recommended board games for 2 players and strategy based from store BoardGameGeek?",
+      "Original Translation (you marked this Correct)": "2 ખેલાડીઓ માટે કેટલીક ભલામણ કરાયેલી બોર્ડ રમતો કઈ કઈ છે અને સ્ટોર બોર્ડગેમગીક પર આધારિત વ્યૂહરચના કઈ છે?",
+      "Other reviewer's proposed fix": "બોર્ડગેમગીક સ્ટોર પરથી 2 ખેલાડીઓ માટેની અને વ્યૂહરચના (strategy) પર આધારિત કઈ બોર્ડ ગેમ્સની ભલામણ કરવામાં આવે છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_88": {
+      "base_id": "multiple_88",
+      "English Source": "Find me the number of active players in the game 'World of Warcraft' in 2020.",
+      "Original Translation (you marked this Correct)": "મને 2020માં'વર્લ્ડ ઓફ વોરક્રાફ્ટ'રમતમાં સક્રિય ખેલાડીઓની સંખ્યા શોધો.",
+      "Other reviewer's proposed fix": "મને 2020માં'વર્લ્ડ ઓફ વોરક્રાફ્ટ'રમતમાં સક્રિય ખેલાડીઓની સંખ્યા શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_89": {
+      "base_id": "multiple_89",
+      "English Source": "Find a healthy lunch recipe under 500 calories that uses chicken and mushrooms.",
+      "Original Translation (you marked this Correct)": "ચિકન અને મશરૂમ્સનો ઉપયોગ કરતી 500 કેલરીથી ઓછી તંદુરસ્ત બપોરના ભોજનની વાનગી શોધો.",
+      "Other reviewer's proposed fix": "ચિકન અને મશરૂમનો ઉપયોગ કરતી, ૫૦૦ કેલરીથી ઓછી ઊર્જા ધરાવતી બપોરના ભોજનની એક સ્વાસ્થ્યપ્રદ રેસીપી શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_92": {
+      "base_id": "multiple_92",
+      "English Source": "Get me a list of available vegetarian and gluten-free foods at the Walmart near Denver.",
+      "Original Translation (you marked this Correct)": "મને ડેનવર નજીક વોલમાર્ટ ખાતે ઉપલબ્ધ શાકાહારી અને ધાન્યના લોટમાં રહેલું નત્રિલ દ્રવ્ય મુક્ત ખોરાકની યાદી મેળવો.",
+      "Other reviewer's proposed fix": "મને ડેનવર નજીક વોલમાર્ટ ખાતે ઉપલબ્ધ શાકાહારી અને ધાન્યના લોટમાં રહેલા નત્રિલ દ્રવ્યથી મુક્ત ખોરાકની યાદી મેળવી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_94": {
+      "base_id": "multiple_94",
+      "English Source": "I want to book a suite with queen size bed for 3 nights in Hilton New York. Can you find the pricing for me?",
+      "Original Translation (you marked this Correct)": "હું હિલ્ટન ન્યૂયોર્કમાં 3 રાત માટે રાણી કદના બેડ સાથેનો એક સ્યુટ બુક કરવા માંગુ છું. શું તમે મારા માટે કિંમત શોધી શકો છો?",
+      "Other reviewer's proposed fix": "હું હિલ્ટન ન્યૂયોર્કમાં 3 રાત માટે ક્વીન સાઇઝ બેડ સાથેનો એક સ્યુટ બુક કરવા માંગુ છું. શું તમે મારા માટે કિંમત શોધી શકો છો?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_100": {
+      "base_id": "multiple_100",
+      "English Source": "Find the highest common factor of 36 and 24.",
+      "Original Translation (you marked this Correct)": "36 અને 24 નું સૌથી વધુ સામાન્ય પરિબળ શોધો.",
+      "Other reviewer's proposed fix": "36 અને 24 નો ગુરુત્તમ સામાન્ય અવયવ શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_101": {
+      "base_id": "multiple_101",
+      "English Source": "Find the greatest common divisor (GCD) of 12 and 18",
+      "Original Translation (you marked this Correct)": "12 અને 18 નો સૌથી મોટો સામાન્ય વિભાજક (જીસીડી) શોધો.",
+      "Other reviewer's proposed fix": "12 અને 18 નો ગુરુત્તમ સામાન્ય અવયવ (GCD) શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_113": {
+      "base_id": "multiple_113",
+      "English Source": "Calculate the expected evolutionary fitness of a creature, with trait A contributing to 40% of the fitness and trait B contributing 60%, if trait A has a value of 0.8 and trait B a value of 0.7.",
+      "Original Translation (you marked this Correct)": "પ્રાણીની અપેક્ષિત ઉત્ક્રાંતિ તંદુરસ્તીની ગણતરી કરો, જેમાં લક્ષણ A એ તંદુરસ્તીના 40 ટકા યોગદાન આપે છે અને લક્ષણ B એ 60 ટકા યોગદાન આપે છે, જો લક્ષણ A નું મૂલ્ય 0.8 અને લક્ષણ B નું મૂલ્ય 0.7 હોય.",
+      "Other reviewer's proposed fix": "એક જીવની અપેક્ષિત ઉત્ક્રાંતિજન્ય યોગ્યતા (evolutionary fitness) ની ગણતરી કરો, જેમાં લક્ષણ A યોગ્યતામાં 40% અને લક્ષણ B 60% ફાળો આપે છે; જો લક્ષણ A નું મૂલ્ય 0.8 અને લક્ષણ B નું મૂલ્ય 0.7 હોય.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_114": {
+      "base_id": "multiple_114",
+      "English Source": "Get me the predictions of the evolutionary rate for Homo Sapiens for next 50 years using Darwin model",
+      "Original Translation (you marked this Correct)": "ડાર્વિન મોડેલનો ઉપયોગ કરીને મને આગામી 50 વર્ષ માટે હોમો સેપિઅન્સ માટે ઉત્ક્રાંતિ દરની આગાહીઓ મેળવો.",
+      "Other reviewer's proposed fix": "ડાર્વિન મોડેલનો ઉપયોગ કરીને મને આગામી 50 વર્ષ માટે હોમો સેપિઅન્સ માટે ઉત્ક્રાંતિ દરની આગાહીઓ મેળવી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_117": {
+      "base_id": "multiple_117",
+      "English Source": "Calculate the BMI (Body Mass Index) of a person who weighs 70kg and is 1.75m tall.",
+      "Original Translation (you marked this Correct)": "70 કિલો વજન અને 1.75m ઊંચો હોય તેવી વ્યક્તિનો બોડી માસ ઇન્ડેક્સ (બીએમઆઈ) ની ગણતરી કરો.",
+      "Other reviewer's proposed fix": "70 કિલો વજન અને 1.75m ઊંચો હોય તેવી વ્યક્તિના  બીએમઆઈ (બોડી માસ ઇન્ડેક્સ)ની ગણતરી કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_119": {
+      "base_id": "multiple_119",
+      "English Source": "Find records in database in user table where age is greater than 25 and job is 'engineer'.",
+      "Original Translation (you marked this Correct)": "વપરાશકર્તા કોષ્ટકમાં ડેટાબેઝમાં રેકોર્ડ્સ શોધો જ્યાં વય 25 વર્ષથી વધુ છે અને નોકરી'એન્જિનિયર'છે.",
+      "Other reviewer's proposed fix": "ડેટાબેઝના વપરાશકર્તા કોષ્ટકમાં એવા રેકોર્ડ્સ શોધો જ્યાં વય 25 વર્ષથી વધુ છે અને નોકરી 'એન્જિનિયર' છે.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_127": {
+      "base_id": "multiple_127",
+      "English Source": "What's the quarterly dividend per share of a company with 100 million outstanding shares and total dividend payout of 50 million USD?",
+      "Original Translation (you marked this Correct)": "10 કરોડ બાકી શેર અને 5 કરોડ યુએસડીની કુલ ડિવિડન્ડ ચૂકવણી ધરાવતી કંપનીના શેર દીઠ ત્રિમાસિક ડિવિડન્ડ કેટલું છે?",
+      "Other reviewer's proposed fix": "10 કરોડ બાકી શેર અને 5 કરોડ યુએસડીની કુલ ડિવિડન્ડ ચૂકવણી ધરાવતી કંપનીનું શેર દીઠ ત્રિમાસિક ડિવિડન્ડ કેટલું છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_130": {
+      "base_id": "multiple_130",
+      "English Source": "Calculate the Compound Annual Growth Rate (CAGR) for an initial investment of $2000, final value of $3000 in a period of 4 years.",
+      "Original Translation (you marked this Correct)": "2000 ડોલરના પ્રારંભિક રોકાણ માટે ચક્રવૃદ્ધિ વાર્ષિક વૃદ્ધિ દર (સી. એ. જી. આર.) ની ગણતરી કરો, જે 4 વર્ષના સમયગાળામાં 3000 ડોલરનું અંતિમ મૂલ્ય છે.",
+      "Other reviewer's proposed fix": "2000 ડોલરના પ્રારંભિક રોકાણ માટે ચક્રવૃદ્ધિ વાર્ષિક વૃદ્ધિ દર (સી. એ. જી. આર.) ની ગણતરી કરો, જેનું 4 વર્ષના સમયગાળામાં 3000 ડોલરનું અંતિમ મૂલ્ય છે.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_160": {
+      "base_id": "multiple_160",
+      "English Source": "Find me the most recent art sculpture by James Plensa with detailed description.",
+      "Original Translation (you marked this Correct)": "મને વિગતવાર વર્ણન સાથે જેમ્સ પ્લેન્સાનું સૌથી તાજેતરનું કલા શિલ્પ શોધો.",
+      "Other reviewer's proposed fix": "મને વિગતવાર વર્ણન સાથે જેમ્સ પ્લેન્સાનું સૌથી તાજેતરનું કલા શિલ્પ શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_166": {
+      "base_id": "multiple_166",
+      "English Source": "Find me a classical concert this weekend in Los Angeles with cheap tickets.",
+      "Original Translation (you marked this Correct)": "મને લોસ એન્જલસમાં આ સપ્તાહના અંતે સસ્તી ટિકિટ સાથે શાસ્ત્રીય સંગીત કાર્યક્રમ શોધો.",
+      "Other reviewer's proposed fix": "મને લોસ એન્જલસમાં આ સપ્તાહના અંતે સસ્તી ટિકિટ સાથે શાસ્ત્રીય સંગીત કાર્યક્રમ શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_168": {
+      "base_id": "multiple_168",
+      "English Source": "Find the lyrics to the song 'Bohemian Rhapsody' by Queen.",
+      "Original Translation (you marked this Correct)": "ક્વીનના'બોહેમિયન રેપસોડી'ગીતના ગીતો શોધો.",
+      "Other reviewer's proposed fix": "ક્વીનના ગીત 'બોહેમિયન રેપ્સોડી'ના બોલ શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_172": {
+      "base_id": "multiple_172",
+      "English Source": "Find me the detailed profile of basketball player Lebron James",
+      "Original Translation (you marked this Correct)": "મને બાસ્કેટબોલ ખેલાડી લેબ્રોન જેમ્સની વિગતવાર રૂપરેખા શોધો.",
+      "Other reviewer's proposed fix": "મને બાસ્કેટબોલ ખેલાડી લેબ્રોન જેમ્સની વિગતવાર રૂપરેખા શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_182": {
+      "base_id": "multiple_182",
+      "English Source": "Find me a multiplayer game with rating above 4.5 and compatible with Windows 10.",
+      "Original Translation (you marked this Correct)": "મને 4.5થી ઉપરના રેટિંગ અને વિન્ડોઝ 10 સાથે સુસંગત મલ્ટિપ્લેયર ગેમ શોધો.",
+      "Other reviewer's proposed fix": "મને 4.5થી ઉપરના રેટિંગ અને વિન્ડોઝ 10 સાથે સુસંગત મલ્ટિપ્લેયર ગેમ શોધી આપો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket3_dhruv": {
+    "multiple_6": {
+      "base_id": "multiple_6",
+      "English Source": "Calculate the capacitance of a parallel plate capacitor where the area of the plate is 10 square meters, the distance between plates is 0.01 meters and the dielectric constant K is 1.0.",
+      "Original Translation (you marked this Correct)": "સમાંતર પ્લેટ કેપેસિટરની કેપેસિટન્સની ગણતરી કરો જ્યાં પ્લેટનો વિસ્તાર 10 ચોરસ મીટર છે, પ્લેટ વચ્ચેનું અંતર 0.01 મીટર છે અને ડાઇલેક્ટ્રિક અચળાંક K 1 છે.",
+      "Other reviewer's proposed fix": "સમાંતર પ્લેટ કેપેસિટરની કેપેસિટન્સની ગણતરી કરો જ્યાં પ્લેટનો વિસ્તાર 10 ચોરસ મીટર છે, પ્લેટ વચ્ચેનું અંતર 0.01 મીટર છે અને ડાઇલેક્ટ્રિક અચળાંક K 1.0 છે.",
+      "Other reviewer's reasoning": "Value of K = 1.0 and not K = 1. If it matters.",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_12": {
+      "base_id": "multiple_12",
+      "English Source": "What is the year over year growth rate for company 'Tech Inc' with revenues of $1M in 2019 and $1.2M in 2020?",
+      "Original Translation (you marked this Correct)": "2019માં $1 મિલિયન અને 2020માં $1.2 મિલિયનની આવક સાથે'ટેક ઇન્ક'કંપની માટે વર્ષ દર વર્ષે વૃદ્ધિ દર કેટલો છે?",
+      "Other reviewer's proposed fix": " 2019માં $1 મિલિયન અને 2020માં $1.2 મિલિયનની આવક સાથે 'ટેક ઇન્ક' કંપની માટે વર્ષ દર વર્ષે વૃદ્ધિ દર કેટલો છે?",
+      "Other reviewer's reasoning": "Spacing before and after 'Tech Inc'",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_15": {
+      "base_id": "multiple_15",
+      "English Source": "How much is the potential of the Solar farm at location with coordinates [43.653225, -79.383186] in December, given that it has a total solar panel area of 80000 sq ft?",
+      "Original Translation (you marked this Correct)": "ડિસેમ્બરમાં કોઓર્ડિનેટ્સ [43.653225,-79.383186] સાથે સૌર ફાર્મની ક્ષમતા કેટલી છે, કારણ કે તેનો કુલ સૌર પેનલ વિસ્તાર 80000 ચોરસ ફૂટ છે?",
+      "Other reviewer's proposed fix": "ડિસેમ્બરમાં કોઓર્ડિનેટ્સ [43.653225,-79.383186] સાથે સૌર ફાર્મની ક્ષમતા કેટલી છે, આપેલ છે કે તેનો કુલ સૌર પેનલ વિસ્તાર 80000 ચોરસ ફૂટ છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_28": {
+      "base_id": "multiple_28",
+      "English Source": "What's the root of quadratic equation with coefficients 2, 3 and -4?",
+      "Original Translation (you marked this Correct)": "ગુણાંક 2,3 અને-4 સાથે દ્વિઘાત સમીકરણનું મૂળ શું છે?",
+      "Other reviewer's proposed fix": "ગુણાંક 2,3 અને -4 સાથે દ્વિઘાત સમીકરણનું મૂળ શું છે?",
+      "Other reviewer's reasoning": "Space before -4",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_36": {
+      "base_id": "multiple_36",
+      "English Source": "Find out how fast an object was going if it started from rest and traveled a distance of 20 meters over 4 seconds due to a constant acceleration?",
+      "Original Translation (you marked this Correct)": "જો કોઈ પદાર્થ સ્થિર ગતિથી શરૂ થાય અને સતત પ્રવેગને કારણે 4 સેકન્ડમાં 20 મીટરનું અંતર કાપ્યું હોય તો તે કેટલી ઝડપથી જઈ રહ્યો હતો તે શોધો.",
+      "Other reviewer's proposed fix": "જો કોઈ પદાર્થ વિરામાવસ્થાથી શરૂ થાય અને સતત પ્રવેગને કારણે 4 સેકન્ડમાં 20 મીટરનું અંતર કાપ્યું હોય તો તે કેટલી ઝડપથી જઈ રહ્યો હતો તે શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_37": {
+      "base_id": "multiple_37",
+      "English Source": "Find the final velocity of an object thrown up at 40 m/s after 6 seconds.",
+      "Original Translation (you marked this Correct)": "6 સેકન્ડ પછી 40 મીટર/સેકન્ડની ઝડપે ફેંકવામાં આવેલી વસ્તુનો અંતિમ વેગ શોધો.",
+      "Other reviewer's proposed fix": "6 સેકન્ડ પછી 40 મીટર/સેકન્ડની ઝડપે ઉપર ફેંકવામાં આવેલી વસ્તુનો અંતિમ વેગ શોધો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_122": {
+      "base_id": "multiple_122",
+      "English Source": "Run a linear regression model with predictor variables 'Age', 'Income' and 'Education' and a target variable 'Purchase_Amount'. Also apply standardization.",
+      "Original Translation (you marked this Correct)": "આગાહી કરનાર ચલ'ઉંમર','આવક'અને'શિક્ષણ'અને લક્ષ્ય ચલ'ખરીદી _ રકમ'સાથે રેખીય પ્રતિગમન મોડેલ ચલાવો. માનકીકરણ પણ લાગુ કરો.",
+      "Other reviewer's proposed fix": "આગાહી કરનાર ચલ 'ઉંમર', 'આવક' અને 'શિક્ષણ' અને લક્ષ્ય ચલ 'ખરીદી _ રકમ' સાથે રેખીય પ્રતિગમન મોડેલ ચલાવો. માનકીકરણ પણ લાગુ કરો.",
+      "Other reviewer's reasoning": "Spacing before and after inverted commas",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_125": {
+      "base_id": "multiple_125",
+      "English Source": "Run a two sample T-test to compare the average of Group A [3, 4, 5, 6, 4] and Group B [7, 8, 9, 8, 7] assuming equal variance.",
+      "Original Translation (you marked this Correct)": "સમાન તફાવત ધારીને જૂથ A [3,4,5,6,4] અને જૂથ B [7,8,9,8,7] ની સરેરાશની સરખામણી કરવા માટે બે નમૂના T-પરીક્ષણ ચલાવો.",
+      "Other reviewer's proposed fix": "સમાન વિચલન ધારીને જૂથ A [3,4,5,6,4] અને જૂથ B [7,8,9,8,7] ની સરેરાશની સરખામણી કરવા માટે બે નમૂના T-પરીક્ષણ ચલાવો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_133": {
+      "base_id": "multiple_133",
+      "English Source": "Calculate the balance of a mutual fund given a total investment of $50000 with a 5% annual yield after 3 years.",
+      "Original Translation (you marked this Correct)": "3 વર્ષ પછી 5 ટકા વાર્ષિક ઉપજ સાથે $50,000ના કુલ રોકાણ સાથે મ્યુચ્યુઅલ ફંડની બાકીની ગણતરી કરો.",
+      "Other reviewer's proposed fix": "3 વર્ષ પછી 5 ટકા વાર્ષિક ઉપજ સાથે $50,000ના કુલ રોકાણ સાથે મ્યુચ્યુઅલ ફંડની બાકી રકમની ગણતરી કરો.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_154": {
+      "base_id": "multiple_154",
+      "English Source": "Who was the full name of the president of the United States in 1861?",
+      "Original Translation (you marked this Correct)": "1861માં યુનાઇટેડ સ્ટેટ્સના રાષ્ટ્રપતિનું પૂરું નામ કોણ હતું?",
+      "Other reviewer's proposed fix": "1861માં યુનાઇટેડ સ્ટેટ્સના રાષ્ટ્રપતિનું પૂરું નામ શું હતું?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_167": {
+      "base_id": "multiple_167",
+      "English Source": "Generate a melody in C major scale, starting with the note C4, 16 measures long, at 120 beats per minute.",
+      "Original Translation (you marked this Correct)": "C મેજર સ્કેલમાં મેલોડી બનાવો, જે C4 સાથે શરૂ થાય છે, જે 16 માપ લાંબી હોય છે, જે પ્રતિ મિનિટ 120 ધબકારા પર હોય છે.",
+      "Other reviewer's proposed fix": "C મેજર સ્કેલમાં મેલોડી બનાવો, જે C4 સાથે શરૂ થાય છે, જે 16 મેઝર લાંબી હોય છે, જે પ્રતિ મિનિટ 120 ધબકારા પર હોય છે.",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_169": {
+      "base_id": "multiple_169",
+      "English Source": "What is the musical scale associated with C sharp major?",
+      "Original Translation (you marked this Correct)": "સી શાર્પ મેજર સાથે સંકળાયેલ સંગીતનું પ્રમાણ શું છે?",
+      "Other reviewer's proposed fix": "સી શાર્પ મેજર સાથે સંકળાયેલ સંગીતનું સ્કેલ શું છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_170": {
+      "base_id": "multiple_170",
+      "English Source": "Get the player stats of Cristiano Ronaldo in the 2019-2020 season",
+      "Original Translation (you marked this Correct)": "2019-2020 સીઝનમાં ક્રિસ્ટિયાનો રોનાલ્ડોના ખેલાડીઓના આંકડા મેળવો",
+      "Other reviewer's proposed fix": "2019-2020 સીઝનમાં ક્રિસ્ટિયાનો રોનાલ્ડોના ખેલાડી તરીકેના આંકડા મેળવો",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_179": {
+      "base_id": "multiple_179",
+      "English Source": "What is the probability of getting a full house in poker?",
+      "Original Translation (you marked this Correct)": "પોકરમાં સંપૂર્ણ ઘર મેળવવાની સંભાવના કેટલી છે?",
+      "Other reviewer's proposed fix": "પોકરમાં ફુલ હાઉસ મેળવવાની સંભાવના કેટલી છે?",
+      "Other reviewer's reasoning": null,
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_180": {
+      "base_id": "multiple_180",
+      "English Source": "Fetch player statistics of 'Zelda' on Switch for user 'Sam'.",
+      "Original Translation (you marked this Correct)": "વપરાશકર્તા'સેમ'માટે સ્વિચ પર'ઝેલ્ડા'ના ખેલાડીના આંકડા મેળવો.",
+      "Other reviewer's proposed fix": "વપરાશકર્તા 'સેમ' માટે સ્વિચ પર 'ઝેલ્ડા' ના ખેલાડીના આંકડા મેળવો.",
+      "Other reviewer's reasoning": "Spacing before and after inverteted commas",
+      "Decision": "Accept fix",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket4_samarth": {
+    "multiple_4": {
+      "base_id": "multiple_4",
+      "English Source": "Can you calculate the displacement of a car moving at an initial speed of 20 m/s and then accelerates at 10 m/s^2 for 5 seconds? (assuming a straight line motion)",
+      "Original Translation (both flagged Incorrect)": "શું તમે 20 મીટર/સેકન્ડની પ્રારંભિક ઝડપે ચાલતી કારના વિસ્થાપનની ગણતરી કરી શકો છો અને પછી 5 સેકન્ડ માટે 10 મીટર/સેકન્ડ પર પ્રવેગ કરી શકો છો? (સીધી રેખાના ગતિ ધારીને)",
+      "Version A": "શું તમે 20 m/sની પ્રારંભિક ઝડપે અને ત્યારબાદ 5 સેકન્ડ સુધી 10 m/s^2ના પ્રવેગથી ગતિ કરતી કારના સ્થાનાંતરની ગણતરી કરી શકો છો? (સીધી રેખામાં ગતિ ધારીને)",
+      "Version B": "શું તમે 20 મીટર/સેકન્ડની પ્રારંભિક ઝડપે ચાલતી ગાડી જે પછી 5 સેકન્ડ માટે 10 મીટર/સેકન્ડ^2 પર પ્રવેગ કરે છે તેના વિસ્થાપનની ગણતરી કરી શકો છો? (સીધી રેખાના ગતિ ધારીને)",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_33": {
+      "base_id": "multiple_33",
+      "English Source": "Find the integral of the function f(x) = 3x^2 from 1 to 2.",
+      "Original Translation (both flagged Incorrect)": "1 થી 2 સુધી f (x) = 3x2 વિધેયનું અભિન્ન ભાગ શોધો.",
+      "Version A": "વિધેય f(x) = 3x^2 નું 1 થી 2 સુધીનું સંકલન શોધો.",
+      "Version B": "1 થી 2 સુધી f (x) = 3x^2 વિધેયનું અભિન્ન ભાગ શોધો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_49": {
+      "base_id": "multiple_49",
+      "English Source": "Calculate the compound interest for an amount of 1500 for a duration of 2 years with an annual interest rate of 2.5%.",
+      "Original Translation (both flagged Incorrect)": "2 વર્ષના સમયગાળા માટે 1500ની રકમ માટે ચક્રવૃદ્ધિ વ્યાજની ગણતરી કરો, જેમાં 2.5 ટકાના વાર્ષિક વ્યાજ દરની ગણતરી કરો.",
+      "Version A": "1500ની રકમ પર વાર્ષિક 2.5% ના વ્યાજ દરે 2 વર્ષ માટે ચક્રવૃદ્ધિ વ્યાજની ગણતરી કરો.",
+      "Version B": "2 વર્ષના સમયગાળા માટે 1500ની રકમ માટે ચક્રવૃદ્ધિ વ્યાજની ગણતરી કરો, જેમાં વાર્ષિક વ્યાજ દર 2.5 ટકા છે.  ",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_106": {
+      "base_id": "multiple_106",
+      "English Source": "Calculate the electric field strength 4 meters away from a charge of 0.01 Coulombs.",
+      "Original Translation (both flagged Incorrect)": "0. 1 કુલમ્બના ચાર્જથી 4 મીટર દૂર વિદ્યુત ક્ષેત્રની શક્તિની ગણતરી કરો.",
+      "Version A": "0.01 કુલમ્બના ચાર્જથી 4 મીટર દૂર વિદ્યુત ક્ષેત્રની શક્તિની ગણતરી કરો.",
+      "Version B": "0.01 કુલંબના વિદ્યુતભારથી 4 મીટર દૂર વિદ્યુતક્ષેત્રની તીવ્રતાની ગણતરી કરો.",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_123": {
+      "base_id": "multiple_123",
+      "English Source": "Calculate the probability of drawing a king from a deck of cards.",
+      "Original Translation (both flagged Incorrect)": "કાર્ડ્સના ડેકમાંથી રાજાને દોરવાની સંભાવનાની ગણતરી કરો.",
+      "Version A": "પત્તાના ડેકમાંથી રાજા દોરવાની સંભાવનાની ગણતરી કરો.",
+      "Version B": "પત્તાની થોકડીમાંથી રાજા નીકળવાની સંભાવનાની ગણતરી કરો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_124": {
+      "base_id": "multiple_124",
+      "English Source": "What's the probability of drawing a king from a well shuffled standard deck of 52 cards?",
+      "Original Translation (both flagged Incorrect)": "52 કાર્ડ્સના સારી રીતે બદલાયેલા પ્રમાણભૂત ડેકમાંથી રાજાને દોરવાની સંભાવના કેટલી છે?",
+      "Version A": "52 પત્તાંની બરાબર ચીપેલા પ્રમાણભૂત પત્તાના ઢગમાંથી રાજા નીકળવાની સંભાવના કેટલી છે?",
+      "Version B": "52 પત્તાના સારી રીતે બદલાયેલા પ્રમાણભૂત ડેકમાંથી રાજાને દોરવાની સંભાવના કેટલી છે?",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_178": {
+      "base_id": "multiple_178",
+      "English Source": "Find a Card of rank 'Queen' and suit 'Hearts' in the deck.",
+      "Original Translation (both flagged Incorrect)": "'ક્વીન'રેન્કનું કાર્ડ શોધો અને ડેકમાં'હાર્ટ્સ'ને સૂટ કરો.",
+      "Version A": "ડેકમાં 'ક્વીન' રેન્કનું અને 'હાર્ટ્સ' ને અનુરૂપ કાર્ડ શોધો.",
+      "Version B": "પત્તાની થોકડીમાંથી 'રાણી' અને 'લાલ' રંગનું પત્તું શોધો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  },
+  "bucket4_dhruv": {
+    "multiple_39": {
+      "base_id": "multiple_39",
+      "English Source": "Find a ride from New York to Philadelphia with maximum cost of $50",
+      "Original Translation (both flagged Incorrect)": "ન્યૂયોર્કથી ફિલાડેલ્ફિયા સુધીની મુસાફરી માટે મહત્તમ 50 ડોલરની કિંમત શોધો.",
+      "Version A": "ન્યૂ યોર્કથી ફિલાડેલ્ફિયા જવા માટે મહત્તમ $50ના ખર્ચે સવારી શોધો.",
+      "Version B": "ન્યૂયોર્કથી ફિલાડેલ્ફિયા સુધી મહત્તમ $50ના ભાડામાં મુસાફરી શોધો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_57": {
+      "base_id": "multiple_57",
+      "English Source": "Can you please calculate the compound interest for a principle of $1000, annual rate of 5% over 10 years with 4 compound per year.",
+      "Original Translation (both flagged Incorrect)": "શું તમે કૃપા કરીને 1000 ડોલરના સિદ્ધાંત માટે ચક્રવૃદ્ધિ વ્યાજની ગણતરી કરી શકો છો, જે દર વર્ષે 4 ચક્રવૃદ્ધિ સાથે 10 વર્ષમાં 5 ટકાના વાર્ષિક દર છે.",
+      "Version A": "શું તમે કૃપા કરીને $1000 ની મુદ્દલ રકમ પર, વાર્ષિક 5% ના દરે અને વર્ષમાં 4 વખત ચક્રવૃદ્ધિ થતી હોય તે રીતે 10 વર્ષ માટેનું ચક્રવૃદ્ધિ વ્યાજ ગણી આપશો.",
+      "Version B": "શું તમે કૃપા કરીને 1000 ડોલરના મૂળધન માટે ચક્રવૃદ્ધિ વ્યાજની ગણતરી કરી શકો છો, જે દર વર્ષે 4 ચક્રવૃદ્ધિ સાથે 10 વર્ષમાં 5 ટકાના વાર્ષિક દર છે.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_78": {
+      "base_id": "multiple_78",
+      "English Source": "Get me information about Natural History Museum in London including timings, exhibitions, and accessibility.",
+      "Original Translation (both flagged Incorrect)": "મને લંડનમાં નેચરલ હિસ્ટ્રી મ્યુઝિયમ વિશે સમય, પ્રદર્શનો અને સુલભતા સહિત માહિતી મેળવો.",
+      "Version A": "મને લંડનમાં નેચરલ હિસ્ટ્રી મ્યુઝિયમ વિશે સમય, પ્રદર્શનો અને સુલભતા સહિત માહિતી મેળવી આપો.",
+      "Version B": "મને લંડનમાં નેચરલ હિસ્ટ્રી મ્યુઝિયમ વિશે સમય, પ્રદર્શનો અને સુલભતા સહિત માહિતી આપો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_99": {
+      "base_id": "multiple_99",
+      "English Source": "Calculate the derivative of the function 2x^2 at x = 1.",
+      "Original Translation (both flagged Incorrect)": "x = 1 પર 2x2 વિધેયના વ્યુત્પન્નની ગણતરી કરો.",
+      "Version A": "x = 1 પર 2x^2 વિધેયના વિકલિતની ગણતરી કરો.",
+      "Version B": "x = 1 પર 2x^2 વિધેયના વ્યુત્પન્નની ગણતરી કરો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_107": {
+      "base_id": "multiple_107",
+      "English Source": "What is the density of a substance with a mass of 45 kg and a volume of 15 m³?",
+      "Original Translation (both flagged Incorrect)": "45 કિલોગ્રામના દળ અને 15 મી3ના કદવાળા પદાર્થની ઘનતા કેટલી છે?",
+      "Version A": "45 kg દળ અને 15 m³ કદ ધરાવતા પદાર્થની ઘનતા કેટલી છે?",
+      "Version B": "45 કિલોગ્રામના દળ અને 15 ઘન મીટરના કદવાળા પદાર્થની ઘનતા કેટલી છે?",
+      "Decision": "Version B",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    },
+    "multiple_108": {
+      "base_id": "multiple_108",
+      "English Source": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+      "Original Translation (both flagged Incorrect)": "હવા માટે સતત દબાણ પર ગરમીની ક્ષમતાની ગણતરી કરો, તેનું તાપમાન 298K છે અને કદ 10 m3 છે.",
+      "Version A": "હવા માટે સતત દબાણ પર ગરમીની ક્ષમતાની ગણતરી કરો, તેનું તાપમાન 298K છે અને કદ 10 ઘન મીટર છે.",
+      "Version B": "હવાનું તાપમાન 298 K અને કદ 10 m³ આપેલું હોય, તો અચળ દબાણે તેની ઉષ્માધારિતાની ગણતરી કરો.",
+      "Decision": "Neither - write new",
+      "Corrected version (only if 'Neither')": "હવાનું તાપમાન 298 K અને કદ 10 ઘન મીટર આપેલું હોય, તો અચળ દબાણે તેની ઉષ્માધારિતાની ગણતરી કરો.",
+      "Notes": "ઘન મીટર instead of m³ is better translation."
+    },
+    "multiple_150": {
+      "base_id": "multiple_150",
+      "English Source": "Calculate the neuronal activity based on synaptic input rate of 200 and weight 0.5 and decay rate of 0.1.",
+      "Original Translation (both flagged Incorrect)": "200ના સિનેપ્ટિક ઇનપુટ દર અને 0.50ના વજન અને 0.01ના ક્ષય દરના આધારે ચેતાકોષની પ્રવૃત્તિની ગણતરી કરો.",
+      "Version A": "200ના સિનેપ્ટિક ઇનપુટ દર અને 0.5ના વજન અને 0.1ના ક્ષય દરના આધારે ચેતાકોષની પ્રવૃત્તિની ગણતરી કરો.",
+      "Version B": "200ના સિનેપ્ટિક ઇનપુટ દર અને 0.50ના વજન અને 0.1ના ક્ષય દરના આધારે ચેતાકોષની પ્રવૃત્તિની ગણતરી કરો.",
+      "Decision": "Version A",
+      "Corrected version (only if 'Neither')": null,
+      "Notes": null
+    }
+  }
+}
