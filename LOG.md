@@ -1470,3 +1470,22 @@ placeholders for experiments that have not run yet.
     `multiple_gu`, and the Gujarati PARA/SYNO sheet.
   - The 35.0% correction rate is unchanged, because 195 was already a
     corrected item.
+
+### 2026-10-20 -- Backed up to GitHub
+
+The private repo `Bhuvan-Arora-1313/Indic-tool-calling-agentic-ai` had not been
+pushed since 2026-09-16 (78 untracked and 8 modified files). Four commits
+were pushed to `main` (d7b19d0..d7fb40a):
+- gold data, test categories and scripts;
+- all reviewer annotation files;
+- 14-model results and scores;
+- reports, LOG and PROGRESS.
+
+Checks before pushing:
+- `.env` is in `.gitignore` and was never tracked.
+- A secret scan of every new or changed file, including the xlsx and zip
+  contents and the SLURM scripts, found nothing.
+
+After pushing, all 14 reviewer workbooks on GitHub match the local file sizes.
+**Rule:** commit and push each new batch of reviewer downloads as soon as it
+arrives.
