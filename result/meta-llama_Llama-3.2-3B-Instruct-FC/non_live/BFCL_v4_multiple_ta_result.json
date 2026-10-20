@@ -1,0 +1,200 @@
+{"id": "multiple_ta_0", "result": "triangle_properties.get(side1=5, side2=4, side3=3)", "input_token_count": 1000, "output_token_count": 19, "latency": 6.452378273010254}
+{"id": "multiple_ta_1", "result": "[math.triangle_area_heron(side1=3, side2=4, side3=5)]", "input_token_count": 802, "output_token_count": 23, "latency": 6.5195701122283936}
+{"id": "multiple_ta_2", "result": "[country_info.largest_city(country='பிரேசில்')]", "input_token_count": 560, "output_token_count": 21, "latency": 6.636174201965332}
+{"id": "multiple_ta_3", "result": "[EuclideanDistance.calculate(pointA=[3, 4], pointB=[1, 2])]", "input_token_count": 742, "output_token_count": 22, "latency": 6.4696266651153564}
+{"id": "multiple_ta_4", "result": "[kinematics.calculate_displacement(initial_speed=20, acceleration=10, time=5)]", "input_token_count": 916, "output_token_count": 20, "latency": 6.492104768753052}
+{"id": "multiple_ta_5", "result": "[weather.get_by_coordinates_date(coordinates=(46.603354, 1.8883340), date=\"2019-12-13\")]", "input_token_count": 887, "output_token_count": 30, "latency": 6.759553670883179}
+{"id": "multiple_ta_6", "result": "capacitance_calculator.calculate(A=10, d=0.01, K=1)", "input_token_count": 939, "output_token_count": 22, "latency": 6.488647222518921}
+{"id": "multiple_ta_7", "result": "[wildlife_population.assess_growth(species='மான்', location='வாஷிங்டன்', duration=10)]", "input_token_count": 803, "output_token_count": 40, "latency": 7.12070107460022}
+{"id": "multiple_ta_8", "result": "[realestate.find_properties(location='San%20Diego', propertyType='apartment', bedrooms=3, budget={'min': 300000, 'max': 400000})]", "input_token_count": 850, "output_token_count": 41, "latency": 7.118411064147949}
+{"id": "multiple_ta_9", "result": "[calculate_average(gradeDict={'கணிதம்': 90, 'அறிவியல்': 75, 'வரலாறு': 82, 'இசை': 89})]", "input_token_count": 748, "output_token_count": 65, "latency": 7.9790732860565186}
+{"id": "multiple_ta_10", "result": "[database.modify_columns(db_name='personal_data', table='employees', operation='delete', columns=['email', 'social_security_number'])]", "input_token_count": 917, "output_token_count": 29, "latency": 6.422116994857788}
+{"id": "multiple_ta_11", "result": "[math_roots.quadratic(a=5, b=20, c=25)]", "input_token_count": 825, "output_token_count": 19, "latency": 6.220250606536865}
+{"id": "multiple_ta_12", "result": "corporate_finance.calculate_YOY_growth_rate(company_name='டெக் இன்க்', year1=2019, year1_revenue=1000000, year2=2020, year2_revenue=1200000)", "input_token_count": 923, "output_token_count": 59, "latency": 7.765997409820557}
+{"id": "multiple_ta_13", "result": "[corporate_finance.revenue_forecast(company='XYZ', product='A', sales_units_increase_percentage=10)]", "input_token_count": 708, "output_token_count": 25, "latency": 6.425628185272217}
+{"id": "multiple_ta_14", "result": "[finance.property_depreciation(initial_cost=200000, depreciation_rate=3, years=5, monthly=False)]", "input_token_count": 956, "output_token_count": 25, "latency": 6.4222588539123535}
+{"id": "multiple_ta_15", "result": "solarFarm.potential(coordinates=[43.653225, -79.383186], panelArea=80000)", "input_token_count": 843, "output_token_count": 26, "latency": 6.340485095977783}
+{"id": "multiple_ta_16", "result": "population_genetics.calculate_ne(species='காட்டுப் புலி', generations=100, probability=0.95)", "input_token_count": 996, "output_token_count": 38, "latency": 6.930648326873779}
+{"id": "multiple_ta_17", "result": "[currency_conversion.get_latest_rate(from_currency='EUR', to_currency='USD')]", "input_token_count": 835, "output_token_count": 17, "latency": 6.051156282424927}
+{"id": "multiple_ta_18", "result": "[european_history.battle_details(battle='ஸ்டாலின்கிராட் போர்')]", "input_token_count": 630, "output_token_count": 37, "latency": 6.727783918380737}
+{"id": "multiple_ta_19", "result": "[religion_history.get_schisms(religion='கிறிஸ்துவம்', count=3)]", "input_token_count": 744, "output_token_count": 31, "latency": 6.618499517440796}
+{"id": "multiple_ta_20", "result": "[sculpture_price.calculate(material='marble', size=3)]", "input_token_count": 731, "output_token_count": 16, "latency": 6.011688709259033}
+{"id": "multiple_ta_21", "result": "[generate_sound_wave(frequency=440, duration=300, wave_type='sine')]", "input_token_count": 765, "output_token_count": 20, "latency": 6.129668474197388}
+{"id": "multiple_ta_22", "result": "[sports_data.basketball.most_points_single_season(league='NBA')]", "input_token_count": 746, "output_token_count": 18, "latency": 6.205051898956299}
+{"id": "multiple_ta_23", "result": "basketball.player_stats.get(player_name='லெப்ரான் ஜேம்ஸ்', stats_fields=['புள்ளிகள்', 'உதவிகள்', 'நிமிடங்கள்'])", "input_token_count": 986, "output_token_count": 76, "latency": 8.489705324172974}
+{"id": "multiple_ta_24", "result": "[route_planner.calculate_route(start='லண்டன்', destination='எடின்பர்க்', method='fastest')]", "input_token_count": 758, "output_token_count": 40, "latency": 7.212110757827759}
+{"id": "multiple_ta_25", "result": "[video_games.store_price(game_title='Assassin\\'s Creed Valhalla', platform='PlayStation', region='United States')]", "input_token_count": 903, "output_token_count": 28, "latency": 6.597199440002441}
+{"id": "multiple_ta_26", "result": "[game_rewards.get(game='ஃபோர்ட்நைட்', platform='Playstation')]", "input_token_count": 933, "output_token_count": 30, "latency": 6.67786431312561}
+{"id": "multiple_ta_27", "result": "[maps.shortest_path(start_location='பாரிஸ்', end_location='ரோம்', mode='transit')]", "input_token_count": 722, "output_token_count": 35, "latency": 7.011422157287598}
+{"id": "multiple_ta_28", "result": "[solve.quadratic_equation(a=2, b=3, c=4)]", "input_token_count": 722, "output_token_count": 19, "latency": 6.176734685897827}
+{"id": "multiple_ta_29", "result": "[functions.zero(function='3x+2', function='2x+3')]", "input_token_count": 605, "output_token_count": 18, "latency": 6.22738242149353}
+{"id": "multiple_ta_30", "result": "[rectangle.area(length=12, width=5)]", "input_token_count": 719, "output_token_count": 12, "latency": 5.8377296924591064}
+{"id": "multiple_ta_31", "result": "[geometry_rectangle.calculate(width=7, length=10)]", "input_token_count": 690, "output_token_count": 13, "latency": 6.004146099090576}
+{"id": "multiple_ta_32", "result": "[geometry.calculate_cone_volume(radius=4, height=7)]", "input_token_count": 667, "output_token_count": 15, "latency": 6.20114278793335}
+{"id": "multiple_ta_33", "result": "[calculate_integral(func='3*x**2', a=1, b=2)]", "input_token_count": 657, "output_token_count": 19, "latency": 6.232367753982544}
+{"id": "multiple_ta_34", "result": "[math.lcm(num1=18, num2=12)]", "input_token_count": 689, "output_token_count": 15, "latency": 6.279896020889282}
+{"id": "multiple_ta_35", "result": "[calculate_lcm(num1=128, num2=256)]", "input_token_count": 705, "output_token_count": 15, "latency": 6.406317472457886}
+{"id": "multiple_ta_36", "result": "kinematics.calculate_speed_from_rest(distance=20, time=4, initial_speed=0)", "input_token_count": 841, "output_token_count": 20, "latency": 6.428265810012817}
+{"id": "multiple_ta_37", "result": "[kinematics.final_velocity(initial_velocity=40, time=6, acceleration=-9.81)]", "input_token_count": 878, "output_token_count": 21, "latency": 6.509209632873535}
+{"id": "multiple_ta_38", "result": "[library.search_book(book_name='தி அல்கெமிஸ்ட்', city='நியூயார்க்', availability=True)]", "input_token_count": 741, "output_token_count": 48, "latency": 7.467659950256348}
+{"id": "multiple_ta_39", "result": "[grocery_delivery.order(location='New York', items=['New York to Philadelphia'], max_delivery_cost=50000)]", "input_token_count": 702, "output_token_count": 25, "latency": 6.666543245315552}
+{"id": "multiple_ta_40", "result": "[electromagnetism.biot_savart_law(current=12, distance=8)]", "input_token_count": 817, "output_token_count": 21, "latency": 6.472718000411987}
+{"id": "multiple_ta_41", "result": "magnetic_field.calculate(I=10, r=0.01)", "input_token_count": 873, "output_token_count": 15, "latency": 6.2178730964660645}
+{"id": "multiple_ta_42", "result": "[calculate_final_temperature(quantity1=2, temperature1=300, quantity2=3, temperature2=400)]", "input_token_count": 721, "output_token_count": 25, "latency": 6.527672290802002}
+{"id": "multiple_ta_43", "result": "[biological.calc_energy(mols=5, substance='C6H12O6', joules_per_mol=2800)]", "input_token_count": 779, "output_token_count": 29, "latency": 6.701123952865601}
+{"id": "multiple_ta_44", "result": "[calculate.weight_in_space(weight_earth_kg=70, planet='செவ்வாய்')]", "input_token_count": 819, "output_token_count": 30, "latency": 6.6210246086120605}
+{"id": "multiple_ta_45", "result": "[geology.get_era(era_name='பனி யுகம்', calculate_years_ago=True)]", "input_token_count": 603, "output_token_count": 31, "latency": 6.743600845336914}
+{"id": "multiple_ta_46", "result": "[sort_list(elements=['Sam', 'Alice', 'Jack'], order='asc')]", "input_token_count": 741, "output_token_count": 18, "latency": 6.299745082855225}
+{"id": "multiple_ta_47", "result": "[cosine_similarity.calculate(vector1=[3,2,1], vector2=[1,2,3])]", "input_token_count": 758, "output_token_count": 25, "latency": 6.442568063735962}
+{"id": "multiple_ta_48", "result": "[library.find_nearby(location='நியூயார்க்', preferences=['Pet-friendly'])]", "input_token_count": 752, "output_token_count": 30, "latency": 6.651580572128296}
+{"id": "multiple_ta_49", "result": "[calc_Compound_Interest(principle_amount=1500, duration=2, annual_rate=2.5, compound_freq=1)]", "input_token_count": 944, "output_token_count": 31, "latency": 6.652052879333496}
+{"id": "multiple_ta_50", "result": "[house_price_forecast(location='நியூயார்க்கு', months=1)]", "input_token_count": 812, "output_token_count": 30, "latency": 6.646604537963867}
+{"id": "multiple_ta_51", "result": "dice_roll_probability(desired_sum=7, sides_per_die=2)", "input_token_count": 826, "output_token_count": 16, "latency": 6.0797224044799805}
+{"id": "multiple_ta_52", "result": "[currency_conversion(amount=100, from_currency='EUR', to_currency='USD')]", "input_token_count": 628, "output_token_count": 18, "latency": 6.1798601150512695}
+{"id": "multiple_ta_53", "result": "[linear_regression(independent_var=[\"வட்டி விகிதங்கள்\", \"வேலையின்மை விகிதங்கள்\"], dependent_var=\"வீட்டு விலை\", forecast_period=5)]", "input_token_count": 792, "output_token_count": 84, "latency": 8.524385929107666}
+{"id": "multiple_ta_54", "result": "[corporate_finance.dividend_data(company='ஆப்பிள் இன்க்', years=5, frequency='annually')]", "input_token_count": 698, "output_token_count": 37, "latency": 7.082174301147461}
+{"id": "multiple_ta_55", "result": "[stock_forecast(company='கூகிள்', days=3, model='regression')]", "input_token_count": 631, "output_token_count": 26, "latency": 6.663679361343384}
+{"id": "multiple_ta_56", "result": "[avg_closing_price(company='ஆப்பிள்', days=60, data_source='yahoo finance')]", "input_token_count": 843, "output_token_count": 28, "latency": 6.720240831375122}
+{"id": "multiple_ta_57", "result": "[financial.compound_interest(principle=1000, rate=0.05, time=10, n=4)]", "input_token_count": 821, "output_token_count": 26, "latency": 6.541939973831177}
+{"id": "multiple_ta_58", "result": "[lawyer.search(location='Los Angeles, CA', expertise='Divorce')]", "input_token_count": 610, "output_token_count": 17, "latency": 6.4993064403533936}
+{"id": "multiple_ta_59", "result": "[lawyer_finder(location='நியூயார்க்கில்', specialization=['குற்றவியல் சட்டம்'], experience=5)]", "input_token_count": 721, "output_token_count": 57, "latency": 7.674097776412964}
+{"id": "multiple_ta_60", "result": "[event_search(location='நியூயார்க்', days=7)]", "input_token_count": 784, "output_token_count": 25, "latency": 6.714092969894409}
+{"id": "multiple_ta_61", "result": "[landscape_architect.find_specialty(location='போர்ட்லேண்ட்', specialization='சிறிய இடங்களுக்கான தோட்ட வடிவமைப்பு', years_experience=5)]", "input_token_count": 799, "output_token_count": 84, "latency": 8.611490964889526}
+{"id": "multiple_ta_62", "result": "[nature_park.find_nearby(location='Boston, MA', features=['Camping'])]", "input_token_count": 741, "output_token_count": 20, "latency": 6.2750020027160645}
+{"id": "multiple_ta_63", "result": "[air_quality_forecast(location='New York', days=7)]", "input_token_count": 743, "output_token_count": 15, "latency": 6.288784742355347}
+{"id": "multiple_ta_64", "result": "[uv_index.get_future(location='டோக்கியோ', date='06-01-2023')]", "input_token_count": 753, "output_token_count": 30, "latency": 6.694378852844238}
+{"id": "multiple_ta_65", "result": "[geodistance.find(origin='New York', destination='Los Angeles')]", "input_token_count": 792, "output_token_count": 16, "latency": 6.167962312698364}
+{"id": "multiple_ta_66", "result": "[traffic_estimate(start_location='லாஸ் வேகாஸ்', end_location='லாஸ் ஏஞ்சல்ஸ்', time_period='now')]", "input_token_count": 820, "output_token_count": 53, "latency": 7.4419105052948}
+{"id": "multiple_ta_67", "result": "[translate(text='Hello, how are you?', source_language='en', target_language='fr')]", "input_token_count": 689, "output_token_count": 21, "latency": 6.2868332862854}
+{"id": "multiple_ta_68", "result": "[library.search_books(location='New York Public Library', genre='history', title='') ]", "input_token_count": 758, "output_token_count": 19, "latency": 6.2841620445251465}
+{"id": "multiple_ta_69", "result": "MBTI.analyse(thinking_vs_feeling='feeling', introverted_vs_extroverted='extroverted', judging_vs_perceiving='perceiving', sensing_vs_intuition='sensing')", "input_token_count": 1101, "output_token_count": 42, "latency": 7.135336637496948}
+{"id": "multiple_ta_70", "result": "[european_history.get_monarchs(country='பிரான்சு', century=18)]", "input_token_count": 832, "output_token_count": 25, "latency": 6.5232765674591064}
+{"id": "multiple_ta_71", "result": "[get_bureau_statistics(year=1954, category='veterans')]", "input_token_count": 733, "output_token_count": 17, "latency": 6.374722719192505}
+{"id": "multiple_ta_72", "result": "[us_history.population_by_state_year(state='California', year=1970)]", "input_token_count": 635, "output_token_count": 17, "latency": 6.313204526901245}
+{"id": "multiple_ta_73", "result": "[religion.get_origin(religion='பௌத்தம்')]", "input_token_count": 534, "output_token_count": 21, "latency": 6.4261088371276855}
+{"id": "multiple_ta_74", "result": "[art_auction.fetch_artwork_price(artwork_name='வான் கோவின்'ஸ்டாரி நைட்', artist='வான் கோவின்', platform='all')]", "input_token_count": 696, "output_token_count": 71, "latency": 8.280359506607056}
+{"id": "multiple_ta_75", "result": "[paint_color.trends(room='வரவேற்பறை', period='வாராந்திரம்')]", "input_token_count": 794, "output_token_count": 45, "latency": 7.133625030517578}
+{"id": "multiple_ta_76", "result": "[painting.create_custom(subject='குதிரை', color='வெண்கல்', size=24)]", "input_token_count": 772, "output_token_count": 35, "latency": 6.636027812957764}
+{"id": "multiple_ta_77", "result": "[artwork_search.find(type='sculpture', location='New York')]", "input_token_count": 787, "output_token_count": 17, "latency": 6.160276174545288}
+{"id": "multiple_ta_78", "result": "[tourist_spot_info(spot='Natural History Museum', city='London', details='timings, exhibitions')]", "input_token_count": 859, "output_token_count": 24, "latency": 6.3738696575164795}
+{"id": "multiple_ta_79", "result": "[restaurant_info(location='நியூயார்க்கில்', food_type='நவீன கலை')]", "input_token_count": 670, "output_token_count": 44, "latency": 7.1014885902404785}
+{"id": "multiple_ta_80", "result": "[music_shop.find_nearby(location='Nashville, TN', services=['Violin Lessons'])]", "input_token_count": 865, "output_token_count": 22, "latency": 6.229613542556763}
+{"id": "multiple_ta_81", "result": "[concert.book_ticket(artist='எமினெம்', location='நியூயார்க்', add_ons=['Backstage Pass'])]", "input_token_count": 846, "output_token_count": 46, "latency": 7.200855493545532}
+{"id": "multiple_ta_82", "result": "[music.generate(key='C Major', tempo=120)]", "input_token_count": 696, "output_token_count": 13, "latency": 5.946152925491333}
+{"id": "multiple_ta_83", "result": "[team_stats.get_top_scorer(team_name='பார்சிலோனா', player_name='லியோனல் மெஸ்ஸி')]", "input_token_count": 784, "output_token_count": 53, "latency": 7.476733684539795}
+{"id": "multiple_ta_84", "result": "[getTopGoalScorers(competition='UEFA Champions League', team='Barcelona', number=10)]", "input_token_count": 733, "output_token_count": 25, "latency": 6.409955978393555}
+{"id": "multiple_ta_85", "result": "[basketball_scores.get_scores(team='லா லிகா', league='ரியல் மாட்ரிட்', rounds=5)]", "input_token_count": 733, "output_token_count": 45, "latency": 7.194552421569824}
+{"id": "multiple_ta_86", "result": "[BoardGameGeek.recommend(numPlayers=2, category='war')]\"", "input_token_count": 811, "output_token_count": 18, "latency": 6.150594234466553}
+{"id": "multiple_ta_87", "result": "[games.update.find(game='சைபர்பங்க் 2077', platform='Xbox')]", "input_token_count": 811, "output_token_count": 31, "latency": 6.77140998840332}
+{"id": "multiple_ta_88", "result": "[video_games.get_player_count(game_title='World of Warcraft', year=2020)]", "input_token_count": 747, "output_token_count": 19, "latency": 6.422537326812744}
+{"id": "multiple_ta_89", "result": "[restaurant_search(ingredients=['கோழி', 'காளான்'], calories=500, meal='மதிய)]", "input_token_count": 978, "output_token_count": 41, "latency": 7.484869003295898}
+{"id": "multiple_ta_90", "result": "[restaurant.find_group(location='சியாட்டில்', group_size=5)]", "input_token_count": 779, "output_token_count": 26, "latency": 6.604485034942627}
+{"id": "multiple_ta_91", "result": "[restaurant.find(cuisine='apple', price=['low', 'mid'])]", "input_token_count": 700, "output_token_count": 17, "latency": 6.3455188274383545}
+{"id": "multiple_ta_92", "result": "[walmart.vegan_products(location='Denver, CO')]", "input_token_count": 905, "output_token_count": 13, "latency": 6.103829383850098}
+{"id": "multiple_ta_93", "result": "[hotel.book(location='நியூயார்க்கில்', roomType='டீலக்ஸ்', nights=2, additional_services=['காலை உணவு'])]", "input_token_count": 862, "output_token_count": 65, "latency": 8.824445962905884}
+{"id": "multiple_ta_94", "result": "[hotel_room_pricing.get(hotelName='Hilton New York', roomType='Queen Size Bed', nights=3)]", "input_token_count": 969, "output_token_count": 27, "latency": 7.050807476043701}
+{"id": "multiple_ta_95", "result": "[currency_exchange.convert(amount=200, from_currency='EUR', to_currency='USD', live_conversion=True)]", "input_token_count": 718, "output_token_count": 23, "latency": 6.696658611297607}
+{"id": "multiple_ta_96", "result": "[solve_quadratic_equation(a=2, b=6, c=5)]", "input_token_count": 875, "output_token_count": 19, "latency": 6.456208229064941}
+{"id": "multiple_ta_97", "result": "[geometry.area_circle(radius=10)]", "input_token_count": 657, "output_token_count": 9, "latency": 6.026921987533569}
+{"id": "multiple_ta_98", "result": "[geometry.circumference(radius=3)]", "input_token_count": 985, "output_token_count": 11, "latency": 6.000171422958374}
+{"id": "multiple_ta_99", "result": "[calculus.derivative(function='2*x**2', value=1, function_variable='x')]", "input_token_count": 659, "output_token_count": 22, "latency": 6.988462686538696}
+{"id": "multiple_ta_100", "result": "[math.hcf(number1=36, number2=24)]", "input_token_count": 652, "output_token_count": 15, "latency": 6.469558238983154}
+{"id": "multiple_ta_101", "result": "[math.gcd(num1=12, num2=18)]", "input_token_count": 640, "output_token_count": 15, "latency": 6.636145353317261}
+{"id": "multiple_ta_102", "result": "[calculate_displacement(initial_velocity=10, time=5, acceleration=9.8)]", "input_token_count": 896, "output_token_count": 20, "latency": 6.979748010635376}
+{"id": "multiple_ta_103", "result": "[calculate_final_speed(initial_velocity=0, height=100, gravity=9.8)]", "input_token_count": 1002, "output_token_count": 20, "latency": 7.0034520626068115}
+{"id": "multiple_ta_104", "result": "[get_shortest_driving_distance(origin='நியூயார்க்', destination='வாஷிங்டன் D.C.') ]", "input_token_count": 996, "output_token_count": 45, "latency": 8.050516605377197}
+{"id": "multiple_ta_105", "result": "[calculate_magnetic_field(current=5, radius=4)]", "input_token_count": 935, "output_token_count": 14, "latency": 6.562651872634888}
+{"id": "multiple_ta_106", "result": "[calculate_electric_field_strength(charge=0.01, distance=4, medium='vacuum')]", "input_token_count": 1074, "output_token_count": 23, "latency": 6.888622522354126}
+{"id": "multiple_ta_107", "result": "[calculate_density(mass=45, volume=15)]", "input_token_count": 665, "output_token_count": 13, "latency": 6.330322742462158}
+{"id": "multiple_ta_108", "result": "[calc_heat_capacity(temp=298, volume=10, gas='air')]", "input_token_count": 780, "output_token_count": 17, "latency": 6.4830732345581055}
+{"id": "multiple_ta_109", "result": "[cellbio.get_proteins(cell_compartment='plasma', include_description=True)]", "input_token_count": 854, "output_token_count": 18, "latency": 6.644770860671997}
+{"id": "multiple_ta_110", "result": "[mutation_type.find(snp_id='rs6034464', species='Homo sapiens')]", "input_token_count": 733, "output_token_count": 21, "latency": 6.888528347015381}
+{"id": "multiple_ta_111", "result": "[calculate_genotype_frequency(allele_frequency=0.3, genotype='AA')]", "input_token_count": 822, "output_token_count": 18, "latency": 6.80631685256958}
+{"id": "multiple_ta_112", "result": "[forest_growth_forecast(location='யெல்லோஸ்டோன் தேசியப் பூங்கா', years=5, include_human_impact=True)]", "input_token_count": 673, "output_token_count": 59, "latency": 8.546251058578491}
+{"id": "multiple_ta_113", "result": "[calculate_fitness(trait_values=[0.8, 0.7], trait_contributions=[0.4, 0.6])]", "input_token_count": 1297, "output_token_count": 30, "latency": 7.342387437820435}
+{"id": "multiple_ta_114", "result": "[prediction.evolution(species='ஹோமோ சேபியன்ஸ்', years=50, model='Darwin')]", "input_token_count": 926, "output_token_count": 40, "latency": 7.5403242111206055}
+{"id": "multiple_ta_115", "result": "[find_restaurants(location='மன்ஹாட்டன்', food_type='தாய்லாந்து உணவு', number=5, dietary_requirements=['முட்டை–பால் அற்ற'])", "input_token_count": 1161, "output_token_count": 80, "latency": 9.2766854763031}
+{"id": "multiple_ta_116", "result": "[calculate_bmi(weight=85, height=180)]", "input_token_count": 689, "output_token_count": 13, "latency": 6.397503137588501}
+{"id": "multiple_ta_117", "result": "[calculate_BMI(weight_kg=70, height_m=1.75)]", "input_token_count": 947, "output_token_count": 18, "latency": 6.785170793533325}
+{"id": "multiple_ta_118", "result": "imdb.find_movies_by_actor(actor_name='Leonardo DiCaprio', year=2010)", "input_token_count": 1037, "output_token_count": 21, "latency": 6.748960018157959}
+{"id": "multiple_ta_119", "result": "[database.query(table='user', conditions=[{'field': 'age', 'operation': '>', 'value': '25'}, {'field': 'job', 'operation': '=', 'value': 'engineer'}])", "input_token_count": 1184, "output_token_count": 45, "latency": 7.758995294570923}
+{"id": "multiple_ta_120", "result": "[light_travel_time(distance_in_light_years=4, speed_of_light=299792458)]", "input_token_count": 1163, "output_token_count": 20, "latency": 6.674492120742798}
+{"id": "multiple_ta_121", "result": "[geometry.area_triangle(base=6, height=10)]", "input_token_count": 850, "output_token_count": 13, "latency": 6.441250562667847}
+{"id": "multiple_ta_122", "result": "[run_linear_regression(predictors=['Age', 'Income', 'Education'], target='Purchase_Amount', standardize=True)]", "input_token_count": 1164, "output_token_count": 26, "latency": 7.000948905944824}
+{"id": "multiple_ta_123", "result": "[]", "input_token_count": 873, "output_token_count": 2, "latency": 6.004932165145874}
+{"id": "multiple_ta_124", "result": "[]", "input_token_count": 902, "output_token_count": 2, "latency": 5.949052333831787}
+{"id": "multiple_ta_125", "result": "[run_two_sample_ttest(group1=[3,4,5,6,4], group2=[7,8,9,8,7], equal_variance=True)]", "input_token_count": 966, "output_token_count": 37, "latency": 7.291330337524414}
+{"id": "multiple_ta_126", "result": "t_test(dataset_A=[12, 24, 36], dataset_B=[15, 30, 45], alpha=0.05)", "input_token_count": 967, "output_token_count": 31, "latency": 7.074980020523071}
+{"id": "multiple_ta_127", "result": "finance.calculate_quarterly_dividend_per_share(total_payout=1000000000, outstanding_shares=500000000)", "input_token_count": 1110, "output_token_count": 27, "latency": 6.773815393447876}
+{"id": "multiple_ta_128", "result": "[calculate_return_on_equity(net_income=2000000, shareholder_equity=10000000, dividends_paid=200000)]", "input_token_count": 1196, "output_token_count": 28, "latency": 6.727432012557983}
+{"id": "multiple_ta_129", "result": "[lawsuits_search(company_name='வட்டி', location='இலவச', year=5, case_type='all')]", "input_token_count": 848, "output_token_count": 36, "latency": 7.4081103801727295}
+{"id": "multiple_ta_130", "result": "[calculate_cagr(initial_value=2000, final_value=3000, period_in_years=4)]", "input_token_count": 878, "output_token_count": 23, "latency": 6.58791184425354}
+{"id": "multiple_ta_131", "result": "[market_performance.get_data(indexes=['S&P 500', 'Dow Jones'], days=5, detailed=True)]", "input_token_count": 941, "output_token_count": 26, "latency": 6.84716010093689}
+{"id": "multiple_ta_132", "result": "finance.calculate_future_value(initial_investment=20000, rate_of_return=0.08, years=5)", "input_token_count": 969, "output_token_count": 24, "latency": 6.7847514152526855}
+{"id": "multiple_ta_133", "result": "[calculate_mutual_fund_balance(investment_amount=50000, annual_yield=0.05, years=3)]", "input_token_count": 726, "output_token_count": 26, "latency": 7.099365234375}
+{"id": "multiple_ta_134", "result": "[crime_record.get_record(case_number='CA123456', county='San Diego County')]", "input_token_count": 1128, "output_token_count": 19, "latency": 6.793222427368164}
+{"id": "multiple_ta_135", "result": "[get_case_info(docket='2022/AL2562', court='கலிபோர்னியா', info_type='victim')]", "input_token_count": 670, "output_token_count": 39, "latency": 7.667140007019043}
+{"id": "multiple_ta_136", "result": "[get_crime_rate(city='San Francisco', state='California', year=2020)]", "input_token_count": 762, "output_token_count": 20, "latency": 6.732922315597534}
+{"id": "multiple_ta_137", "result": "[lawsuit_search(company='Google', start_date='2021-01-01', location='California')]", "input_token_count": 1002, "output_token_count": 23, "latency": 7.237247943878174}
+{"id": "multiple_ta_138", "result": "legal_case.fetch(case_id='RV_Atomosz', details=True)", "input_token_count": 864, "output_token_count": 16, "latency": 6.95461630821228}
+{"id": "multiple_ta_139", "result": "[lawsuit_details.find(company_name='ஆப்பிள் இன்க்', year=2010)]", "input_token_count": 1111, "output_token_count": 31, "latency": 7.279565095901489}
+{"id": "multiple_ta_140", "result": "[lawsuits_search(company_name='கூகிள்', location='கலிபோர்னியா', year=2020, case_type='all')]", "input_token_count": 853, "output_token_count": 47, "latency": 7.945811986923218}
+{"id": "multiple_ta_141", "result": "[get_protein_sequence(gene=1234, species='Homo sapiens')]", "input_token_count": 854, "output_token_count": 19, "latency": 6.9364213943481445}
+{"id": "multiple_ta_142", "result": "[weather.humidity_forecast(location='மியாமி', days=7)]", "input_token_count": 688, "output_token_count": 23, "latency": 6.967397928237915}
+{"id": "multiple_ta_143", "result": "[calculate_slope_gradient(point1=[40.7128, -74.0060], point2=[34.0522, -118.2437], unit='degree')]", "input_token_count": 1087, "output_token_count": 37, "latency": 7.608442544937134}
+{"id": "multiple_ta_144", "result": "[air_quality(location='லண்டன்', date='2022/08/16')]", "input_token_count": 601, "output_token_count": 25, "latency": 6.996843338012695}
+{"id": "multiple_ta_145", "result": "[calculate_emissions(distance=12000, fuel_type='petrol', fuel_efficiency=20, efficiency_reduction=0)]", "input_token_count": 975, "output_token_count": 27, "latency": 7.198249816894531}
+{"id": "multiple_ta_146", "result": "[restaurant.find_nearby(location='சியாட்டில்', cuisine='சீன உணவு', max_distance=10)]", "input_token_count": 718, "output_token_count": 43, "latency": 7.898023843765259}
+{"id": "multiple_ta_147", "result": "[map_service.get_directions(start='New York', end='Los Angeles', avoid=['tolls', 'highways'])", "input_token_count": 961, "output_token_count": 26, "latency": 6.933303356170654}
+{"id": "multiple_ta_148", "result": "[get_stock_info(company_name='ஆப்பிள்', detail_level='detailed')]", "input_token_count": 672, "output_token_count": 24, "latency": 6.9318530559539795}
+{"id": "multiple_ta_149", "result": "[sentiment_analysis(text='இங்குள்ள உணவை நான் விரும்புகிறேன்! இது எப்போதும் புதியதாகவும் சுவையாகவும் இருக்கும்', language='தமிழ்')]", "input_token_count": 1131, "output_token_count": 134, "latency": 10.577856063842773}
+{"id": "multiple_ta_150", "result": "[calculate_neuronal_activity(input_synaptic_rate=200, weight=0.5, decay_rate=0.1)]", "input_token_count": 1210, "output_token_count": 27, "latency": 7.014587879180908}
+{"id": "multiple_ta_151", "result": "[social_media_analytics.most_followed(topic='நடத்தை மற்றும் குழு இயக்கவியல் தொடர்பான உளவியல்', sub_topics=['உளவியல்', 'தொடர்பு மொழிகள்'], region='global')]", "input_token_count": 958, "output_token_count": 122, "latency": 10.362006664276123}
+{"id": "multiple_ta_152", "result": "[history.get_key_events(country='Germany', start_year=1871, end_year=1945, event_type=['War'])]", "input_token_count": 775, "output_token_count": 28, "latency": 7.236815690994263}
+{"id": "multiple_ta_153", "result": "[get_event_date(event='லிஸ்பன் ஒப்பந்தம்')]", "input_token_count": 791, "output_token_count": 30, "latency": 7.415256500244141}
+{"id": "multiple_ta_154", "result": "[US_president(year=1861, full_name=True)]", "input_token_count": 1052, "output_token_count": 14, "latency": 6.890289783477783}
+{"id": "multiple_ta_155", "result": "[get_discoverer(discovery='நியூட்ரான்', detail=True)]", "input_token_count": 852, "output_token_count": 28, "latency": 7.5009989738464355}
+{"id": "multiple_ta_156", "result": "historical_contrib.get_contrib(scientist='ஆல்பர்ட் ஐன்ஸ்டீன்', date='1915-03-17')", "input_token_count": 819, "output_token_count": 44, "latency": 8.051534652709961}
+{"id": "multiple_ta_157", "result": "[get_earliest_reference(name='இயேசு கிறிஸ்து', source='வரலாற்று பதிவுகள்')]", "input_token_count": 674, "output_token_count": 56, "latency": 8.680729866027832}
+{"id": "multiple_ta_158", "result": "religious_history.get_papal_biography(papal_name='III', include_contributions=True)", "input_token_count": 1084, "output_token_count": 21, "latency": 7.12750506401062}
+{"id": "multiple_ta_159", "result": "[calculate_paint_needed(coverage_rate=350, length=30, height=12)]", "input_token_count": 958, "output_token_count": 19, "latency": 7.101245164871216}
+{"id": "multiple_ta_160", "result": "[get_sculpture_info(artist_name='ஜேம்ஸ் பிளென்சா', detail=True)]", "input_token_count": 1049, "output_token_count": 36, "latency": 7.7496724128723145}
+{"id": "multiple_ta_161", "result": "[find_exhibition(location='New York', art_form='sculpture', month='current', user_ratings='high')]", "input_token_count": 973, "output_token_count": 26, "latency": 7.3311545848846436}
+{"id": "multiple_ta_162", "result": "[analyze_structure(building_id='B1004', floors=[2, 3, 4], mode='dynamic')]", "input_token_count": 727, "output_token_count": 26, "latency": 7.222125053405762}
+{"id": "multiple_ta_163", "result": "[metropolitan_museum.get_top_artworks(number=5, sort_by='popularity')]", "input_token_count": 824, "output_token_count": 20, "latency": 7.096811771392822}
+{"id": "multiple_ta_164", "result": "[]", "input_token_count": 1095, "output_token_count": 2, "latency": 6.434842109680176}
+{"id": "multiple_ta_165", "result": "[guitar_price.find(model='Cigar Box Guitar', condition='Excellent', location='Chicago')]", "input_token_count": 874, "output_token_count": 20, "latency": 6.99527907371521}
+{"id": "multiple_ta_166", "result": "[concert.search(genre='rock', location='Los Angeles', date='this weekend', price_range='cheap')]", "input_token_count": 922, "output_token_count": 24, "latency": 7.251733779907227}
+{"id": "multiple_ta_167", "result": "[music_generator.generate_melody(key='C', start_note='C4', length=16, tempo=120)]", "input_token_count": 1019, "output_token_count": 26, "latency": 7.381728649139404}
+{"id": "multiple_ta_168", "result": "[get_song_lyrics(song_title='குயினின்'போஹேமியன் ராப்சோடி', artist_name='வாசுதேவ் பண்டிட்', lang='தமிழ்')]", "input_token_count": 811, "output_token_count": 86, "latency": 9.175381422042847}
+{"id": "multiple_ta_169", "result": "[musical_scale(key='C', scale_type='major')]", "input_token_count": 650, "output_token_count": 14, "latency": 6.794736862182617}
+{"id": "multiple_ta_170", "result": "[soccer_stat.get_player_stats(player_name='கிறிஸ்டியானோ ரொனால்டோ', season='2019-2020')]", "input_token_count": 1004, "output_token_count": 49, "latency": 8.156896829605103}
+{"id": "multiple_ta_171", "result": "[game_result.get_winner(teams=['Lakers', 'Clippers', 'date=''2021-01-28''])]", "input_token_count": 692, "output_token_count": 29, "latency": 7.393802642822266}
+{"id": "multiple_ta_172", "result": "[sports_db.find_athlete(name='Lebron James', sport='Basketball')]", "input_token_count": 1126, "output_token_count": 19, "latency": 7.06511116027832}
+{"id": "multiple_ta_173", "result": "[get_defense_ranking(season=2021, top=1)]", "input_token_count": 819, "output_token_count": 17, "latency": 7.183046579360962}
+{"id": "multiple_ta_174", "result": "[sports_ranking(team='Manchester United', league='Premier League')]", "input_token_count": 694, "output_token_count": 16, "latency": 7.028446435928345}
+{"id": "multiple_ta_175", "result": "[sports_ranking.get_top_player(sport='tennis', gender='women')]", "input_token_count": 1014, "output_token_count": 18, "latency": 7.184359550476074}
+{"id": "multiple_ta_176", "result": "[sports_team.get_schedule(team_name='Manchester United', num_of_games=6, league='Premier League')]", "input_token_count": 1328, "output_token_count": 24, "latency": 7.2894487380981445}
+{"id": "multiple_ta_177", "result": "[board_game.chess.get_top_players(location='நியூயார்க்கில்', minimum_rating=2300)]", "input_token_count": 885, "output_token_count": 37, "latency": 7.617193222045898}
+{"id": "multiple_ta_178", "result": "[find_card_in_deck(rank='Queen', suit='Hearts')]", "input_token_count": 1169, "output_token_count": 15, "latency": 7.004045724868774}
+{"id": "multiple_ta_179", "result": "poker_probability.full_house(deck_size=52, hand_size=5)", "input_token_count": 852, "output_token_count": 16, "latency": 7.029756307601929}
+{"id": "multiple_ta_180", "result": "[game_stats.fetch_player_statistics(game='சுவிட்சில்', username='சாம்', platform='செல்டா')]", "input_token_count": 1037, "output_token_count": 45, "latency": 8.043386220932007}
+{"id": "multiple_ta_181", "result": "[soccer.get_last_match(team_name='லிவர்பூல் எஃப். சி.', include_stats=True)]", "input_token_count": 1079, "output_token_count": 39, "latency": 7.723080158233643}
+{"id": "multiple_ta_182", "result": "[multiplayer_game_finder(platform='Windows 10', rating=4.5, genre='')]", "input_token_count": 1192, "output_token_count": 21, "latency": 7.0816943645477295}
+{"id": "multiple_ta_183", "result": "[recipe_info.get_calories(website='Foodnetwork.com', recipe='மாட்டிறைச்சி லாஸக்னா')]", "input_token_count": 812, "output_token_count": 46, "latency": 7.888811111450195}
+{"id": "multiple_ta_184", "result": "[recipe_search(dietary_restriction='வெகுளிர்', ingredients=['பாலாடைக்கட்டி', 'சைவ பாஸ்தா'], servings=2)]", "input_token_count": 884, "output_token_count": 69, "latency": 8.075268268585205}
+{"id": "multiple_ta_185", "result": "[restaurant_search.find_closest(location='Boston, MA', cuisine='Sushi', amenities=['Patio'])]", "input_token_count": 737, "output_token_count": 24, "latency": 7.183669328689575}
+{"id": "multiple_ta_186", "result": "[find_recipe(dietary_restrictions='vegan', recipe_type='main course', time=30)]", "input_token_count": 742, "output_token_count": 23, "latency": 7.136479377746582}
+{"id": "multiple_ta_187", "result": "[whole_foods.check_price(location='லாஸ் ஏஞ்சல்ஸ்', items=['தக்காளி', 'கீரை'])]", "input_token_count": 1017, "output_token_count": 53, "latency": 7.803785562515259}
+{"id": "multiple_ta_188", "result": "[grocery_store.find_best(my_location='Berkeley', rating=4.5, products=['தக்காளி', 'செல்லப்பிராணி'])]", "input_token_count": 1123, "output_token_count": 55, "latency": 7.853068113327026}
+{"id": "multiple_ta_189", "result": "[timezone.convert(time='3pm', from_timezone='America/New_York', to_timezone='Europe/London')]", "input_token_count": 689, "output_token_count": 24, "latency": 7.20919132232666}
+{"id": "multiple_ta_190", "result": "[book_hotel(hotel_name='Hilton', location='Chicago', room_type='single', start_date='December 10, 2022', nights=2)]", "input_token_count": 918, "output_token_count": 36, "latency": 7.618157863616943}
+{"id": "multiple_ta_191", "result": "[book_hotel(hotel_name='பாரடைஸ்', location='லாஸ் வேகாஸ்', room_type='ஆடம்பர', start_date='05-12-2022', stay_duration=3, view='நகரக் காட்சி')]", "input_token_count": 1157, "output_token_count": 94, "latency": 8.042741775512695}
+{"id": "multiple_ta_192", "result": "[currency_conversion.convert(amount=150, from_currency='EUR', to_currency='CAD')]", "input_token_count": 787, "output_token_count": 19, "latency": 7.250348806381226}
+{"id": "multiple_ta_193", "result": "[maps.get_distance_duration(start_location='ஈபிள் கோபுரம்', end_location='லூவர் அருங்காட்சியகம்')]", "input_token_count": 999, "output_token_count": 64, "latency": 7.668849229812622}
+{"id": "multiple_ta_194", "result": "[get_museum_hours(museum_name='பெருநகர கலை அருங்காட்சியகம்', day='Sunday')]", "input_token_count": 1009, "output_token_count": 56, "latency": 7.609297275543213}
+{"id": "multiple_ta_195", "result": "[calc_heat_capacity(temp=298, volume=10, gas='air')]", "input_token_count": 1018, "output_token_count": 17, "latency": 7.1104350090026855}
+{"id": "multiple_ta_196", "result": "[cellbio.get_proteins(cell_compartment='plasma', include_description=True)]", "input_token_count": 981, "output_token_count": 18, "latency": 7.072359800338745}
+{"id": "multiple_ta_197", "result": "[mutation_type.find(snp_id='rs6034464', species='Homo sapiens')]", "input_token_count": 1127, "output_token_count": 21, "latency": 7.172883987426758}
+{"id": "multiple_ta_198", "result": "[calculate_genotype_frequency(allele_frequency=0.3, genotype='AA')]", "input_token_count": 1126, "output_token_count": 18, "latency": 7.042030572891235}
+{"id": "multiple_ta_199", "result": "[forest_growth_forecast(location='யெல்லோஸ்டோன்', years=5, include_human_impact=True)]", "input_token_count": 819, "output_token_count": 38, "latency": 7.244544267654419}

@@ -1,0 +1,200 @@
+{"id": "multiple_ta_0", "result": "```\n[]\n```", "input_token_count": 907, "output_token_count": 5, "latency": 1.503736972808838}
+{"id": "multiple_ta_1", "result": "```\n[{\"name\": \"math.triangle_area_heron\", \"arguments\": {\"side1\": 3, \"side2\": 4, \"side3\": 5}}]\n```", "input_token_count": 711, "output_token_count": 41, "latency": 1.8990960121154785}
+{"id": "multiple_ta_2", "result": "```\n[]\n```", "input_token_count": 505, "output_token_count": 5, "latency": 1.574758529663086}
+{"id": "multiple_ta_3", "result": "```\n[]\n```", "input_token_count": 665, "output_token_count": 5, "latency": 1.5277130603790283}
+{"id": "multiple_ta_4", "result": "```\n[{\"name\": \"kinematics.calculate_displacement\", \"arguments\": {\"initial_speed\": 20, \"acceleration\": 10, \"time\": 5.0}}]\n```", "input_token_count": 837, "output_token_count": 43, "latency": 1.9749541282653809}
+{"id": "multiple_ta_5", "result": "```\n[{\"name\": \"weather.get_by_city_date\", \"arguments\": {\"city\": \"டிசம்பர்\", \"date\": \"2019-10-13\"}}, {\"name\": \"weather.get_by_coordinates_date\", \"arguments\": {\"coordinates\": [46.603354, 1.888334], \"date\": \"2019-10-13\"}}]\n```", "input_token_count": 799, "output_token_count": 100, "latency": 2.4943673610687256}
+{"id": "multiple_ta_6", "result": "```\n[{\"name\": \"resistance_calculator.calculate\", \"arguments\": {\"I\": 10.0, \"V\": 0.01}}]\n```", "input_token_count": 835, "output_token_count": 37, "latency": 1.880983591079712}
+{"id": "multiple_ta_7", "result": "```\n[]\n```", "input_token_count": 736, "output_token_count": 5, "latency": 1.5691144466400146}
+{"id": "multiple_ta_8", "result": "```\n[{\"name\": \"property_valuation.get\", \"arguments\": {\"location\": \"San Diego, CA\", \"propertyType\": \"villa\", \"bedrooms\": 3, \"age\": 300000}}, {\"name\": \"property_valuation.get\", \"arguments\": {\"location\": \"San Diego, CA\", \"propertyType\": \"villa\", \"bedrooms\": 3, \"age\": 400000}}]\n```", "input_token_count": 755, "output_token_count": 100, "latency": 2.4369421005249023}
+{"id": "multiple_ta_9", "result": "```\n[{\"name\": \"calculate_average\", \"arguments\": {\"gradeDict\": {\"கணிதம்\": 90, \"அறிவியல்\": 75, \"வரலாறு\": 82, \"இசை\": 89}}}]\n```", "input_token_count": 665, "output_token_count": 69, "latency": 2.135437488555908}
+{"id": "multiple_ta_10", "result": "```\n[]\n```", "input_token_count": 819, "output_token_count": 5, "latency": 1.5402333736419678}
+{"id": "multiple_ta_11", "result": "```\n[]\n```", "input_token_count": 722, "output_token_count": 5, "latency": 1.5153937339782715}
+{"id": "multiple_ta_12", "result": "```\n[]\n```", "input_token_count": 811, "output_token_count": 5, "latency": 1.4867520332336426}
+{"id": "multiple_ta_13", "result": "```\n[{\"name\": \"corporate_finance.revenue_forecast\", \"arguments\": {\"company\": \"XYZ\", \"product\": \"A\", \"sales_units_increase_percentage\": 10}}]\n```", "input_token_count": 653, "output_token_count": 44, "latency": 1.8898396492004395}
+{"id": "multiple_ta_14", "result": "```\n[]\n```", "input_token_count": 845, "output_token_count": 5, "latency": 1.4943289756774902}
+{"id": "multiple_ta_15", "result": "```\n[{\"name\": \"solarFarm.potential\", \"arguments\": {\"coordinates\": [43.653225, -79.383186], \"panelArea\": 80000}}, {\"name\": \"windFarm.potential\", \"arguments\": {\"coordinates\": [43.653225, -79.383186], \"turbineCount\": 10}}]\n```", "input_token_count": 770, "output_token_count": 104, "latency": 2.4053261280059814}
+{"id": "multiple_ta_16", "result": "```\n[{\"name\": \"species_distribution_modeling.project_range_shift\", \"arguments\": {\"species\": \"Ne\", \"climate_scenario\": \"default\", \"future_time\": 100}}]\n```", "input_token_count": 873, "output_token_count": 43, "latency": 1.8560583591461182}
+{"id": "multiple_ta_17", "result": "```\n[]\n```", "input_token_count": 742, "output_token_count": 5, "latency": 1.4702744483947754}
+{"id": "multiple_ta_18", "result": "```\n[]\n```", "input_token_count": 566, "output_token_count": 5, "latency": 1.4822819232940674}
+{"id": "multiple_ta_19", "result": "```\n[]\n```", "input_token_count": 673, "output_token_count": 5, "latency": 1.4841325283050537}
+{"id": "multiple_ta_20", "result": "```\n[]\n```", "input_token_count": 651, "output_token_count": 5, "latency": 1.4958198070526123}
+{"id": "multiple_ta_21", "result": "```\n[]\n```", "input_token_count": 709, "output_token_count": 5, "latency": 1.4845681190490723}
+{"id": "multiple_ta_22", "result": "```\n[]\n```", "input_token_count": 683, "output_token_count": 5, "latency": 1.4886696338653564}
+{"id": "multiple_ta_23", "result": "```\n[]\n```", "input_token_count": 857, "output_token_count": 5, "latency": 1.4856858253479004}
+{"id": "multiple_ta_24", "result": "```\n[]\n```", "input_token_count": 695, "output_token_count": 5, "latency": 1.4629297256469727}
+{"id": "multiple_ta_25", "result": "```\n[]\n```", "input_token_count": 808, "output_token_count": 5, "latency": 1.4645330905914307}
+{"id": "multiple_ta_26", "result": "```\n[]\n```", "input_token_count": 817, "output_token_count": 5, "latency": 1.4584600925445557}
+{"id": "multiple_ta_27", "result": "```\n[]\n```", "input_token_count": 669, "output_token_count": 5, "latency": 1.4308044910430908}
+{"id": "multiple_ta_28", "result": "```\n[]\n```", "input_token_count": 638, "output_token_count": 5, "latency": 1.410323143005371}
+{"id": "multiple_ta_29", "result": "```\n[{\"name\": \"functions.intersect\", \"arguments\": {\"function1\": \"3x + 2\", \"function2\": \"2x + 3\"}}]\n```", "input_token_count": 568, "output_token_count": 39, "latency": 1.6552484035491943}
+{"id": "multiple_ta_30", "result": "```\n[]\n```", "input_token_count": 640, "output_token_count": 5, "latency": 1.3499188423156738}
+{"id": "multiple_ta_31", "result": "```\n[]\n```", "input_token_count": 609, "output_token_count": 5, "latency": 1.3636691570281982}
+{"id": "multiple_ta_32", "result": "```\n[]\n```", "input_token_count": 610, "output_token_count": 5, "latency": 1.3395590782165527}
+{"id": "multiple_ta_33", "result": "```\n[{\"name\": \"calculate_integral\", \"arguments\": {\"func\": \"3*x^2\", \"a\": 0, \"b\": 2}}]\n```", "input_token_count": 610, "output_token_count": 37, "latency": 1.6227531433105469}
+{"id": "multiple_ta_34", "result": "```\n[{\"name\": \"math.lcm\", \"arguments\": {\"num1\": 18, \"num2\": 12}}]\n```", "input_token_count": 613, "output_token_count": 33, "latency": 1.583031177520752}
+{"id": "multiple_ta_35", "result": "```\n[]\n```", "input_token_count": 650, "output_token_count": 5, "latency": 1.354400396347046}
+{"id": "multiple_ta_36", "result": "```\n[]\n```", "input_token_count": 764, "output_token_count": 5, "latency": 1.3429052829742432}
+{"id": "multiple_ta_37", "result": "```\n[{\"name\": \"kinematics.final_velocity\", \"arguments\": {\"initial_velocity\": 40, \"time\": 6}}, {\"name\": \"kinematics.distance\", \"arguments\": {\"initial_velocity\": 40, \"time\": 6}}]\n```", "input_token_count": 780, "output_token_count": 57, "latency": 1.810436487197876}
+{"id": "multiple_ta_38", "result": "```\n[]\n```", "input_token_count": 673, "output_token_count": 5, "latency": 1.3372888565063477}
+{"id": "multiple_ta_39", "result": "```\n[]\n```", "input_token_count": 650, "output_token_count": 5, "latency": 1.3477039337158203}
+{"id": "multiple_ta_40", "result": "```\n[]\n```", "input_token_count": 768, "output_token_count": 5, "latency": 1.346623182296753}
+{"id": "multiple_ta_41", "result": "```\n[{\"name\": \"electric_force.calculate\", \"arguments\": {\"Q1\": 10.0, \"Q2\": 0.01, \"r\": 0.01}}]\n```", "input_token_count": 777, "output_token_count": 46, "latency": 1.7088913917541504}
+{"id": "multiple_ta_42", "result": "```\n[]\n```", "input_token_count": 662, "output_token_count": 5, "latency": 1.342766523361206}
+{"id": "multiple_ta_43", "result": "```\n[{\"name\": \"biological.calc_energy\", \"arguments\": {\"mols\": 5, \"substance\": \"C6H12O6\"}}]\n```", "input_token_count": 708, "output_token_count": 38, "latency": 1.6416025161743164}
+{"id": "multiple_ta_44", "result": "```\n[]\n```", "input_token_count": 715, "output_token_count": 5, "latency": 1.3269238471984863}
+{"id": "multiple_ta_45", "result": "```\n[{\"name\": \"geology.get_era\", \"arguments\": {\"era_name\": \"Era of the Moon\", \"calculate_years_ago\": true}}]\n```", "input_token_count": 557, "output_token_count": 38, "latency": 1.665346622467041}
+{"id": "multiple_ta_46", "result": "```\n[]\n```", "input_token_count": 655, "output_token_count": 5, "latency": 1.3411822319030762}
+{"id": "multiple_ta_47", "result": "```\n[{\"name\": \"cosine_similarity.calculate\", \"arguments\": {\"vector1\": [3, 2, 1], \"vector2\": [1, 2, 3]}}]\n```", "input_token_count": 675, "output_token_count": 45, "latency": 1.6871700286865234}
+{"id": "multiple_ta_48", "result": "```\n[]\n```", "input_token_count": 674, "output_token_count": 5, "latency": 1.2812492847442627}
+{"id": "multiple_ta_49", "result": "```\n[{\"name\": \"calc_Simple_Interest\", \"arguments\": {\"principle_amount\": 1500.0, \"duration\": 2.5, \"annual_rate\": 0.02}}]\n```", "input_token_count": 833, "output_token_count": 50, "latency": 1.6727652549743652}
+{"id": "multiple_ta_50", "result": "```\n[]\n```", "input_token_count": 716, "output_token_count": 5, "latency": 1.349931001663208}
+{"id": "multiple_ta_51", "result": "```\n[{\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 2, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 3, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 4, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 5, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 6, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 7, \"sides_per_die\": 6}}]\n```", "input_token_count": 719, "output_token_count": 216, "latency": 3.2832021713256836}
+{"id": "multiple_ta_52", "result": "```\n[]\n```", "input_token_count": 577, "output_token_count": 5, "latency": 1.340348482131958}
+{"id": "multiple_ta_53", "result": "```\n[]\n```", "input_token_count": 709, "output_token_count": 5, "latency": 1.3652851581573486}
+{"id": "multiple_ta_54", "result": "```\n[]\n```", "input_token_count": 636, "output_token_count": 5, "latency": 1.3391404151916504}
+{"id": "multiple_ta_55", "result": "```\n[]\n```", "input_token_count": 588, "output_token_count": 5, "latency": 1.3215596675872803}
+{"id": "multiple_ta_56", "result": "```\n[]\n```", "input_token_count": 748, "output_token_count": 5, "latency": 1.3325865268707275}
+{"id": "multiple_ta_57", "result": "```\n[{\"name\": \"financial.simple_interest\", \"arguments\": {\"principle\": 1000.0, \"rate\": 0.05, \"time\": 4}}, {\"name\": \"financial.compound_interest\", \"arguments\": {\"principle\": 1000.0, \"rate\": 0.05, \"time\": 10, \"n\": 1}}]\n```", "input_token_count": 757, "output_token_count": 90, "latency": 2.0458710193634033}
+{"id": "multiple_ta_58", "result": "```\n[{\"name\": \"doctor.search\", \"arguments\": {\"location\": \"Lahas\", \"specialization\": \"Cardiology\"}}, {\"name\": \"doctor.search\", \"arguments\": {\"location\": \"Lahas\", \"specialization\": \"Orthopedics\"}}, {\"name\": \"doctor.search\", \"arguments\": {\"location\": \"Lahas\", \"specialization\": \"Gynecology\"}}]\n```", "input_token_count": 572, "output_token_count": 88, "latency": 2.026686429977417}
+{"id": "multiple_ta_59", "result": "```\n[]\n```", "input_token_count": 649, "output_token_count": 5, "latency": 1.3172221183776855}
+{"id": "multiple_ta_60", "result": "```\n[]\n```", "input_token_count": 698, "output_token_count": 5, "latency": 1.3211779594421387}
+{"id": "multiple_ta_61", "result": "```\n[]\n```", "input_token_count": 737, "output_token_count": 5, "latency": 1.3717825412750244}
+{"id": "multiple_ta_62", "result": "```\n[{\"name\": \"nature_park.find_nearby\", \"arguments\": {\"location\": \"பாஸ்டன், MA-வில்\", \"features\": [\"Camping\", \"Picnic Areas\"]}}, {\"name\": \"restaurant.find_nearby\", \"arguments\": {\"location\": \"பாஸ்டன், MA-வில்\", \"amenities\": [\"Delivery\", \"Outdoor Seating\", \"Vegetarian Options\"]}}]\n```", "input_token_count": 665, "output_token_count": 104, "latency": 2.198286533355713}
+{"id": "multiple_ta_63", "result": "```\n[]\n```", "input_token_count": 661, "output_token_count": 5, "latency": 1.3506553173065186}
+{"id": "multiple_ta_64", "result": "```\n[{\"name\": \"uv_index.get_future\", \"arguments\": {\"location\": \"டோக்கியோவின்\", \"date\": \"1-01-2023\"}}, {\"name\": \"rainfall_prediction\", \"arguments\": {\"location\": \"டோக்கியோவின்\", \"date\": \"1-01-2023\"}}, {\"name\": \"snowfall_prediction\", \"arguments\": {\"location\": \"டோக்கியோவின்\", \"date\": \"1-01-2023\"}}]\n```", "input_token_count": 676, "output_token_count": 141, "latency": 2.604583501815796}
+{"id": "multiple_ta_65", "result": "```\n[{\"name\": \"geodistance.find\", \"arguments\": {\"origin\": \"London\", \"destination\": \"Sydney\"}}]\n```", "input_token_count": 703, "output_token_count": 31, "latency": 1.6099927425384521}
+{"id": "multiple_ta_66", "result": "```\n[{\"name\": \"weather_forecast\", \"arguments\": {\"location\": \"London\", \"days\": 7}}]\n```", "input_token_count": 725, "output_token_count": 29, "latency": 1.5663807392120361}
+{"id": "multiple_ta_67", "result": "```\n[{\"name\": \"translate\", \"arguments\": {\"text\": \"Hello, how are you?\", \"source_language\": \"English\", \"target_language\": \"Tamil\"}}]\n```", "input_token_count": 620, "output_token_count": 40, "latency": 1.6564807891845703}
+{"id": "multiple_ta_68", "result": "```\n[]\n```", "input_token_count": 666, "output_token_count": 5, "latency": 1.3704586029052734}
+{"id": "multiple_ta_69", "result": "```\n[]\n```", "input_token_count": 962, "output_token_count": 5, "latency": 1.3615844249725342}
+{"id": "multiple_ta_70", "result": "```\n[{\"name\": \"european_history.get_monarchs\", \"arguments\": {\"country\": \"India\", \"century\": 18}}]\n```", "input_token_count": 757, "output_token_count": 34, "latency": 1.6076648235321045}
+{"id": "multiple_ta_71", "result": "```\n[{\"name\": \"get_population\", \"arguments\": {\"year\": 1954, \"category\": \"total\"}}]\n```", "input_token_count": 656, "output_token_count": 31, "latency": 1.5746629238128662}
+{"id": "multiple_ta_72", "result": "```\n[{\"name\": \"us_history.population_by_state_year\", \"arguments\": {\"state\": \"Kerala\", \"year\": 1970}}]\n```", "input_token_count": 594, "output_token_count": 36, "latency": 1.5897881984710693}
+{"id": "multiple_ta_73", "result": "```\n[]\n```", "input_token_count": 506, "output_token_count": 5, "latency": 1.361058235168457}
+{"id": "multiple_ta_74", "result": "```\n[]\n```", "input_token_count": 645, "output_token_count": 5, "latency": 1.3354294300079346}
+{"id": "multiple_ta_75", "result": "```\n[]\n```", "input_token_count": 694, "output_token_count": 5, "latency": 1.3380365371704102}
+{"id": "multiple_ta_76", "result": "```\n[]\n```", "input_token_count": 698, "output_token_count": 5, "latency": 1.3799777030944824}
+{"id": "multiple_ta_77", "result": "```\n[]\n```", "input_token_count": 697, "output_token_count": 5, "latency": 1.3551218509674072}
+{"id": "multiple_ta_78", "result": "```\n[{\"name\": \"tourist_spot_info\", \"arguments\": {\"spot\": \"Lalnath Museum\", \"city\": \"Karnataka\"}}]\n```", "input_token_count": 774, "output_token_count": 36, "latency": 1.599900722503662}
+{"id": "multiple_ta_79", "result": "```\n[]\n```", "input_token_count": 610, "output_token_count": 5, "latency": 1.3578782081604004}
+{"id": "multiple_ta_80", "result": "```\n[]\n```", "input_token_count": 762, "output_token_count": 5, "latency": 1.3388614654541016}
+{"id": "multiple_ta_81", "result": "```\n[]\n```", "input_token_count": 757, "output_token_count": 5, "latency": 1.347795009613037}
+{"id": "multiple_ta_82", "result": "```\n[]\n```", "input_token_count": 643, "output_token_count": 5, "latency": 1.3469288349151611}
+{"id": "multiple_ta_83", "result": "```\n[{\"name\": \"team_stats.get_top_scorer\", \"arguments\": {\"team_name\": \"Liverpool\"}}]\n```", "input_token_count": 691, "output_token_count": 28, "latency": 1.4901103973388672}
+{"id": "multiple_ta_84", "result": "```\n[{\"name\": \"getTopGoalScorers\", \"arguments\": {\"competition\": \"UEFA Champions League\", \"team\": \"Barcelona\", \"number\": 10}}]\n```", "input_token_count": 677, "output_token_count": 43, "latency": 1.5942108631134033}
+{"id": "multiple_ta_85", "result": "```\n[{\"name\": \"basketball_scores.get_scores\", \"arguments\": {\"team\": \"Lal\\u00aali\\u00b9\\u00adkan\\u00adli\\u00b9\\u00ad\", \"league\": \"5\\u00b8\\u00adகால்பந்து\", \"rounds\": 5}}, {\"name\": \"soccer_scores.get_scores\", \"arguments\": {\"team\": \"Lal\\u00aali\\u00b9\\u00adkan\\u00adli\\u00b9\\u00ad\", \"league\": \"5\\u00b8\\u00adகால்பந்து\", \"rounds\": 5}}]\n```", "input_token_count": 674, "output_token_count": 170, "latency": 2.821774482727051}
+{"id": "multiple_ta_86", "result": "```\n[{\"name\": \"BoardGameGeek.recommend\", \"arguments\": {\"numPlayers\": 2, \"category\": \"strategy\"}}, {\"name\": \"BoardGameGeek.recommend\", \"arguments\": {\"numPlayers\": 2, \"category\": \"family\"}}, {\"name\": \"BoardGameGeek.recommend\", \"arguments\": {\"numPlayers\": 2, \"category\": \"party\"}}]\n```", "input_token_count": 748, "output_token_count": 89, "latency": 2.024876117706299}
+{"id": "multiple_ta_87", "result": "```\n[{\"name\": \"games.reviews.find\", \"arguments\": {\"game\": \"சைபர்பங்க் 2077\", \"region\": \"patch\"}}]\n```", "input_token_count": 722, "output_token_count": 46, "latency": 1.6246936321258545}
+{"id": "multiple_ta_88", "result": "```\n[{\"name\": \"video_games.get_player_count\", \"arguments\": {\"game_title\": \"2020 ஆம் ஆண்டில்\", \"year\": 2020}}, {\"name\": \"video_games.get_sales\", \"arguments\": {\"game_title\": \"2020 ஆம் ஆண்டில்\", \"year\": 2020}}]\n```", "input_token_count": 683, "output_token_count": 93, "latency": 2.099670648574829}
+{"id": "multiple_ta_89", "result": "```\n[]\n```", "input_token_count": 850, "output_token_count": 5, "latency": 1.2827579975128174}
+{"id": "multiple_ta_90", "result": "```\n[]\n```", "input_token_count": 694, "output_token_count": 5, "latency": 1.2465503215789795}
+{"id": "multiple_ta_91", "result": "```\n[]\n```", "input_token_count": 636, "output_token_count": 5, "latency": 1.2915115356445312}
+{"id": "multiple_ta_92", "result": "```\n[]\n```", "input_token_count": 779, "output_token_count": 5, "latency": 1.2559840679168701}
+{"id": "multiple_ta_93", "result": "```\n[]\n```", "input_token_count": 769, "output_token_count": 5, "latency": 1.2683384418487549}
+{"id": "multiple_ta_94", "result": "```\n[]\n```", "input_token_count": 846, "output_token_count": 5, "latency": 1.3191320896148682}
+{"id": "multiple_ta_95", "result": "```\n[]\n```", "input_token_count": 654, "output_token_count": 5, "latency": 1.3188257217407227}
+{"id": "multiple_ta_96", "result": "```\n[{\"name\": \"solve_quadratic_equation\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}]\n```", "input_token_count": 773, "output_token_count": 37, "latency": 1.603510856628418}
+{"id": "multiple_ta_97", "result": "```\n[]\n```", "input_token_count": 611, "output_token_count": 5, "latency": 1.3208198547363281}
+{"id": "multiple_ta_98", "result": "```\n[]\n```", "input_token_count": 849, "output_token_count": 5, "latency": 1.3075182437896729}
+{"id": "multiple_ta_99", "result": "```\n[{\"name\": \"calculus.derivative\", \"arguments\": {\"function\": \"x = 1 * 2 * x^2\", \"value\": 1}}]\n```", "input_token_count": 609, "output_token_count": 40, "latency": 1.6669127941131592}
+{"id": "multiple_ta_100", "result": "```\n[]\n```", "input_token_count": 606, "output_token_count": 5, "latency": 1.3170208930969238}
+{"id": "multiple_ta_101", "result": "```\n[]\n```", "input_token_count": 592, "output_token_count": 5, "latency": 1.2800874710083008}
+{"id": "multiple_ta_102", "result": "```\n[]\n```", "input_token_count": 794, "output_token_count": 5, "latency": 1.2946820259094238}
+{"id": "multiple_ta_103", "result": "```\n[]\n```", "input_token_count": 871, "output_token_count": 5, "latency": 1.3279602527618408}
+{"id": "multiple_ta_104", "result": "```\n[]\n```", "input_token_count": 851, "output_token_count": 5, "latency": 1.3066089153289795}
+{"id": "multiple_ta_105", "result": "```\n[]\n```", "input_token_count": 827, "output_token_count": 5, "latency": 1.3278675079345703}
+{"id": "multiple_ta_106", "result": "```\n[]\n```", "input_token_count": 925, "output_token_count": 5, "latency": 1.3067617416381836}
+{"id": "multiple_ta_107", "result": "```\n[{\"name\": \"calculate_density\", \"arguments\": {\"mass\": 45, \"volume\": 15}}]\n```", "input_token_count": 621, "output_token_count": 30, "latency": 1.552628755569458}
+{"id": "multiple_ta_108", "result": "```\n[{\"name\": \"calc_heat_capacity\", \"arguments\": {\"temp\": 298, \"volume\": 10}}]\n```", "input_token_count": 714, "output_token_count": 32, "latency": 1.5621004104614258}
+{"id": "multiple_ta_109", "result": "```\n[]\n```", "input_token_count": 756, "output_token_count": 5, "latency": 1.2908835411071777}
+{"id": "multiple_ta_110", "result": "```\n[]\n```", "input_token_count": 679, "output_token_count": 5, "latency": 1.2943429946899414}
+{"id": "multiple_ta_111", "result": "```\n[{\"name\": \"calculate_genotype_frequency\", \"arguments\": {\"allele_frequency\": 0.3, \"genotype\": \"AA\"}}, {\"name\": \"calculate_genotype_frequency\", \"arguments\": {\"allele_frequency\": 0.3, \"genotype\": \"A\"}}]\n```", "input_token_count": 717, "output_token_count": 63, "latency": 1.8741207122802734}
+{"id": "multiple_ta_112", "result": "```\n[]\n```", "input_token_count": 622, "output_token_count": 5, "latency": 1.2922008037567139}
+{"id": "multiple_ta_113", "result": "```\n[]\n```", "input_token_count": 1100, "output_token_count": 5, "latency": 1.3142063617706299}
+{"id": "multiple_ta_114", "result": "```\n[]\n```", "input_token_count": 816, "output_token_count": 5, "latency": 1.3304221630096436}
+{"id": "multiple_ta_115", "result": "```\n[]\n```", "input_token_count": 987, "output_token_count": 5, "latency": 1.3101670742034912}
+{"id": "multiple_ta_116", "result": "```\n[]\n```", "input_token_count": 641, "output_token_count": 5, "latency": 1.3364832401275635}
+{"id": "multiple_ta_117", "result": "```\n[{\"name\": \"calculate_BMI\", \"arguments\": {\"weight_kg\": 70, \"height_m\": 1.75}}]\n```", "input_token_count": 830, "output_token_count": 36, "latency": 1.6508769989013672}
+{"id": "multiple_ta_118", "result": "```\n[]\n```", "input_token_count": 921, "output_token_count": 5, "latency": 1.3461289405822754}
+{"id": "multiple_ta_119", "result": "```\n[{\"name\": \"database.query\", \"arguments\": {\"table\": \"cricket_players\", \"conditions\": [{\"field\": \"name\", \"operation\": \"=\", \"value\": \"engineer\"}], \"description\": \"Query the database based on certain conditions.\"}}]\n```", "input_token_count": 993, "output_token_count": 58, "latency": 1.8888978958129883}
+{"id": "multiple_ta_120", "result": "```\n[]\n```", "input_token_count": 998, "output_token_count": 5, "latency": 1.3454792499542236}
+{"id": "multiple_ta_121", "result": "```\n[]\n```", "input_token_count": 745, "output_token_count": 5, "latency": 1.3383469581604004}
+{"id": "multiple_ta_122", "result": "```\n[]\n```", "input_token_count": 989, "output_token_count": 5, "latency": 1.3368921279907227}
+{"id": "multiple_ta_123", "result": "```\n[]\n```", "input_token_count": 768, "output_token_count": 5, "latency": 1.3375957012176514}
+{"id": "multiple_ta_124", "result": "```\n[]\n```", "input_token_count": 791, "output_token_count": 5, "latency": 1.3562414646148682}
+{"id": "multiple_ta_125", "result": "```\n[]\n```", "input_token_count": 836, "output_token_count": 5, "latency": 1.3319954872131348}
+{"id": "multiple_ta_126", "result": "```\n[{\"name\": \"t_test\", \"arguments\": {\"dataset_A\": [15, 30, 45], \"dataset_B\": [12, 24, 36], \"alpha\": 0.05}}]\n```", "input_token_count": 852, "output_token_count": 57, "latency": 1.9279115200042725}
+{"id": "multiple_ta_127", "result": "```\n[]\n```", "input_token_count": 952, "output_token_count": 5, "latency": 1.37727952003479}
+{"id": "multiple_ta_128", "result": "```\n[]\n```", "input_token_count": 1030, "output_token_count": 5, "latency": 1.3523743152618408}
+{"id": "multiple_ta_129", "result": "```\n[{\"name\": \"lawsuits_search\", \"arguments\": {\"company_name\": \"Company Name\", \"location\": \"Location\", \"year\": 2024, \"case_type\": \"small_claims\"}}]\n```", "input_token_count": 767, "output_token_count": 49, "latency": 1.81679368019104}
+{"id": "multiple_ta_130", "result": "```\n[]\n```", "input_token_count": 779, "output_token_count": 5, "latency": 1.335838794708252}
+{"id": "multiple_ta_131", "result": "```\n[]\n```", "input_token_count": 834, "output_token_count": 5, "latency": 1.3410463333129883}
+{"id": "multiple_ta_132", "result": "```\n[{\"name\": \"finance.calculate_future_value\", \"arguments\": {\"initial_investment\": 8000, \"rate_of_return\": 0.05, \"years\": 8}}]\n```", "input_token_count": 847, "output_token_count": 46, "latency": 1.7444911003112793}
+{"id": "multiple_ta_133", "result": "```\n[]\n```", "input_token_count": 664, "output_token_count": 5, "latency": 1.335686445236206}
+{"id": "multiple_ta_134", "result": "```\n[]\n```", "input_token_count": 974, "output_token_count": 5, "latency": 1.3054163455963135}
+{"id": "multiple_ta_135", "result": "```\n[]\n```", "input_token_count": 624, "output_token_count": 5, "latency": 1.2808334827423096}
+{"id": "multiple_ta_136", "result": "```\n[]\n```", "input_token_count": 700, "output_token_count": 5, "latency": 1.2938766479492188}
+{"id": "multiple_ta_137", "result": "```\n[]\n```", "input_token_count": 873, "output_token_count": 5, "latency": 1.2672088146209717}
+{"id": "multiple_ta_138", "result": "```\n[]\n```", "input_token_count": 752, "output_token_count": 5, "latency": 1.2967698574066162}
+{"id": "multiple_ta_139", "result": "```\n[]\n```", "input_token_count": 961, "output_token_count": 5, "latency": 1.2696075439453125}
+{"id": "multiple_ta_140", "result": "```\n[]\n```", "input_token_count": 778, "output_token_count": 5, "latency": 1.2772009372711182}
+{"id": "multiple_ta_141", "result": "```\n[]\n```", "input_token_count": 755, "output_token_count": 5, "latency": 1.2846572399139404}
+{"id": "multiple_ta_142", "result": "```\n[]\n```", "input_token_count": 642, "output_token_count": 5, "latency": 1.3055708408355713}
+{"id": "multiple_ta_143", "result": "```\n[]\n```", "input_token_count": 941, "output_token_count": 5, "latency": 1.2819983959197998}
+{"id": "multiple_ta_144", "result": "```\n[{\"name\": \"air_quality\", \"arguments\": {\"location\": \"Lalnath\", \"date\": \"2022-08-16\"}}]\n```", "input_token_count": 567, "output_token_count": 40, "latency": 1.6777141094207764}
+{"id": "multiple_ta_145", "result": "```\n[{\"name\": \"calculate_emissions\", \"arguments\": {\"distance\": 12000, \"fuel_type\": \"petrol\", \"fuel_efficiency\": 20}}]\n```", "input_token_count": 857, "output_token_count": 44, "latency": 1.7155077457427979}
+{"id": "multiple_ta_146", "result": "```\n[]\n```", "input_token_count": 654, "output_token_count": 5, "latency": 1.2618165016174316}
+{"id": "multiple_ta_147", "result": "```\n[]\n```", "input_token_count": 842, "output_token_count": 5, "latency": 1.2483196258544922}
+{"id": "multiple_ta_148", "result": "```\n[]\n```", "input_token_count": 617, "output_token_count": 5, "latency": 1.2475531101226807}
+{"id": "multiple_ta_149", "result": "```\n[]\n```", "input_token_count": 966, "output_token_count": 5, "latency": 1.2536859512329102}
+{"id": "multiple_ta_150", "result": "```\n[]\n```", "input_token_count": 1045, "output_token_count": 5, "latency": 1.2499895095825195}
+{"id": "multiple_ta_151", "result": "```\n[]\n```", "input_token_count": 828, "output_token_count": 5, "latency": 1.2724545001983643}
+{"id": "multiple_ta_152", "result": "```\n[]\n```", "input_token_count": 710, "output_token_count": 5, "latency": 1.2433884143829346}
+{"id": "multiple_ta_153", "result": "```\n[]\n```", "input_token_count": 698, "output_token_count": 5, "latency": 1.2504067420959473}
+{"id": "multiple_ta_154", "result": "```\n[{\"name\": \"US_president.in_year\", \"arguments\": {\"year\": 1861}}]\n```", "input_token_count": 882, "output_token_count": 28, "latency": 1.4925553798675537}
+{"id": "multiple_ta_155", "result": "```\n[]\n```", "input_token_count": 750, "output_token_count": 5, "latency": 1.2308907508850098}
+{"id": "multiple_ta_156", "result": "```\n[]\n```", "input_token_count": 730, "output_token_count": 5, "latency": 1.2042458057403564}
+{"id": "multiple_ta_157", "result": "```\n[]\n```", "input_token_count": 618, "output_token_count": 5, "latency": 1.2166328430175781}
+{"id": "multiple_ta_158", "result": "```\n[]\n```", "input_token_count": 925, "output_token_count": 5, "latency": 1.1902916431427002}
+{"id": "multiple_ta_159", "result": "```\n[]\n```", "input_token_count": 843, "output_token_count": 5, "latency": 1.1948516368865967}
+{"id": "multiple_ta_160", "result": "```\n[]\n```", "input_token_count": 895, "output_token_count": 5, "latency": 1.1721947193145752}
+{"id": "multiple_ta_161", "result": "```\n[]\n```", "input_token_count": 858, "output_token_count": 5, "latency": 1.1776447296142578}
+{"id": "multiple_ta_162", "result": "```\n[{\"name\": \"analyze_structure\", \"arguments\": {\"building_id\": \"B1004\", \"floors\": [2, 3], \"mode\": \"dynamic\"}}]\n```", "input_token_count": 665, "output_token_count": 43, "latency": 1.5676088333129883}
+{"id": "multiple_ta_163", "result": "```\n[]\n```", "input_token_count": 737, "output_token_count": 5, "latency": 1.172684669494629}
+{"id": "multiple_ta_164", "result": "```\n[]\n```", "input_token_count": 931, "output_token_count": 5, "latency": 1.1408085823059082}
+{"id": "multiple_ta_165", "result": "```\n[]\n```", "input_token_count": 776, "output_token_count": 5, "latency": 1.192497730255127}
+{"id": "multiple_ta_166", "result": "```\n[{\"name\": \"concert.search\", \"arguments\": {\"genre\": \"concert\", \"location\": \"Laser City\", \"date\": \"this weekend\"}}]\n```", "input_token_count": 809, "output_token_count": 37, "latency": 1.486433506011963}
+{"id": "multiple_ta_167", "result": "```\n[{\"name\": \"music_generator.generate_melody\", \"arguments\": {\"key\": \"C\", \"start_note\": \"C4\", \"length\": 16, \"tempo\": 120}}]\n```", "input_token_count": 901, "output_token_count": 50, "latency": 1.5698375701904297}
+{"id": "multiple_ta_168", "result": "```\n[{\"name\": \"park_information\", \"arguments\": {\"park_name\": \"Kuveya Palatla\", \"information\": [\"Elevation\", \"Area\", \"Location\", \"Established Year\"]}}]\n```", "input_token_count": 700, "output_token_count": 48, "latency": 1.5604472160339355}
+{"id": "multiple_ta_169", "result": "```\n[]\n```", "input_token_count": 598, "output_token_count": 5, "latency": 1.1703784465789795}
+{"id": "multiple_ta_170", "result": "```\n[{\"name\": \"soccer_stat.get_player_stats\", \"arguments\": {\"player_name\": \"Prajwal\", \"season\": \"2019-2020\"}}, {\"name\": \"soccer_stat.get_player_stats\", \"arguments\": {\"player_name\": \"Prajwal\", \"season\": \"2020-2021\"}}]\n```", "input_token_count": 865, "output_token_count": 81, "latency": 1.6578612327575684}
+{"id": "multiple_ta_171", "result": "```\n[]\n```", "input_token_count": 638, "output_token_count": 5, "latency": 1.155963659286499}
+{"id": "multiple_ta_172", "result": "```\n[]\n```", "input_token_count": 949, "output_token_count": 5, "latency": 1.1297338008880615}
+{"id": "multiple_ta_173", "result": "```\n[]\n```", "input_token_count": 725, "output_token_count": 5, "latency": 1.16414475440979}
+{"id": "multiple_ta_174", "result": "```\n[]\n```", "input_token_count": 640, "output_token_count": 5, "latency": 1.155627965927124}
+{"id": "multiple_ta_175", "result": "```\n[]\n```", "input_token_count": 882, "output_token_count": 5, "latency": 1.1551198959350586}
+{"id": "multiple_ta_176", "result": "```\n[]\n```", "input_token_count": 1136, "output_token_count": 5, "latency": 1.1177828311920166}
+{"id": "multiple_ta_177", "result": "```\n[]\n```", "input_token_count": 791, "output_token_count": 5, "latency": 1.1626276969909668}
+{"id": "multiple_ta_178", "result": "```\n[{\"name\": \"find_card_in_deck\", \"arguments\": {\"rank\": \"Queen\", \"suit\": \"Hearts\"}}]\n```", "input_token_count": 992, "output_token_count": 31, "latency": 1.3675553798675537}
+{"id": "multiple_ta_179", "result": "```\n[{\"name\": \"hospital.locate\", \"arguments\": {\"location\": \"நிகழ்தகவு என்ன\", \"radius\": 100}}]\n```", "input_token_count": 749, "output_token_count": 45, "latency": 1.4187047481536865}
+{"id": "multiple_ta_180", "result": "```\n[]\n```", "input_token_count": 898, "output_token_count": 5, "latency": 1.1399259567260742}
+{"id": "multiple_ta_181", "result": "```\n[]\n```", "input_token_count": 917, "output_token_count": 5, "latency": 1.1165156364440918}
+{"id": "multiple_ta_182", "result": "```\n[]\n```", "input_token_count": 1020, "output_token_count": 5, "latency": 1.1047627925872803}
+{"id": "multiple_ta_183", "result": "```\n[{\"name\": \"recipe_info.get_calories\", \"arguments\": {\"website\": \"Foodnetwork.com\", \"recipe\": \"Makatamata Rajakpuri\"}}, {\"name\": \"recipe_info.get_calories\", \"arguments\": {\"website\": \"Foodnetwork.com\", \"recipe\": \"Makatamata Rajakpuri\", \"optional_meal_time\": \"Breakfast\"}}]\n```", "input_token_count": 723, "output_token_count": 87, "latency": 1.5143368244171143}
+{"id": "multiple_ta_184", "result": "```\n[]\n```", "input_token_count": 773, "output_token_count": 5, "latency": 1.115997076034546}
+{"id": "multiple_ta_185", "result": "```\n[{\"name\": \"board_game.chess.get_top_players\", \"arguments\": {\"location\": \"Paris, France\", \"minimum_rating\": 5, \"number_of_players\": 10}}]\n```", "input_token_count": 676, "output_token_count": 45, "latency": 1.3494396209716797}
+{"id": "multiple_ta_186", "result": "```\n[]\n```", "input_token_count": 677, "output_token_count": 5, "latency": 1.1091196537017822}
+{"id": "multiple_ta_187", "result": "```\n[]\n```", "input_token_count": 870, "output_token_count": 5, "latency": 1.1216754913330078}
+{"id": "multiple_ta_188", "result": "```\n[]\n```", "input_token_count": 960, "output_token_count": 5, "latency": 1.0774273872375488}
+{"id": "multiple_ta_189", "result": "```\n[]\n```", "input_token_count": 630, "output_token_count": 5, "latency": 1.096555471420288}
+{"id": "multiple_ta_190", "result": "```\n[]\n```", "input_token_count": 805, "output_token_count": 5, "latency": 1.0956320762634277}
+{"id": "multiple_ta_191", "result": "```\n[]\n```", "input_token_count": 987, "output_token_count": 5, "latency": 1.1189801692962646}
+{"id": "multiple_ta_192", "result": "```\n[]\n```", "input_token_count": 701, "output_token_count": 5, "latency": 1.1113698482513428}
+{"id": "multiple_ta_193", "result": "```\n[]\n```", "input_token_count": 850, "output_token_count": 5, "latency": 1.1045751571655273}
+{"id": "multiple_ta_194", "result": "```\n[]\n```", "input_token_count": 867, "output_token_count": 5, "latency": 1.1429681777954102}
+{"id": "multiple_ta_195", "result": "```\n[{\"name\": \"calc_heat_capacity\", \"arguments\": {\"temp\": 298, \"volume\": 10}}]\n```", "input_token_count": 885, "output_token_count": 32, "latency": 1.2417583465576172}
+{"id": "multiple_ta_196", "result": "```\n[]\n```", "input_token_count": 845, "output_token_count": 5, "latency": 1.1225361824035645}
+{"id": "multiple_ta_197", "result": "```\n[]\n```", "input_token_count": 964, "output_token_count": 5, "latency": 1.1026356220245361}
+{"id": "multiple_ta_198", "result": "```\n[{\"name\": \"calculate_genotype_frequency\", \"arguments\": {\"allele_frequency\": 0.3, \"genotype\": \"AA\"}}]\n```", "input_token_count": 967, "output_token_count": 34, "latency": 1.183319330215454}
+{"id": "multiple_ta_199", "result": "```\n[]\n```", "input_token_count": 718, "output_token_count": 5, "latency": 1.0941760540008545}
