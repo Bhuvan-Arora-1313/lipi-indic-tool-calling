@@ -1,0 +1,42 @@
+{
+  "language": "ta",
+  "random_seed": 42,
+  "note": "version_a_author/version_b_author are hidden from the adjudicator (blinded as Version A/B).",
+  "assignment": {
+    "multiple_1|SYNO": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_19|PARA": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_26|PARA": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_129|PARA": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Rohan",
+      "version_b_author": "Dhayanidhi"
+    },
+    "multiple_141|SYNO": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_184|SYNO": {
+      "adjudicator": "Rohan",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    },
+    "multiple_186|PARA": {
+      "adjudicator": "Dhayanidhi",
+      "version_a_author": "Dhayanidhi",
+      "version_b_author": "Rohan"
+    }
+  }
+}

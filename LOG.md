@@ -1517,3 +1517,48 @@ arrives.
   - This is reported to the user. Tamil Cycle 2 is not built until the user
     decides how to treat the Tamil annotations (independent pair vs. one
     shared review).
+- **Independence:** the user asked the Tamil reviewers, who confirmed they
+  worked independently. Per the user, the Tamil annotations (NO and PARA/SYNO)
+  are treated as two independent reviews. The overlap statistics above stay
+  on record.
+
+### 2026-10-20 -- Tamil PARA/SYNO Cycle 1 classified, Cycle 2 built
+
+- **Rule** (user decision; it will also be used for Hindi and Gujarati
+  PARA/SYNO), applied per item in order:
+  1. both reviewers wrote the same correction -> use it;
+  2. anyone ticked Same-as-NO -> Cycle 2;
+  3. IndicTrans2 accepted by both -> IndicTrans2, chosen first because the
+     FT-NO gold is IndicTrans2-based, so there is no MT-engine switch between
+     NO and PARA/SYNO;
+  4. Google accepted by both -> Google;
+  5. otherwise -> Cycle 2.
+- **Script:** `translation/generate_cycle2_parasyno_translation.py`, generic
+  per language.
+  - It validates first: 400/400 items per reviewer, both verdicts set,
+    read-only columns equal to the template, matching item sets.
+- **Result (400 items):**
+  - agreed human correction 168;
+  - IndicTrans2 accepted by both 218;
+  - Google accepted by both 7;
+  - Cycle 2: 7.
+  - All 25 Same-as-NO rows were already covered by an agreed correction
+    (step 1), so none reached step 2.
+- **Outputs:**
+  - `data/reviews/tamil_parasyno_translation_cycle1_classification.json`:
+    per-item step and final text.
+  - `data/reviews/tamil_parasyno_translation_cycle2_assignment.json`:
+    seed 42, balanced, Version A/B blinded.
+  - `data/review_sheets/cycle2/Tamil_ParaSyno_Cycle2_Rohan.xlsx`: 4 items,
+    26 PARA, 129 PARA, 141 SYNO, 184 SYNO.
+  - `data/review_sheets/cycle2/Tamil_ParaSyno_Cycle2_Dhayanidhi.xlsx`:
+    3 items, 1 SYNO, 19 PARA, 186 PARA.
+- **Cycle 2 sheet layout:** the English source, the final Tamil NO
+  translation for reference, both candidates and the blinded Version A/B
+  corrections. Decision options: IndicTrans2 / Google / Version A /
+  Version B / Neither - write new.
+  - Checked: no empty cells, A/B map to the right reviewers, and no reviewer
+    names appear.
+- **Data issue, recorded, not fixed:** on multiple_186 PARA, Rohan marked
+  IndicTrans2 Correct, but his note says it turns 'brownie' into fruit juice.
+  Likely a mis-click. The item goes to Cycle 2 anyway.

@@ -275,6 +275,8 @@ saved outputs to regenerate the post-fix score files before citing.
 - [ ] Run models on `multiple_gu` (all 14 open-weights + OpenRouter batch), copy results back, fill the GU column in the short paper.
 - [ ] Update the papers' Gujarati MT-correction figure: preliminary ~32.5% -> final 35.0%.
 - [x] Gujarati PARA/SYNO dual-translation review sheet regenerated with the resolved NO reference (2026-10-20): `data/review_sheets/Gujarati_ParaSyno_Translation_review_template.xlsx`. Upload to Google Sheets and duplicate per reviewer.
+- [x] Tamil PARA/SYNO Cycle 1 returned and classified (2026-10-20): 393/400 resolved by the agreed rule. Cycle 2 sheets built for 7 items (`data/review_sheets/cycle2/Tamil_ParaSyno_Cycle2_{Rohan,Dhayanidhi}.xlsx`), to upload.
+- [ ] Build the resolve step for PARA/SYNO translations once Tamil Cycle 2 returns, then the `multiple_ta_para` / `multiple_ta_syno` test categories.
 - [x] Midterm short paper (4-page ACL version with placeholders) built 2026-10-13: `reports/midterm/Indic_ToolCalling_Midterm_Short_Overleaf.zip`. See LOG.md 2026-10-13.
 - [ ] Confirm the acknowledgements wording (BITS seed grant / Postman / APPScAI) with the PI before submitting the short paper.
 - [x] Reference check for the short paper (2026-10-13): all 24 cited entries verified by script against official records (authors, year, link). See `reports/midterm/citation_check_2026-10-13.md`.
