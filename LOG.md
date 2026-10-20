@@ -946,3 +946,527 @@ worth a closer error-taxonomy look, not yet done. Real total OpenRouter
 cost for this entire batch (all test calls + full 2400-call run):
 $0.487, checked directly via OpenRouter's own usage API before and
 after, comfortably under the user's $3-4 ceiling for this phase.
+
+## 2026-09-19 -- Gujarati Cycle 1 audit + Cycle 2 built, Hindi/English PARA-SYNO Cycle 2 resolved, PARA/SYNO dual-source Indic translation, cross-language NO analysis
+
+**Gujarati Cycle 1 checked (Samarth Patel, Dhruv Kunvarani), Cycle 2 built.**
+200/200 rows each, structurally clean. Bucket counts: 1 (both Correct)
+134, 2 (identical fix) 1, 3 (asymmetric) 51, 4 (different fixes) 14 --
+by far the highest disagreement rate of any language reviewed so far
+(32.5% of items needed Cycle 2, vs. 6.5-8% for Hindi/Tamil). One data
+anomaly investigated and resolved as harmless: `multiple_154`'s English
+Source reference column differed between the two reviewers' copies
+("What was..." in Samarth's vs. "Who was..." in Dhruv's); checked
+against `data/translations/multiple_translations.jsonl` and the raw
+`BFCL_v4_multiple.json` -- Dhruv's copy is canonical, Samarth's had
+drifted in a read-only reference column only, doesn't affect either
+reviewer's actual Translation judgment.
+
+**New methodology rule, user-confirmed, not previously needed:** Dhruv
+volunteered a "Better translation" suggestion on 9 items despite marking
+them Correct (no issue checkbox, no claim the original was wrong -- a
+genuine stylistic upgrade, not the Hindi/Anshul-style form confusion).
+6 of these are bucket 1 (Samarth also said Correct) and would otherwise
+resolve with no Cycle 2 at all, discarding a free human-expert
+improvement. Per the user: prefer Dhruv's version directly for these 6
+(`multiple_11, 34, 35, 40, 55, 68`) -- no adjudication needed since
+neither reviewer actually disagrees, recorded as its own traceable
+category (`prefer_dhruv_better_translation` in
+`gujarati_cycle1_classification.json`) rather than silently merged into
+plain bucket-1. The other 3 similar-looking items (`multiple_6, 12, 15`)
+stay in bucket 3 as normal, since Samarth actually said Incorrect there.
+`translation/generate_cycle2_gujarati.py` wrote
+`Gujarati_Cycle2_Samarth.xlsx` (36 bucket-3 + 7 bucket-4) and
+`Gujarati_Cycle2_Dhruv.xlsx` (15 bucket-3 + 7 bucket-4); uploaded to
+Google Sheets, Cycle 2 responses not yet returned.
+
+**Hindi Cycle 2 resolved.** Jayant initially returned his workbook with
+Bucket 4's Decision column blank on all 3 assigned items (`multiple_64,
+99, 106`) -- caught by `resolve_cycle2_hindi.py`'s validation (reports
+which items are missing rather than silently treating blank as a
+decision), resolved everything else in the meantime, re-ran clean once
+he filled them in. Also hit a filename drift (reviewer's re-download had
+a doubled space vs. the original), fixed by matching the actual filename
+on disk rather than assuming it stays fixed across re-downloads. Final:
+`data/reviews/hindi_final_resolved.jsonl`, 200/200 rows. Bucket 3: 3
+Accept fix / 5 Original stands. Bucket 4: 4 Version A / 1 Version B.
+Reviewer-behavior write-up in `hindi_cycle2_reviewer_behavior.md` --
+see cross-language comparison below.
+
+**English PARA/SYNO Cycle 2 resolved**, both reviewers' workbooks
+complete on first return. `data/reviews/parasyno_final_resolved.jsonl`,
+400/400 rows. Bucket 3: 2 Accept fix / 4 Original stands. The one
+auto-resolved bucket-4 item (`multiple_72`) used Jayant's uncontested
+fix as planned.
+
+**Built the PARA/SYNO Indic translation pipeline (Hindi, Tamil,
+Gujarati), two independent MT sources.** User wanted an IndicTrans2
+candidate and a Google Translate candidate per item, reviewer picks
+whichever is correct rather than being forced to a single "the"
+translation -- and flagged upfront that this creates a real edge case:
+what if the two reviewers each validate a *different* source as
+correct? Decided this isn't actually a conflict needing new machinery --
+it's just bucket 3 (asymmetric) on each source's own independent 4-bucket
+classification, reusing the exact Cycle 1/Cycle 2 process already built;
+if both sources end up validated Correct, that's a legitimate outcome,
+and picking a single final text between two valid options is a later,
+separate decision.
+
+Considered and rejected browser automation of the Google Translate web
+UI (typing into the page, scraping the result) to avoid an API key --
+fragile (breaks on page/selector changes, can trigger CAPTCHAs) and
+against Google Translate's own terms of service for programmatic access.
+Used the real Cloud Translation API instead: free tier (500K chars/month)
+covers this volume with room to spare, confirmed $0 real cost after the
+full run. Setup wasn't friction-free -- hit `API_KEY_SERVICE_BLOCKED`
+twice, first because the key was created as a "Maps Platform API Key"
+(restricted away from Cloud Translation by default) and second because
+the project had no billing account linked (Cloud Translation requires
+one even to stay within the free tier); both fixed by the user in Cloud
+Console, verified live before running anything at scale.
+
+Also caught and fixed a staleness bug before translating: the normal
+IndicTrans2 source file (`en_multiple_perturbations.jsonl`) still held
+the *pre-review* PARA/SYNO English text for the dozen-plus items
+corrected during the English Cycle 2 round. Both `translate_indictrans2.py`
+and the new `translate_google.py` now source PARA/SYNO text from
+`parasyno_final_resolved.jsonl` instead (NO is unaffected, never
+reviewed at the English level). Ran both translators for Hindi, Tamil,
+Gujarati (1200 rows each); ran `check_translation_fidelity.py` (now
+parameterized via `--input`/`--output`, previously hardcoded) against
+both -- IndicTrans2 flagged 6.7% of all its rows, Google Translate 3.2%
+of PARA/SYNO rows.
+
+**Second review-sheet iteration, based directly on user feedback:** the
+first dual-candidate sheet only showed PARA and SYNO side by side, and
+the user pointed out a real translation-specific failure mode neither
+English-level review nor per-candidate correctness judging can catch --
+a translation model can independently collapse two genuinely different
+English sentences (NO vs. PARA) into the same or near-identical target-
+language text, defeating the entire purpose of the perturbation even
+when both the English PARA and its translation are individually
+"correct". Rebuilt `generate_review_sheets_parasyno_translation.py` to
+show a third, grey read-only reference row (NO -- English source +
+already-resolved translation) above each PARA/SYNO pair, and added a new
+issue-type checkbox, "Same as NO Translation", so reviewers can flag it
+directly. Gujarati's NO isn't Cycle-2-resolved yet, so its reference row
+falls back to the pre-review IndicTrans2 NO text with an explicit
+"NOT YET Cycle-2-resolved" marker -- the script detects and reports this
+automatically, to be re-run once Gujarati's NO resolves.
+
+**Cross-language NO translation analysis** (Hindi/Tamil fully resolved,
+Gujarati Cycle-1-only):
+
+| Language | Bucket 1 (both Correct) | Bucket 2 (ident. fix) | Bucket 3 | Bucket 4 | Cycle-1 agreement | % needing any correction |
+|---|---|---|---|---|---|---|
+| Hindi | 186 (93.0%) | 1 (0.5%) | 8 (4.0%) | 5 (2.5%) | 93.5% | 7.0% |
+| Tamil | 126 (63.0%) | 58 (29.0%) | 8 (4.0%) | 8 (4.0%) | 92.0% | 37.0% |
+| Gujarati (Cycle 1 only) | 134 (67.0%) | 1 (0.5%) | 51 (25.5%) | 14 (7.0%) | 67.5% | 32.5%* |
+
+*Gujarati's figure is a preliminary upper bound -- some bucket-3 items
+will resolve to "Original stands" (no correction) once Cycle 2 returns.
+
+Automated QA (number/marker fidelity) flag rate on the NO condition is
+nearly identical across all three languages (Hindi 7.0%, Tamil 6.5%,
+Gujarati 7.0%) -- yet the actual human-judged correction rate differs by
+a factor of 5x (Hindi 7% vs. Tamil/Gujarati ~33-37%). Checked directly
+whether QA-flagged status predicts human correction: for Hindi, being
+QA-clean is a fairly reliable signal (only 3.2% of QA-clean items still
+needed correction); for Tamil it isn't (33.2% of QA-clean items needed
+correction anyway). Conclusion: the automated checker only catches a
+narrow numeric/marker-drift failure mode; Hindi's IndicTrans2 output
+quality problems are mostly confined to that narrow band, while Tamil's
+(and likely Gujarati's) are predominantly semantic/lexical errors the
+checker has no way to see. This gives a plausible mechanistic reading of
+why Tamil showed the largest English-vs-Tamil accuracy gap of any model
+tested (see 2026-09-16 above): the raw MT quality gap between Hindi and
+Tamil, visible here at the human-review stage, likely propagates
+straight through to downstream model accuracy.
+
+Reviewer-behavior comparison (Hindi vs. Tamil Cycle 2, see both
+`*_cycle2_reviewer_behavior.md` files for full detail): the two language
+pairs show opposite behavioral leans on both bucket 3 (Tamil's
+adjudicator reversed his own call 62.5% of the time; Hindi's held their
+own call 62.5% of the time) and bucket 4 (Tamil's adjudicators picked
+the *other* reviewer's fix 85.7% of the time; Hindi's picked their *own*
+fix 60% of the time). Both samples are small (n=5-13) -- flagged
+explicitly as a descriptive contrast, not a claim that either pattern
+generalizes, and worth rechecking once Gujarati and PARA/SYNO Cycle 2
+data exist.
+
+## 2026-09-19/20 (backfilled 2026-09-29) -- 14-model open-weights batch across EN / HI / TA / PARA / SYNO
+
+*Backfilled on 2026-09-29: this run happened in an earlier session (then
+working from `Desktop/Agentic AI/BFCL-eval`, since renamed) and was never
+logged, and its result/score files had never been copied back to this
+machine. Numbers below are taken from the actual score files, not from
+chat.*
+
+**Test categories built.** `translation/build_hindi_test_category.py` ->
+`bfcl_eval/data/BFCL_v4_multiple_hi.json` (from
+`hindi_final_resolved.jsonl`); `translation/build_parasyno_test_categories.py`
+-> `BFCL_v4_multiple_para.json` / `BFCL_v4_multiple_syno.json` (from
+`parasyno_final_resolved.jsonl`). All three registered in
+`category_mapping.py`, each with a `possible_answer` file whose ground
+truth is inherited unchanged from the English source.
+
+**Model set: 15 open-weights models, 5 families x small/mid/large** --
+Qwen3 (1.7B/8B/32B), Gemma3 (4B/12B/27B), Falcon3 (3B/7B/10B), Llama-3.x
+(3.2-3B / 3.1-8B / 3.3-70B), Hammer2.1 (0.5B/1.5B/7B). Note this is a
+different set from the 2026-09-16 OpenRouter Tamil batch; only Qwen3-32B
+is in both.
+
+**Where it ran.** `translation/gen_slurm_jobs.py` wrote SLURM chain scripts
+(`generated_slurm/chainA..K`), each chain holding its GPU for all of its
+models. Sharanga's V100 partition turned out to be monopolized by another
+lab's multi-day jobs, and the other partitions needed explicit QOS values
+that weren't known up front (`gpulimit`, `qos_gpu_a100`, `qos_gpu_h100`).
+So the 12 small/mid models were moved to **bits-gpu** (single 48GB card,
+shared with other users, results in `~/repo` there). The 3 large models
+went back to **Sharanga** (H200s, chains G/H/I/K; results in
+`/scratch/kudhru/dhruvkumar_indic_toolcalling/repo`).
+
+**Environment bugs fixed along the way** (each confirmed from an actual
+error trace):
+- missing `soundfile` crashed the `bfcl` CLI for every model;
+- a stale `REMOTE_OPENAI_BASE_URL` in a copied `.env` silently sent every
+  request to Ollama instead of the local vLLM server (it's legitimately
+  needed on this Mac -- strip it whenever copying `.env` to a GPU box);
+- vLLM's V1 engine hung at startup, fixed with `VLLM_USE_V1=0`;
+- `vllm==0.8.5` vs `transformers==4.57.6` `sliding_window_pattern` rename
+  broke Gemma3; patched inside the remote venvs only, not in this repo;
+- Gemma3/Llama-3.2 OOM and KV-cache failures on the shared GPU;
+- a CUDA pinned-memory error after several processes were killed abruptly;
+- Sharanga's `.env` had a missing/stale `HF_TOKEN` for gated models.
+
+The last three are fixed in `base_oss_handler.py` via `--max-num-seqs 16`,
+`--max-model-len min(ctx, 8192)` and `--swap-space 0`, applied to every
+local-vLLM model. None of these changes model outputs; BFCL prompts are a
+few hundred tokens.
+
+**Llama-3.3-70B not run**: the HF token's account has no access grant for
+that specific gated repo (Meta gates each size separately). Still blocked
+on the user clicking "Agree" on the HF model page.
+
+**Results copied back 2026-09-29.** Copied via rsync from bits-gpu (12
+models x 5 categories) and Sharanga (Qwen3-32B, Gemma3-27B), staged, then
+merged into `result/` and `score/`. Deliberately skipped:
+- Sharanga's `Qwen_Qwen3-8B-FC`, a 5-question smoke run that would have
+  clobbered the full bits-gpu run;
+- the aggregate `data_*.csv` files.
+
+Every file that overlapped with an existing local copy was byte-identical.
+
+| Model | EN | HI | TA | PARA | SYNO |
+|---|---|---|---|---|---|
+| Qwen3-1.7B | 92.5 | 74.5 | 60.0 | 89.0 | 86.0 |
+| Qwen3-8B | 96.0 | 77.5 | 82.5 | 91.5 | 86.5 |
+| Qwen3-32B | 96.5 | 75.0 | 79.5 | 91.5 | 90.0 |
+| Gemma3-4B | 87.5 | 59.0 | 64.5 | 86.0 | 78.5 |
+| Gemma3-12B | 94.0 | 77.0 | 82.5 | 90.0 | 86.5 |
+| Gemma3-27B | 92.5 | 66.5 | 72.0 | 89.5 | 87.0 |
+| Falcon3-3B | 68.5 | 13.5 | 7.5 | 62.0 | 57.5 |
+| Falcon3-7B | 89.0 | 52.0 | 33.5 | 86.0 | 84.5 |
+| Falcon3-10B | 92.5 | 64.0 | 42.0 | 89.0 | 84.5 |
+| Llama-3.2-3B | 92.5 | 40.5 | 41.5 | 87.0 | 80.0 |
+| Llama-3.1-8B | 53.5 | 28.0 | 36.0 | 52.5 | 48.5 |
+| Hammer2.1-0.5B | 80.5 | 16.5 | 8.0 | 72.5 | 52.0 |
+| Hammer2.1-1.5B | 92.0 | 41.5 | 25.0 | 87.0 | 77.5 |
+| Hammer2.1-7B | 92.5 | 66.0 | 44.0 | 88.5 | 75.0 |
+
+All 70 cells are n=200. All of them match the table reported in chat on
+2026-09-20.
+
+**Observations (descriptive; no error taxonomy run on these yet):**
+- **Translation hurts far more than perturbation.** PARA/SYNO cost 0-8pt
+  vs. EN for most models (Hammer2.1 SYNO up to 28.5pt is the outlier); HI/TA cost 13.5-72.5pt.
+- **Hindi vs. Tamil splits by family.** Tamil is worse than Hindi for
+  Falcon3, Hammer2.1 and Qwen3-1.7B, often by a lot (Hammer-1.5B 41.5 vs.
+  25.0). Tamil is slightly *better* for Qwen3-8B/32B, Gemma3 (all sizes)
+  and Llama-3.x. Worth cross-checking against the 5x Hindi/Tamil MT-quality
+  gap found at review time (2026-09-19): if raw MT quality were the whole
+  story, Tamil should be uniformly worse.
+- **SYNO is consistently harder than PARA**, sharply so for Hammer2.1
+  (0.5B: 72.5 vs. 52.0; 7B: 88.5 vs. 75.0).
+- **Llama-3.1-8B's EN score (53.5) is anomalously low** next to
+  Llama-3.2-3B (92.5). This smells like a handler/format issue rather than
+  genuine capability; spot-check its raw outputs before trusting its row.
+
+**Sarvam-M score files are stale.** The Sarvam-M score files, both local
+and on Sharanga, are dated 2026-09-10 09:52 and read 79.5% EN / 62.0% TA.
+That is *before* the `decode_ast` bracket fix (commit `a8d916d`, 09:54).
+The post-fix 95.5% / 73.5% reported on 2026-09-16 does not exist as a
+score file anywhere. The fix lives in the handler's decode step, so the
+saved raw outputs should only need re-evaluating (`bfcl evaluate`), not
+re-generating. Not done yet.
+
+## 2026-09-29 -- Midterm report (ACL-format LaTeX, Overleaf zip)
+
+Wrote the midterm paper: `reports/midterm/Indic_ToolCalling_Midterm_Overleaf.zip`
+(upload to Overleaf, set Compiler = XeLaTeX), plus a compiled preview,
+`reports/midterm/Indic_ToolCalling_Midterm_preview.pdf` (12 pages).
+- Format: ACL `preprint` option. Structure follows
+  `LLM_Course_Project_Paper_Template.pdf`.
+- Authors: Bhuvan Arora, Dhayanidhi Purushothaman, S Rohan, Jayant Kapoor, Anshul Gupta,
+  Dhruv Kunvarani, Samarth Patel, Dhruv Kumar.
+- Figures: 10, all TikZ/pgfplots.
+- Hindi example: Noto Devanagari/Tamil fonts are bundled so it renders in
+  native script.
+
+**New analysis done for the paper** (saved for reproducibility):
+- **Error breakdown for all 14 models, HI and TA.**
+  `translation/analyze_error_taxonomy_all.py` ->
+  `data/reviews/all_models_hi_ta_error_taxonomy.json`. It generalises
+  `analyze_tamil_error_taxonomy.py`; the counts are
+  syntax / function / language-mismatch / other-value / EN-correct-on-same-question.
+  It reproduces the earlier Qwen3-32B TA numbers exactly (5/19/17, 38/41).
+- Findings:
+  - For the 4 strongest models (Qwen3-8B/32B, Gemma3-12B/27B), language
+    mismatch = 54% of HI and 43% of TA failures.
+  - Small models fail structurally: Hammer2.1 on function/count, Falcon3-3B
+    on syntax.
+  - Pooled, 75.7% (HI) and 77.8% (TA) of failures are on questions the same
+    model gets right in English.
+- **Exact paired McNemar tests** -> `data/reviews/all_models_mcnemar.txt`.
+  - EN vs. HI/TA: significant for all 14 models.
+  - SYNO: 13/14. PARA: 7/14.
+  - HI vs. TA: Tamil significantly worse for 7 models (Qwen3-1.7B, Falcon3,
+    Hammer2.1) and significantly better for 2 (Gemma3-12B, Llama-3.1-8B).
+- **Cohen's kappa on Cycle 1 Correct/Incorrect:** Hindi .58, Tamil .91,
+  Gujarati .22, EN PARA/SYNO .39. Computed from bucket counts plus
+  bucket-3 direction.
+- **Llama-3.1-8B's low EN score explained:** 82 of its 93 EN failures are
+  `type_error:simple`. It serialises list/tuple arguments as strings
+  (`'[3, 4]'`), so this is a formatting artefact, not capability. Flagged
+  with a dagger in the paper.
+
+**Correction to 2026-09-29 chat claim:** the HI-vs-TA split is 7 vs. 7
+models, not "Hindi better for 11 of 14".
+
+**Note:** the paper reports Sarvam-M as 95.5 / 73.5 (post-fix, footnoted).
+Its score files still need regenerating -- see the open item in PROGRESS.md.
+
+**Scope change (user, 2026-09-29):** languages are now English + Hindi,
+Gujarati and Tamil only. Marathi, Bengali and Santali/Bodo are dropped.
+- **Paper reframed:** it no longer claims a five-language design that
+  isolates resource, script and family one at a time. Contrasts are now:
+  - family: Tamil vs. Hindi/Gujarati;
+  - script: Hindi vs. Gujarati (same family; resource also differs);
+  - script alone: native vs. Romanized, within one language.
+
+  Resource level is moved to Limitations.
+- **Paper updates:** new title; language-design figure redrawn; languages
+  table, remaining plan and roadmap updated. Gujarati is now a core
+  language, not an add-on.
+- **Files:** zip and preview PDF rebuilt (12 pages), and a clean-unzip
+  compile was verified.
+- **Unchanged:** `Indic_ToolCalling_Project_Plan.md` is kept as the
+  original plan. The decision is recorded in PROGRESS.md under Open
+  decisions.
+
+## 2026-10-13 -- Midterm short paper (4-page ACL version) + reference check
+
+Condensed the 12-page midterm report into a 4-page ACL short paper with
+placeholders for experiments that have not run yet.
+- **Files** (in `reports/midterm/`, the 12-page originals are untouched):
+  - `Indic_ToolCalling_Midterm_Short_Overleaf.zip` (XeLaTeX, as before)
+  - `Indic_ToolCalling_Midterm_Short_preview.pdf` (10 pages: body ends on
+    page 4 with the Conclusion. Limitations, references and Appendices A-H
+    follow.)
+  - `citation_check_2026-10-13.md` (reference-hallucination check report)
+- **Writing rules:** followed the group guide `Research @ BITS Pilani(1).docx`
+  (project root). No semicolons, dashes or joining colons, no banned words,
+  sentences kept to about 25 words, results organised as RQ1-RQ4. Checked by
+  script.
+- **Placeholders:** `\tbd` (grey TBD table cell) and `\pending{...}` (orange
+  bracketed prose), both defined in the preamble.
+- **Structure:** the main body keeps Fig. 1 (Hindi example), the pipeline
+  figure, the accuracy table (GU column and pending models shown as TBD), a
+  compact six-model error figure, and an MLCL grid table (PAR, FT-PARA/SYNO,
+  FT-Rom as TBD). Everything else moved to the appendix.
+- **Numbers re-verified** against local `score/` files: all 70 cells of the
+  14-model table match. Error-taxonomy percentages (54%/43%, 75.7%/77.8%) were
+  recomputed from Table 7 counts.
+- **Corrections to the 2026-09-29 report:**
+  - "SYNO harder than PARA for 13 of 14 models" was wrong. SYNO accuracy is
+    below PARA for all 14. 13/14 is the EN-vs-SYNO significance count.
+  - Chauhan et al. (2026) do not "name the same phenomenon". Their definition
+    treats the user's language as correct. The paper now calls it related
+    concurrent work.
+  - Dropped the claim that non-reasoning decoding "matches MLCL's setting".
+    MLCL does not say this.
+- **References:** a subagent ran the guide's hallucination-check prompt on all
+  23 entries. All are real, and 7 had wrong metadata, now fixed:
+  - Published versions now used: MLCL -> ACL 2026 Long, Gorilla -> NeurIPS
+    2024, Hammer -> ICLR 2025.
+  - Toolformer: missing author added.
+  - Qwen3: real author list.
+  - Falcon3 and Sarvam-M: real titles.
+  - All citation keys unchanged.
+- **Acknowledgements:** added the BITS line from the guide (New Faculty Seed
+  Grant, Postman Innovation Labs, APPScAI). Wording still to be confirmed
+  with the PI.
+- **Tooling:** installed TinyTeX in `~/Library/TinyTeX` (no sudo, not on
+  PATH). Use `~/Library/TinyTeX/bin/universal-darwin/xelatex`.
+
+### 2026-10-13 (later) -- Short paper renamed LIPI, two related benchmarks cited
+- **New title:** "LIPI: Right Tool, Wrong Script in Indic-Language LLM Tool
+  Calling". It was "Script and Language Family Effects on LLM Tool Calling in
+  Hindi, Gujarati and Tamil".
+  - The benchmark is named LIPI (Language-Induced Parameter Inconsistency),
+    after the Hindi word for script.
+  - A web search found no NLP benchmark with this name. "LIPs" (Language
+    Invariant Properties) is a different thing.
+- **Added two related works that were missing.** Both were read in full, and
+  the claims about them were checked. See the addendum in
+  `reports/midterm/citation_check_2026-10-13.md`.
+  - **BFCL-Hi** (Kamath et al., BHASHA 2025 workshop, ACL Anthology
+    2025.bhasha-1.5). A Hindi BFCL, machine-translated and not human-evaluated.
+  - **VoiceAgentBench** (Jain et al., arXiv 2510.07978). A spoken
+    tool-calling benchmark in six Indic languages, with LLM-translated queries
+    and an LLM judge.
+- **Space:** dropped the GLUECoS sentence, so GLUECoS is no longer cited. It
+  stays in the .bib file, but bibtex leaves it out of the reference list.
+- **Layout:** the body still ends on page 4. Zip and preview were rebuilt and
+  the clean-unzip compile was verified.
+- **Acronym:** LIPI is now expanded in the abstract too, where it first appears, as well as in the introduction.
+- **Abstract and intro reworded** (user feedback):
+  - The languages are now described by purpose: chosen so that the effects
+    of script and language family can be separated.
+  - Annotator count dropped from the abstract ("human-verified").
+  - Accuracy drops restated as failure-rate ratios versus English. Means
+    over 14 models, computed from `score/`:
+    - HI: 3.60x the English failure rate.
+    - TA: 4.01x.
+    - SYNO: 1.81x.
+    - PARA: 1.32x.
+    - English failure rate: 12.86%.
+  - RQ1 states the same ratios, so the abstract claims trace to the results.
+- **Body condensed so it can absorb future results** (user request). The
+  body now ends partway down page 4's left column, about 3.2 pages, which
+  leaves about 0.8 pages for real results once the placeholders are filled.
+  - Intro cut from 5 paragraphs to 3, with one-line contribution bullets.
+  - Related Work: survey sentences merged, but both subsections keep a survey
+    paragraph and a differentiation paragraph.
+  - Fig. 1: code boxes abbreviated with "...", caption says so.
+  - Pipeline caption: shortened to one line.
+  - Moved to the appendix:
+    - Hammer2.1 count, 75.7%/77.8% pooled figures and Gemma3-27B vs. 12B
+      -> Appendix E.
+    - SYNO < PARA for all 14 models -> Appendix F.
+  - Style audit re-run: no semicolons, dashes, joining colons, banned
+    words or sentences over 25 words in the body.
+- **Link check of all citations (short paper).**
+  - **Before:** only 8 of the 24 cited references had a link. 16 had no
+    clickable link.
+  - **Added:** the official links for those 16 (ACL Anthology, arXiv, PMLR,
+    ICLR proceedings, OpenReview, DOI).
+  - **Verified:** every link in the compiled PDF was extracted and opened,
+    and its page title or Crossref record was compared with the cited title.
+    All 24 match.
+  - **403 responses:** the SAGE (Cohen) and ACM (vLLM) DOIs return 403 to
+    scripts, but doi.org redirects both to the right article.
+  - **OpenReview** (IndicTrans2) blocks scripts. Its ID was confirmed in the
+    official TMLR paper list.
+  - **Table:** in `reports/midterm/citation_check_2026-10-13.md`.
+- **Falcon3 citation:** replaced with TII's official recommended citation ("The Falcon 3 Family of Open Models", Falcon-LLM Team, 2024). There is still no Falcon3 paper. The Falcon3 and Sarvam-M links now render as clickable titles.
+- **Full bibliography metadata re-check.** Every cited entry's authors,
+  year and link were compared with its official record, and all 24 match.
+  - Eight "et al." entries now carry their full official author lists.
+  - VoiceAgentBench year changed to 2025.
+  - Recorded in `reports/midterm/citation_check_2026-10-13.md`.
+- **Reference checks are now Claude's job.** The user said (2026-10-13)
+  they will not check references by hand.
+
+## 2026-10-20 -- Gujarati Cycle 2 returned and validated
+
+- **Files.** Samarth Patel and Dhruv Kunvarani returned Cycle 2. The Google
+  Sheets downloads replaced the Cycle 1 files under the same names:
+  `Gujarati_review_Samarth_Patel.xlsx` and
+  `Gujarati Review - Dhruv Kunvarani.xlsx`.
+  - Each workbook now holds the Cycle 1 sheet plus the "Bucket 3" and
+    "Bucket 4" Cycle 2 tabs.
+  - The old Cycle 1 files were never in git, so their earlier copies are gone.
+- **Check script:** `translation/validate_cycle2_gujarati.py` (read-only).
+- **Cycle 1 content is unchanged** since the Cycle 2 sheets were built:
+  - 200/200 rows per reviewer, valid Correctness values.
+  - Recomputed buckets 134/1/51/14 match `gujarati_cycle1_classification.json`
+    item by item.
+  - Every original translation, proposed fix and Version A/B text sent in
+    Cycle 2 still matches the Cycle 1 tab.
+  - The 6 prefer-Dhruv items and the multiple_154 fingerprint are intact.
+- **Cycle 2 is complete and valid:**
+  - Bucket 3: 51/51. Samarth adjudicated 36, Dhruv 15.
+  - Bucket 4: 14/14, and each was answered by the adjudicator in
+    `gujarati_cycle2_bucket4_assignment.json` (7 each).
+  - All decisions are valid, and both "Neither - write new" rows have text.
+  - No read-only column was edited, and there are no stray cells.
+  - The only note is Dhruv on multiple_108, where "ઘન મીટર" replaces m³.
+    The gold call needs only volume=10, so this can't affect scoring.
+- **Outcomes.**
+  - Bucket 3: Accept fix 48, Original stands 2 (multiple_19, multiple_32),
+    Neither 1 (multiple_48).
+  - Bucket 4: Version A 9, Version B 4, Neither 1 (multiple_108).
+- **Reviewer behaviour, to record (not errors):**
+  - Bucket 3 acceptance is 48/51, against Tamil 5/8 and Hindi 3/8. Dhruv
+    accepted all 15 of Samarth's fixes, and Samarth accepted 33 of 36.
+  - In bucket 4, adjudicators picked their own blinded fix 9/13 times
+    (Dhruv 5/6, Samarth 4/7). Tamil was the opposite, 1/7 own.
+  - Both samples are small.
+- **Next:** `resolve_cycle2_gujarati.py`, then `gujarati_final_resolved.jsonl`
+  and the `multiple_gu` test category. Not built yet.
+
+### 2026-10-20 (later) -- Gujarati resolved, `multiple_gu` built, Gujarati PARA/SYNO sheet ready
+
+- **Resolve script:** `translation/resolve_cycle2_gujarati.py`, modelled on the
+  Hindi one.
+  - It re-validates first: Cycle 1 buckets against the saved classification,
+    Cycle 2 ids, adjudicators, decisions, and Version A/B text against the
+    Cycle 1 fixes. Everything was clean.
+  - Output: `data/reviews/gujarati_final_resolved.jsonl` (200/200) and
+    `data/reviews/gujarati_cycle2_decisions.json`.
+  - Resolutions: both_correct 128, prefer-Dhruv better translation 6,
+    identical fix 1, Cycle 2 bucket 3 51, bucket 4 14.
+  - The final text differs from the raw IndicTrans2 output in **70/200 items
+    (35.0%)**, including the 6 stylistic upgrades. This replaces the
+    preliminary ~32.5% in the papers. Hindi is 7.0% and Tamil 37.0%.
+- **Open decision for the user: multiple_108 vs multiple_195.**
+  - BFCL `multiple` has 4 pairs of identical English queries with different
+    candidate functions: 108/195, 109/196, 110/197, 111/198.
+  - Hindi and Tamil translate each pair identically. Gujarati does too,
+    except 108/195.
+  - 195 is the Cycle 1 identical fix ("10 m^3"). 108 is Dhruv's Cycle 2
+    rewrite ("10 ઘન મીટર", standard physics terms).
+  - Both are human-verified. They were left as reviewed, pending the user.
+- **New test category `multiple_gu`:** built with
+  `translation/build_gujarati_test_category.py` into
+  `bfcl_eval/data/BFCL_v4_multiple_gu.json` and the matching possible_answer
+  file, then registered in `category_mapping.py`.
+  - 200 items. Functions and ground truth match English, and the structure
+    matches `multiple_hi`.
+  - BFCL's own `load_dataset_entry('multiple_gu')` loads all 200.
+  - No model has been run on it yet.
+- **Gujarati PARA/SYNO review sheet:**
+  - `generate_review_sheets_parasyno_translation.py` now reads
+    `gujarati_final_resolved.jsonl` for the NO reference row. It also accepts
+    language codes, so `... gu` regenerates only Gujarati and leaves the
+    uploaded Hindi and Tamil sheets untouched.
+  - Regenerated `data/review_sheets/Gujarati_ParaSyno_Translation_review_template.xlsx`:
+    200 reference rows plus 400 PARA/SYNO rows, all reference rows equal
+    the final Gujarati, and there are no "NOT YET" markers.
+  - Versus the old withheld template, exactly 70 reference rows changed and
+    no PARA/SYNO cells changed.
+  - Inputs checked: all 400 IndicTrans2 and 400 Google rows were translated
+    from the final reviewed English PARA/SYNO, with none empty.
+  - Automated checker flags: 27 IndicTrans2 rows, 7 Google rows.
+- **108/195 decided (user, 2026-10-20).** `multiple_195` now uses `multiple_108`'s
+  reviewed Gujarati text, so the identical English query reads identically, as
+  in Hindi and Tamil.
+  - Implemented as an explicit `HARMONIZE_DUPLICATES` rule in
+    `resolve_cycle2_gujarati.py`. The row records `harmonized_with` and
+    `text_before_harmonization`.
+  - The script now fails if any of the 4 duplicate pairs differ.
+  - Rebuilt `gujarati_final_resolved.jsonl` (only multiple_195 changed),
+    `multiple_gu`, and the Gujarati PARA/SYNO sheet.
+  - The 35.0% correction rate is unchanged, because 195 was already a
+    corrected item.
