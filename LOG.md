@@ -1489,3 +1489,31 @@ Checks before pushing:
 After pushing, all 14 reviewer workbooks on GitHub match the local file sizes.
 **Rule:** commit and push each new batch of reviewer downloads as soon as it
 arrives.
+
+## 2026-10-20 -- Tamil PARA/SYNO Cycle 1 returned (Rohan, Dhayanidhi): complete, but not independent
+
+- **Files.** Downloaded as `Tamil_review_Rohan.xlsx` and
+  `Tamil_review_Dhayanidhi.xlsx`, the same names as the September Tamil
+  Cycle 1 files. They were copied into the reviewer folder as
+  `Tamil_PARA_SYNO_Rohan.xlsx` and `Tamil_PARA_SYNO_Dhayanidhi.xlsx` with
+  no overwrite, and are byte-identical to the Downloads copies.
+  - Each workbook bundles the reviewer's earlier tabs (Tamil Cycle 1,
+    Cycle 2) plus the new "Tamil PARA-SYNO Review" tab.
+  - The earlier tabs are identical to the existing repo files.
+- **Complete:** 400/400 PARA/SYNO rows have both verdicts, no read-only cell
+  was edited versus the template, and there are no stray cells.
+  - Rohan: IndicTrans2 Correct 247 / Incorrect 153, Google 372/28.
+  - Dhayanidhi: IndicTrans2 247/153, Google 379/21.
+- **Independence problem:**
+  - Verdict agreement is 392/400 for IndicTrans2 (κ 0.96) and 393/400 for
+    Google.
+  - The issue-flag pattern is identical on 400/400 rows.
+  - Free-text notes are identical in 176 of 178. The rest are light edits,
+    e.g. "rendered as" vs "converte to".
+  - Corrected versions are identical in 168 of 183/178.
+  - The same pattern is already present in the September Tamil NO Cycle 1:
+    58 of 64 notes identical, issue flags identical on 187/200 rows,
+    58 identical fixes in bucket 2, κ 0.91.
+  - This is reported to the user. Tamil Cycle 2 is not built until the user
+    decides how to treat the Tamil annotations (independent pair vs. one
+    shared review).
