@@ -43,7 +43,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-REVIEW_DIR = Path("reviewer annotated file downloaded from google sheets")
+REVIEW_DIR = Path("data/human_review")
 LANGS = {
     "ta": {
         "name": "Tamil",

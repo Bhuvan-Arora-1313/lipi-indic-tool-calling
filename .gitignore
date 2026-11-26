@@ -4,3 +4,14 @@ __pycache__/
 .DS_Store
 .file_locks/
 bfcl_eval.egg-info/
+
+# Internal working files (kept locally, not published)
+*.pdf
+reports/
+generated_slurm/
+logs/
+LOG.md
+LOG_GUIDE.md
+PROGRESS.md
+PROJECT_MANIFEST.md
+Indic_ToolCalling_Project_Plan.md

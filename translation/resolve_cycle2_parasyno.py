@@ -30,7 +30,7 @@ from pathlib import Path
 
 import openpyxl
 
-CYCLE1_DIR = Path("reviewer annotated file downloaded from google sheets")
+CYCLE1_DIR = Path("data/human_review")
 CYCLE1_FILES = {
     "Jayant": (CYCLE1_DIR / "English_PARA_SYNO_Jayant_Kapoor.xlsx", "English PARA-SYNO Jayant"),
     "Anshul": (CYCLE1_DIR / "English_PARA_SYNO_Anshul_Gupta.xlsx", "English PARA-SYNO Anshul"),

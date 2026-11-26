@@ -1,6 +1,6 @@
 import json, openpyxl
 from collections import Counter
-D="reviewer annotated file downloaded from google sheets/"
+D="data/human_review/"
 FILES={"Samarth":(D+"Gujarati_review_Samarth_Patel.xlsx","Gujarati Review Samarth Patel"),
        "Dhruv":(D+"Gujarati Review - Dhruv Kunvarani.xlsx","Dhruv Kunvarani Gujarati Review")}
 SENT={"Samarth":"data/review_sheets/cycle2/Gujarati_Cycle2_Samarth.xlsx","Dhruv":"data/review_sheets/cycle2/Gujarati_Cycle2_Dhruv.xlsx"}

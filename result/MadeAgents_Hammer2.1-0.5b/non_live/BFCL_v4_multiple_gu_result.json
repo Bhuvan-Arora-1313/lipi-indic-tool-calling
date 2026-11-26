@@ -1,0 +1,200 @@
+{"id": "multiple_gu_0", "result": "```\n[]\n```", "input_token_count": 897, "output_token_count": 5, "latency": 0.19622135162353516}
+{"id": "multiple_gu_1", "result": "```\n[{\"name\": \"math.triangle_area_heron\", \"arguments\": {\"side1\": 3, \"side2\": 4, \"side3\": 5}}]\n```", "input_token_count": 703, "output_token_count": 41, "latency": 0.5847702026367188}
+{"id": "multiple_gu_2", "result": "```\n[]\n```", "input_token_count": 515, "output_token_count": 5, "latency": 0.1909027099609375}
+{"id": "multiple_gu_3", "result": "```\n[{\"name\": \"EuclideanDistance.calculate\", \"arguments\": {\"pointA\": [3, 4], \"pointB\": [1, 2]}}]\n```", "input_token_count": 656, "output_token_count": 39, "latency": 0.553128719329834}
+{"id": "multiple_gu_4", "result": "```\n[]\n```", "input_token_count": 889, "output_token_count": 5, "latency": 0.20188665390014648}
+{"id": "multiple_gu_5", "result": "```\n[{\"name\": \"weather.get_by_city_date\", \"arguments\": {\"city\": \"13 ડિસેમ્બર\", \"date\": \"2019-04-13\"}}, {\"name\": \"weather.get_by_coordinates_date\", \"arguments\": {\"coordinates\": [46.603354, 1.888334], \"date\": \"2019-04-13\"}}]\n```", "input_token_count": 831, "output_token_count": 108, "latency": 1.4009897708892822}
+{"id": "multiple_gu_6", "result": "```\n[]\n```", "input_token_count": 871, "output_token_count": 5, "latency": 0.18746471405029297}
+{"id": "multiple_gu_7", "result": "```\n[]\n```", "input_token_count": 758, "output_token_count": 5, "latency": 0.1849377155303955}
+{"id": "multiple_gu_8", "result": "```\n[{\"name\": \"property_valuation.get\", \"arguments\": {\"location\": \"San Diego, CA\", \"propertyType\": \"villa\", \"bedrooms\": 3, \"age\": 3}}]\n```", "input_token_count": 739, "output_token_count": 48, "latency": 0.6722366809844971}
+{"id": "multiple_gu_9", "result": "```\n[]\n```", "input_token_count": 683, "output_token_count": 5, "latency": 0.18408560752868652}
+{"id": "multiple_gu_10", "result": "```\n[]\n```", "input_token_count": 864, "output_token_count": 5, "latency": 0.1901099681854248}
+{"id": "multiple_gu_11", "result": "```\n[{\"name\": \"math_roots.polynomial\", \"arguments\": {\"coefficients\": [5.0, 20.0, -25.0], \"degree\": 2}}]\n```", "input_token_count": 721, "output_token_count": 46, "latency": 0.6382482051849365}
+{"id": "multiple_gu_12", "result": "```\n[]\n```", "input_token_count": 825, "output_token_count": 5, "latency": 0.18691349029541016}
+{"id": "multiple_gu_13", "result": "```\n[]\n```", "input_token_count": 676, "output_token_count": 5, "latency": 0.19462847709655762}
+{"id": "multiple_gu_14", "result": "```\n[]\n```", "input_token_count": 856, "output_token_count": 5, "latency": 0.2717888355255127}
+{"id": "multiple_gu_15", "result": "```\n[]\n```", "input_token_count": 788, "output_token_count": 5, "latency": 0.2682664394378662}
+{"id": "multiple_gu_16", "result": "```\n[{\"name\": \"species_distribution_modeling.project_range_shift\", \"arguments\": {\"species\": \"wild animal\", \"climate_scenario\": \"specified climate change scenario\", \"future_time\": 100}}]\n```", "input_token_count": 893, "output_token_count": 47, "latency": 0.6380829811096191}
+{"id": "multiple_gu_17", "result": "```\n[]\n```", "input_token_count": 739, "output_token_count": 5, "latency": 0.16662311553955078}
+{"id": "multiple_gu_18", "result": "```\n[]\n```", "input_token_count": 596, "output_token_count": 5, "latency": 0.24239826202392578}
+{"id": "multiple_gu_19", "result": "```\n[]\n```", "input_token_count": 693, "output_token_count": 5, "latency": 0.23843145370483398}
+{"id": "multiple_gu_20", "result": "```\n[]\n```", "input_token_count": 679, "output_token_count": 5, "latency": 0.22940349578857422}
+{"id": "multiple_gu_21", "result": "```\n[]\n```", "input_token_count": 728, "output_token_count": 5, "latency": 0.22839999198913574}
+{"id": "multiple_gu_22", "result": "```\n[{\"name\": \"sports_data.basketball.most_points_single_season\", \"arguments\": {\"league\": \"NBA\"}}]\n```", "input_token_count": 706, "output_token_count": 31, "latency": 0.4914829730987549}
+{"id": "multiple_gu_23", "result": "```\n[]\n```", "input_token_count": 861, "output_token_count": 5, "latency": 0.22834086418151855}
+{"id": "multiple_gu_24", "result": "```\n[]\n```", "input_token_count": 698, "output_token_count": 5, "latency": 0.2247161865234375}
+{"id": "multiple_gu_25", "result": "```\n[]\n```", "input_token_count": 852, "output_token_count": 5, "latency": 0.22086524963378906}
+{"id": "multiple_gu_26", "result": "```\n[]\n```", "input_token_count": 831, "output_token_count": 5, "latency": 0.2844665050506592}
+{"id": "multiple_gu_27", "result": "```\n[]\n```", "input_token_count": 672, "output_token_count": 5, "latency": 0.28136396408081055}
+{"id": "multiple_gu_28", "result": "```\n[]\n```", "input_token_count": 644, "output_token_count": 5, "latency": 0.28754401206970215}
+{"id": "multiple_gu_29", "result": "```\n[{\"name\": \"functions.intersect\", \"arguments\": {\"function1\": \"3x + 2\", \"function2\": \"2x + 3\"}}]\n```", "input_token_count": 557, "output_token_count": 39, "latency": 0.6417026519775391}
+{"id": "multiple_gu_30", "result": "```\n[]\n```", "input_token_count": 660, "output_token_count": 5, "latency": 0.28335046768188477}
+{"id": "multiple_gu_31", "result": "```\n[]\n```", "input_token_count": 635, "output_token_count": 5, "latency": 0.2811732292175293}
+{"id": "multiple_gu_32", "result": "```\n[]\n```", "input_token_count": 605, "output_token_count": 5, "latency": 0.2891666889190674}
+{"id": "multiple_gu_33", "result": "```\n[]\n```", "input_token_count": 597, "output_token_count": 5, "latency": 0.2748093605041504}
+{"id": "multiple_gu_34", "result": "```\n[{\"name\": \"math.lcm\", \"arguments\": {\"num1\": 18, \"num2\": 12}}]\n```", "input_token_count": 611, "output_token_count": 33, "latency": 0.5516836643218994}
+{"id": "multiple_gu_35", "result": "```\n[]\n```", "input_token_count": 631, "output_token_count": 5, "latency": 0.3303382396697998}
+{"id": "multiple_gu_36", "result": "```\n[]\n```", "input_token_count": 788, "output_token_count": 5, "latency": 0.33234238624572754}
+{"id": "multiple_gu_37", "result": "```\n[]\n```", "input_token_count": 773, "output_token_count": 5, "latency": 0.3296546936035156}
+{"id": "multiple_gu_38", "result": "```\n[]\n```", "input_token_count": 680, "output_token_count": 5, "latency": 0.33118343353271484}
+{"id": "multiple_gu_39", "result": "```\n[]\n```", "input_token_count": 651, "output_token_count": 5, "latency": 0.34329652786254883}
+{"id": "multiple_gu_40", "result": "```\n[]\n```", "input_token_count": 795, "output_token_count": 5, "latency": 0.32373619079589844}
+{"id": "multiple_gu_41", "result": "```\n[{\"name\": \"electric_force.calculate\", \"arguments\": {\"Q1\": 10.0, \"Q2\": 0.01, \"r\": 0.01}}]\n```", "input_token_count": 782, "output_token_count": 46, "latency": 0.7695808410644531}
+{"id": "multiple_gu_42", "result": "```\n[]\n```", "input_token_count": 720, "output_token_count": 5, "latency": 0.3704559803009033}
+{"id": "multiple_gu_43", "result": "```\n[{\"name\": \"biological.calc_energy\", \"arguments\": {\"mols\": 5, \"substance\": \"C6H12O6\"}}]\n```", "input_token_count": 713, "output_token_count": 38, "latency": 0.7294902801513672}
+{"id": "multiple_gu_44", "result": "```\n[]\n```", "input_token_count": 707, "output_token_count": 5, "latency": 0.37006497383117676}
+{"id": "multiple_gu_45", "result": "```\n[]\n```", "input_token_count": 544, "output_token_count": 5, "latency": 0.3672313690185547}
+{"id": "multiple_gu_46", "result": "```\n[]\n```", "input_token_count": 657, "output_token_count": 5, "latency": 0.3659861087799072}
+{"id": "multiple_gu_47", "result": "```\n[{\"name\": \"cosine_similarity.calculate\", \"arguments\": {\"vector1\": [3, 2, 1], \"vector2\": [1, 2, 3], \"rounding\": 0}}]\n```", "input_token_count": 672, "output_token_count": 51, "latency": 0.8684704303741455}
+{"id": "multiple_gu_48", "result": "```\n[]\n```", "input_token_count": 733, "output_token_count": 5, "latency": 0.4038383960723877}
+{"id": "multiple_gu_49", "result": "```\n[{\"name\": \"calc_Simple_Interest\", \"arguments\": {\"principle_amount\": 1500.0, \"duration\": 2.5, \"annual_rate\": 0.02}}]\n```", "input_token_count": 828, "output_token_count": 50, "latency": 0.9066751003265381}
+{"id": "multiple_gu_50", "result": "```\n[]\n```", "input_token_count": 729, "output_token_count": 5, "latency": 0.40422821044921875}
+{"id": "multiple_gu_51", "result": "```\n[{\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 1, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 2, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 3, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 4, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 5, \"sides_per_die\": 6}}, {\"name\": \"dice_roll_probability\", \"arguments\": {\"desired_sum\": 7, \"n_rolls\": 6, \"sides_per_die\": 6}}]\n```", "input_token_count": 718, "output_token_count": 216, "latency": 2.1235296726226807}
+{"id": "multiple_gu_52", "result": "```\n[]\n```", "input_token_count": 581, "output_token_count": 5, "latency": 0.43654704093933105}
+{"id": "multiple_gu_53", "result": "```\n[]\n```", "input_token_count": 695, "output_token_count": 5, "latency": 0.4332458972930908}
+{"id": "multiple_gu_54", "result": "```\n[{\"name\": \"corporate_finance.dividend_data\", \"arguments\": {\"company\": \"E&P\", \"years\": 5, \"frequency\": \"quarterly\"}}]\n```", "input_token_count": 650, "output_token_count": 41, "latency": 0.9148154258728027}
+{"id": "multiple_gu_55", "result": "```\n[]\n```", "input_token_count": 584, "output_token_count": 5, "latency": 0.4845867156982422}
+{"id": "multiple_gu_56", "result": "```\n[]\n```", "input_token_count": 763, "output_token_count": 5, "latency": 0.4827299118041992}
+{"id": "multiple_gu_57", "result": "```\n[{\"name\": \"financial.simple_interest\", \"arguments\": {\"principle\": 1000.0, \"rate\": 0.05, \"time\": 10, \"n\": 4}}]\n```", "input_token_count": 823, "output_token_count": 51, "latency": 1.0731303691864014}
+{"id": "multiple_gu_58", "result": "```\n[]\n```", "input_token_count": 595, "output_token_count": 5, "latency": 0.5319156646728516}
+{"id": "multiple_gu_59", "result": "```\n[]\n```", "input_token_count": 637, "output_token_count": 5, "latency": 0.5521488189697266}
+{"id": "multiple_gu_60", "result": "```\n[]\n```", "input_token_count": 684, "output_token_count": 5, "latency": 0.5294599533081055}
+{"id": "multiple_gu_61", "result": "```\n[]\n```", "input_token_count": 744, "output_token_count": 5, "latency": 0.5844473838806152}
+{"id": "multiple_gu_62", "result": "```\n[]\n```", "input_token_count": 736, "output_token_count": 5, "latency": 0.5812780857086182}
+{"id": "multiple_gu_63", "result": "```\n[]\n```", "input_token_count": 673, "output_token_count": 5, "latency": 0.5823657512664795}
+{"id": "multiple_gu_64", "result": "```\n[]\n```", "input_token_count": 673, "output_token_count": 5, "latency": 0.6250989437103271}
+{"id": "multiple_gu_65", "result": "```\n[]\n```", "input_token_count": 696, "output_token_count": 5, "latency": 0.6239204406738281}
+{"id": "multiple_gu_66", "result": "```\n[]\n```", "input_token_count": 734, "output_token_count": 5, "latency": 0.6460835933685303}
+{"id": "multiple_gu_67", "result": "```\n[]\n```", "input_token_count": 610, "output_token_count": 5, "latency": 0.6183078289031982}
+{"id": "multiple_gu_68", "result": "```\n[]\n```", "input_token_count": 684, "output_token_count": 5, "latency": 0.641005277633667}
+{"id": "multiple_gu_69", "result": "```\n[]\n```", "input_token_count": 1003, "output_token_count": 5, "latency": 0.6396653652191162}
+{"id": "multiple_gu_70", "result": "```\n[{\"name\": \"european_history.get_events\", \"arguments\": {\"country\": \"India\", \"century\": 18}}, {\"name\": \"european_history.get_events\", \"arguments\": {\"country\": \"China\", \"century\": 18}}, {\"name\": \"european_history.get_events\", \"arguments\": {\"country\": \"Japan\", \"century\": 18}}]\n```", "input_token_count": 769, "output_token_count": 87, "latency": 1.730097770690918}
+{"id": "multiple_gu_71", "result": "```\n[]\n```", "input_token_count": 672, "output_token_count": 5, "latency": 0.6358921527862549}
+{"id": "multiple_gu_72", "result": "```\n[{\"name\": \"us_economy.gdp_by_state_year\", \"arguments\": {\"state\": \"California\", \"year\": 1970, \"adjustment\": \"Nominal\"}}]\n```", "input_token_count": 610, "output_token_count": 45, "latency": 1.1257619857788086}
+{"id": "multiple_gu_73", "result": "```\n[]\n```", "input_token_count": 531, "output_token_count": 5, "latency": 0.6666257381439209}
+{"id": "multiple_gu_74", "result": "```\n[]\n```", "input_token_count": 657, "output_token_count": 5, "latency": 0.6646263599395752}
+{"id": "multiple_gu_75", "result": "```\n[]\n```", "input_token_count": 694, "output_token_count": 5, "latency": 0.6857740879058838}
+{"id": "multiple_gu_76", "result": "```\n[]\n```", "input_token_count": 704, "output_token_count": 5, "latency": 0.6864192485809326}
+{"id": "multiple_gu_77", "result": "```\n[]\n```", "input_token_count": 700, "output_token_count": 5, "latency": 0.6935222148895264}
+{"id": "multiple_gu_78", "result": "```\n[]\n```", "input_token_count": 769, "output_token_count": 5, "latency": 0.6856002807617188}
+{"id": "multiple_gu_79", "result": "```\n[]\n```", "input_token_count": 605, "output_token_count": 5, "latency": 0.7195723056793213}
+{"id": "multiple_gu_80", "result": "```\n[]\n```", "input_token_count": 776, "output_token_count": 5, "latency": 0.7169704437255859}
+{"id": "multiple_gu_81", "result": "```\n[]\n```", "input_token_count": 743, "output_token_count": 5, "latency": 0.7403280735015869}
+{"id": "multiple_gu_82", "result": "```\n[]\n```", "input_token_count": 617, "output_token_count": 5, "latency": 0.736720085144043}
+{"id": "multiple_gu_83", "result": "```\n[{\"name\": \"team_stats.get_top_scorer\", \"arguments\": {\"team_name\": \"Lionel Messi\"}}]\n```", "input_token_count": 717, "output_token_count": 31, "latency": 1.0135719776153564}
+{"id": "multiple_gu_84", "result": "```\n[]\n```", "input_token_count": 675, "output_token_count": 5, "latency": 0.7369430065155029}
+{"id": "multiple_gu_85", "result": "```\n[]\n```", "input_token_count": 660, "output_token_count": 5, "latency": 0.7372579574584961}
+{"id": "multiple_gu_86", "result": "```\n[{\"name\": \"BoardGameGeek.recommend\", \"arguments\": {\"numPlayers\": 2, \"category\": \"strategy\"}}]\n```", "input_token_count": 760, "output_token_count": 33, "latency": 1.0746591091156006}
+{"id": "multiple_gu_87", "result": "```\n[{\"name\": \"games.price.find\", \"arguments\": {\"game\": \"2077\", \"platform\": \"Xbox\"}}]\n```", "input_token_count": 700, "output_token_count": 33, "latency": 1.071190357208252}
+{"id": "multiple_gu_88", "result": "```\n[]\n```", "input_token_count": 667, "output_token_count": 5, "latency": 0.7610659599304199}
+{"id": "multiple_gu_89", "result": "```\n[]\n```", "input_token_count": 881, "output_token_count": 5, "latency": 0.8076033592224121}
+{"id": "multiple_gu_90", "result": "```\n[{\"name\": \"restaurant.find_group\", \"arguments\": {\"location\": \"Seattle, WA\", \"group_size\": 5}}]\n```", "input_token_count": 702, "output_token_count": 32, "latency": 1.0877552032470703}
+{"id": "multiple_gu_91", "result": "```\n[]\n```", "input_token_count": 624, "output_token_count": 5, "latency": 0.7780101299285889}
+{"id": "multiple_gu_92", "result": "```\n[]\n```", "input_token_count": 826, "output_token_count": 5, "latency": 0.8248507976531982}
+{"id": "multiple_gu_93", "result": "```\n[]\n```", "input_token_count": 763, "output_token_count": 5, "latency": 0.7781407833099365}
+{"id": "multiple_gu_94", "result": "```\n[]\n```", "input_token_count": 847, "output_token_count": 5, "latency": 0.7741506099700928}
+{"id": "multiple_gu_95", "result": "```\n[]\n```", "input_token_count": 660, "output_token_count": 5, "latency": 0.8233993053436279}
+{"id": "multiple_gu_96", "result": "```\n[{\"name\": \"solve_quadratic_equation\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}]\n```", "input_token_count": 773, "output_token_count": 37, "latency": 1.2586205005645752}
+{"id": "multiple_gu_97", "result": "```\n[]\n```", "input_token_count": 647, "output_token_count": 5, "latency": 0.8212563991546631}
+{"id": "multiple_gu_98", "result": "```\n[]\n```", "input_token_count": 859, "output_token_count": 5, "latency": 0.853269100189209}
+{"id": "multiple_gu_99", "result": "```\n[]\n```", "input_token_count": 599, "output_token_count": 5, "latency": 0.8759896755218506}
+{"id": "multiple_gu_100", "result": "```\n[]\n```", "input_token_count": 597, "output_token_count": 5, "latency": 0.8261606693267822}
+{"id": "multiple_gu_101", "result": "```\n[{\"name\": \"math.gcd\", \"arguments\": {\"num1\": 12, \"num2\": 18}}]\n```", "input_token_count": 572, "output_token_count": 33, "latency": 1.2026362419128418}
+{"id": "multiple_gu_102", "result": "```\n[]\n```", "input_token_count": 795, "output_token_count": 5, "latency": 0.8258702754974365}
+{"id": "multiple_gu_103", "result": "```\n[]\n```", "input_token_count": 872, "output_token_count": 5, "latency": 0.8456685543060303}
+{"id": "multiple_gu_104", "result": "```\n[]\n```", "input_token_count": 856, "output_token_count": 5, "latency": 0.8740627765655518}
+{"id": "multiple_gu_105", "result": "```\n[]\n```", "input_token_count": 854, "output_token_count": 5, "latency": 0.896697998046875}
+{"id": "multiple_gu_106", "result": "```\n[]\n```", "input_token_count": 936, "output_token_count": 5, "latency": 0.8919715881347656}
+{"id": "multiple_gu_107", "result": "```\n[]\n```", "input_token_count": 645, "output_token_count": 5, "latency": 0.8657102584838867}
+{"id": "multiple_gu_108", "result": "```\n[]\n```", "input_token_count": 703, "output_token_count": 5, "latency": 0.8383512496948242}
+{"id": "multiple_gu_109", "result": "```\n[]\n```", "input_token_count": 768, "output_token_count": 5, "latency": 0.8638534545898438}
+{"id": "multiple_gu_110", "result": "```\n[]\n```", "input_token_count": 712, "output_token_count": 5, "latency": 0.856259822845459}
+{"id": "multiple_gu_111", "result": "```\n[{\"name\": \"calculate_genotype_frequency\", \"arguments\": {\"allele_frequency\": 0.3, \"genotype\": \"AA\"}}]\n```", "input_token_count": 725, "output_token_count": 34, "latency": 1.3329503536224365}
+{"id": "multiple_gu_112", "result": "```\n[]\n```", "input_token_count": 638, "output_token_count": 5, "latency": 0.8519902229309082}
+{"id": "multiple_gu_113", "result": "```\n[{\"name\": \"calculate_fitness\", \"arguments\": {\"trait_values\": [0.8, 0.7], \"trait_contributions\": [0.4, 0.6]}}]\n```", "input_token_count": 1107, "output_token_count": 46, "latency": 1.4919414520263672}
+{"id": "multiple_gu_114", "result": "```\n[]\n```", "input_token_count": 833, "output_token_count": 5, "latency": 0.8460009098052979}
+{"id": "multiple_gu_115", "result": "```\n[]\n```", "input_token_count": 967, "output_token_count": 5, "latency": 0.8771944046020508}
+{"id": "multiple_gu_116", "result": "```\n[]\n```", "input_token_count": 664, "output_token_count": 5, "latency": 0.9003634452819824}
+{"id": "multiple_gu_117", "result": "```\n[{\"name\": \"calculate_BMI\", \"arguments\": {\"weight_kg\": 70, \"height_m\": 1.75}}]\n```", "input_token_count": 848, "output_token_count": 36, "latency": 1.3720285892486572}
+{"id": "multiple_gu_118", "result": "```\n[]\n```", "input_token_count": 921, "output_token_count": 5, "latency": 0.8936126232147217}
+{"id": "multiple_gu_119", "result": "```\n[]\n```", "input_token_count": 1031, "output_token_count": 5, "latency": 0.8904261589050293}
+{"id": "multiple_gu_120", "result": "```\n[]\n```", "input_token_count": 1013, "output_token_count": 5, "latency": 0.8841300010681152}
+{"id": "multiple_gu_121", "result": "```\n[]\n```", "input_token_count": 745, "output_token_count": 5, "latency": 0.932999849319458}
+{"id": "multiple_gu_122", "result": "```\n[]\n```", "input_token_count": 996, "output_token_count": 5, "latency": 0.9267623424530029}
+{"id": "multiple_gu_123", "result": "```\n[]\n```", "input_token_count": 751, "output_token_count": 5, "latency": 0.9240167140960693}
+{"id": "multiple_gu_124", "result": "```\n[]\n```", "input_token_count": 788, "output_token_count": 5, "latency": 0.9497513771057129}
+{"id": "multiple_gu_125", "result": "```\n[]\n```", "input_token_count": 843, "output_token_count": 5, "latency": 0.921438455581665}
+{"id": "multiple_gu_126", "result": "```\n[]\n```", "input_token_count": 846, "output_token_count": 5, "latency": 0.9038379192352295}
+{"id": "multiple_gu_127", "result": "```\n[]\n```", "input_token_count": 933, "output_token_count": 5, "latency": 0.9032707214355469}
+{"id": "multiple_gu_128", "result": "```\n[]\n```", "input_token_count": 1056, "output_token_count": 5, "latency": 0.9317631721496582}
+{"id": "multiple_gu_129", "result": "```\n[]\n```", "input_token_count": 790, "output_token_count": 5, "latency": 0.9019260406494141}
+{"id": "multiple_gu_130", "result": "```\n[]\n```", "input_token_count": 852, "output_token_count": 5, "latency": 0.9311923980712891}
+{"id": "multiple_gu_131", "result": "```\n[{\"name\": \"restaurant.find_nearby\", \"arguments\": {\"location\": \"Chennai\"}}]\n```", "input_token_count": 823, "output_token_count": 25, "latency": 1.22385573387146}
+{"id": "multiple_gu_132", "result": "```\n[]\n```", "input_token_count": 855, "output_token_count": 5, "latency": 0.8859782218933105}
+{"id": "multiple_gu_133", "result": "```\n[]\n```", "input_token_count": 661, "output_token_count": 5, "latency": 0.9210443496704102}
+{"id": "multiple_gu_134", "result": "```\n[]\n```", "input_token_count": 985, "output_token_count": 5, "latency": 0.9120066165924072}
+{"id": "multiple_gu_135", "result": "```\n[]\n```", "input_token_count": 631, "output_token_count": 5, "latency": 0.9156696796417236}
+{"id": "multiple_gu_136", "result": "```\n[]\n```", "input_token_count": 684, "output_token_count": 5, "latency": 0.9129579067230225}
+{"id": "multiple_gu_137", "result": "```\n[]\n```", "input_token_count": 912, "output_token_count": 5, "latency": 0.8728160858154297}
+{"id": "multiple_gu_138", "result": "```\n[]\n```", "input_token_count": 764, "output_token_count": 5, "latency": 0.8848299980163574}
+{"id": "multiple_gu_139", "result": "```\n[]\n```", "input_token_count": 959, "output_token_count": 5, "latency": 0.8802211284637451}
+{"id": "multiple_gu_140", "result": "```\n[]\n```", "input_token_count": 783, "output_token_count": 5, "latency": 0.9084322452545166}
+{"id": "multiple_gu_141", "result": "```\n[]\n```", "input_token_count": 774, "output_token_count": 5, "latency": 0.8799145221710205}
+{"id": "multiple_gu_142", "result": "```\n[]\n```", "input_token_count": 657, "output_token_count": 5, "latency": 0.8628227710723877}
+{"id": "multiple_gu_143", "result": "```\n[]\n```", "input_token_count": 957, "output_token_count": 5, "latency": 0.8623855113983154}
+{"id": "multiple_gu_144", "result": "```\n[{\"name\": \"air_quality\", \"arguments\": {\"location\": \"Ladnamsa\", \"date\": \"2022-08-16\"}}]\n```", "input_token_count": 579, "output_token_count": 41, "latency": 1.3335182666778564}
+{"id": "multiple_gu_145", "result": "```\n[]\n```", "input_token_count": 902, "output_token_count": 5, "latency": 0.8687996864318848}
+{"id": "multiple_gu_146", "result": "```\n[]\n```", "input_token_count": 654, "output_token_count": 5, "latency": 0.8581058979034424}
+{"id": "multiple_gu_147", "result": "```\n[]\n```", "input_token_count": 816, "output_token_count": 5, "latency": 0.8548457622528076}
+{"id": "multiple_gu_148", "result": "```\n[]\n```", "input_token_count": 595, "output_token_count": 5, "latency": 0.8372483253479004}
+{"id": "multiple_gu_149", "result": "```\n[]\n```", "input_token_count": 955, "output_token_count": 5, "latency": 0.8279581069946289}
+{"id": "multiple_gu_150", "result": "```\n[]\n```", "input_token_count": 1047, "output_token_count": 5, "latency": 0.8515691757202148}
+{"id": "multiple_gu_151", "result": "```\n[]\n```", "input_token_count": 872, "output_token_count": 5, "latency": 0.8632056713104248}
+{"id": "multiple_gu_152", "result": "```\n[]\n```", "input_token_count": 730, "output_token_count": 5, "latency": 0.8336565494537354}
+{"id": "multiple_gu_153", "result": "```\n[]\n```", "input_token_count": 732, "output_token_count": 5, "latency": 0.8302466869354248}
+{"id": "multiple_gu_154", "result": "```\n[{\"name\": \"US_president.in_year\", \"arguments\": {\"year\": 1861}}]\n```", "input_token_count": 915, "output_token_count": 28, "latency": 1.1948635578155518}
+{"id": "multiple_gu_155", "result": "```\n[]\n```", "input_token_count": 745, "output_token_count": 5, "latency": 0.8573944568634033}
+{"id": "multiple_gu_156", "result": "```\n[]\n```", "input_token_count": 760, "output_token_count": 5, "latency": 0.8309369087219238}
+{"id": "multiple_gu_157", "result": "```\n[]\n```", "input_token_count": 633, "output_token_count": 5, "latency": 0.824171781539917}
+{"id": "multiple_gu_158", "result": "```\n[]\n```", "input_token_count": 921, "output_token_count": 5, "latency": 0.8205108642578125}
+{"id": "multiple_gu_159", "result": "```\n[]\n```", "input_token_count": 852, "output_token_count": 5, "latency": 0.837848424911499}
+{"id": "multiple_gu_160", "result": "```\n[]\n```", "input_token_count": 912, "output_token_count": 5, "latency": 0.8328254222869873}
+{"id": "multiple_gu_161", "result": "```\n[]\n```", "input_token_count": 867, "output_token_count": 5, "latency": 0.8725259304046631}
+{"id": "multiple_gu_162", "result": "```\n[]\n```", "input_token_count": 688, "output_token_count": 5, "latency": 0.8320260047912598}
+{"id": "multiple_gu_163", "result": "```\n[]\n```", "input_token_count": 757, "output_token_count": 5, "latency": 0.850677490234375}
+{"id": "multiple_gu_164", "result": "```\n[]\n```", "input_token_count": 953, "output_token_count": 5, "latency": 0.8498804569244385}
+{"id": "multiple_gu_165", "result": "```\n[]\n```", "input_token_count": 776, "output_token_count": 5, "latency": 0.8294193744659424}
+{"id": "multiple_gu_166", "result": "```\n[]\n```", "input_token_count": 832, "output_token_count": 5, "latency": 0.8282487392425537}
+{"id": "multiple_gu_167", "result": "```\n[{\"name\": \"music_generator.generate_melody\", \"arguments\": {\"key\": \"C\", \"start_note\": \"C4\", \"length\": 16, \"tempo\": 120}}]\n```", "input_token_count": 913, "output_token_count": 50, "latency": 1.188042163848877}
+{"id": "multiple_gu_168", "result": "```\n[]\n```", "input_token_count": 703, "output_token_count": 5, "latency": 0.8646206855773926}
+{"id": "multiple_gu_169", "result": "```\n[]\n```", "input_token_count": 616, "output_token_count": 5, "latency": 0.8610153198242188}
+{"id": "multiple_gu_170", "result": "```\n[{\"name\": \"soccer_stat.get_player_stats\", \"arguments\": {\"player_name\": \"John Doe\", \"season\": \"2019-2020\", \"league\": \"all\"}}]\n```", "input_token_count": 878, "output_token_count": 48, "latency": 1.155250072479248}
+{"id": "multiple_gu_171", "result": "```\n[]\n```", "input_token_count": 648, "output_token_count": 5, "latency": 0.8657639026641846}
+{"id": "multiple_gu_172", "result": "```\n[]\n```", "input_token_count": 961, "output_token_count": 5, "latency": 0.8686175346374512}
+{"id": "multiple_gu_173", "result": "```\n[]\n```", "input_token_count": 740, "output_token_count": 5, "latency": 0.8429205417633057}
+{"id": "multiple_gu_174", "result": "```\n[]\n```", "input_token_count": 662, "output_token_count": 5, "latency": 0.8459196090698242}
+{"id": "multiple_gu_175", "result": "```\n[]\n```", "input_token_count": 914, "output_token_count": 5, "latency": 0.8399765491485596}
+{"id": "multiple_gu_176", "result": "```\n[]\n```", "input_token_count": 1139, "output_token_count": 5, "latency": 0.8368813991546631}
+{"id": "multiple_gu_177", "result": "```\n[]\n```", "input_token_count": 779, "output_token_count": 5, "latency": 0.85174560546875}
+{"id": "multiple_gu_178", "result": "```\n[{\"name\": \"find_card_in_deck\", \"arguments\": {\"rank\": \"Kitnani\", \"suit\": \"Hariarat\", \"deck\": []}}, {\"name\": \"find_card_in_deck\", \"arguments\": {\"rank\": \"Kitnani\", \"suit\": \"Hariarat\", \"deck\": []}}]\n```", "input_token_count": 999, "output_token_count": 72, "latency": 1.1690678596496582}
+{"id": "multiple_gu_179", "result": "```\n[]\n```", "input_token_count": 758, "output_token_count": 5, "latency": 0.8293924331665039}
+{"id": "multiple_gu_180", "result": "```\n[]\n```", "input_token_count": 910, "output_token_count": 5, "latency": 0.8222215175628662}
+{"id": "multiple_gu_181", "result": "```\n[]\n```", "input_token_count": 908, "output_token_count": 5, "latency": 0.848552942276001}
+{"id": "multiple_gu_182", "result": "```\n[]\n```", "input_token_count": 1016, "output_token_count": 5, "latency": 0.8419265747070312}
+{"id": "multiple_gu_183", "result": "```\n[{\"name\": \"recipe_info.get_calories\", \"arguments\": {\"website\": \"Foodnetwork.com\", \"recipe\": \"Bread\"}}, {\"name\": \"recipe_info.get_calories\", \"arguments\": {\"website\": \"Foodnetwork.com\", \"recipe\": \"Pizza\"}}]\n```", "input_token_count": 721, "output_token_count": 62, "latency": 1.0907959938049316}
+{"id": "multiple_gu_184", "result": "```\n[]\n```", "input_token_count": 731, "output_token_count": 5, "latency": 0.8245952129364014}
+{"id": "multiple_gu_185", "result": "```\n[]\n```", "input_token_count": 684, "output_token_count": 5, "latency": 0.821723222732544}
+{"id": "multiple_gu_186", "result": "```\n[]\n```", "input_token_count": 658, "output_token_count": 5, "latency": 0.8388400077819824}
+{"id": "multiple_gu_187", "result": "```\n[]\n```", "input_token_count": 877, "output_token_count": 5, "latency": 0.8226332664489746}
+{"id": "multiple_gu_188", "result": "```\n[]\n```", "input_token_count": 988, "output_token_count": 5, "latency": 0.8190953731536865}
+{"id": "multiple_gu_189", "result": "```\n[]\n```", "input_token_count": 649, "output_token_count": 5, "latency": 0.840289831161499}
+{"id": "multiple_gu_190", "result": "```\n[]\n```", "input_token_count": 797, "output_token_count": 5, "latency": 0.8353710174560547}
+{"id": "multiple_gu_191", "result": "```\n[]\n```", "input_token_count": 993, "output_token_count": 5, "latency": 0.8391659259796143}
+{"id": "multiple_gu_192", "result": "```\n[]\n```", "input_token_count": 714, "output_token_count": 5, "latency": 0.816378116607666}
+{"id": "multiple_gu_193", "result": "```\n[]\n```", "input_token_count": 846, "output_token_count": 5, "latency": 0.817101001739502}
+{"id": "multiple_gu_194", "result": "```\n[]\n```", "input_token_count": 894, "output_token_count": 5, "latency": 0.8074309825897217}
+{"id": "multiple_gu_195", "result": "```\n[{\"name\": \"calc_heat_capacity\", \"arguments\": {\"temp\": 298, \"volume\": 10, \"gas\": \"air\"}}]\n```", "input_token_count": 874, "output_token_count": 38, "latency": 0.9246971607208252}
+{"id": "multiple_gu_196", "result": "```\n[]\n```", "input_token_count": 857, "output_token_count": 5, "latency": 0.8043434619903564}
+{"id": "multiple_gu_197", "result": "```\n[]\n```", "input_token_count": 997, "output_token_count": 5, "latency": 0.7939162254333496}
+{"id": "multiple_gu_198", "result": "```\n[{\"name\": \"calculate_genotype_frequency\", \"arguments\": {\"allele_frequency\": 0.3, \"genotype\": \"AA\"}}]\n```", "input_token_count": 975, "output_token_count": 34, "latency": 0.8864197731018066}
+{"id": "multiple_gu_199", "result": "```\n[]\n```", "input_token_count": 728, "output_token_count": 5, "latency": 0.7639944553375244}

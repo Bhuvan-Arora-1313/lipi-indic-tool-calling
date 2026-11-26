@@ -44,7 +44,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.utils import get_column_letter
 
-CYCLE1_DIR = Path("reviewer annotated file downloaded from google sheets")
+CYCLE1_DIR = Path("data/human_review")
 CYCLE1_FILES = {
     "Samarth": (CYCLE1_DIR / "Gujarati_review_Samarth_Patel.xlsx", "Gujarati Review Samarth Patel"),
     "Dhruv": (CYCLE1_DIR / "Gujarati Review - Dhruv Kunvarani.xlsx", "Dhruv Kunvarani Gujarati Review"),
